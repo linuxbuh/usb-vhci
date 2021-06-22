@@ -1,0 +1,357 @@
+<Type Name="LocalHcd" FullName="Vhci.Windows.LocalHcd">
+  <TypeSignature Language="C#" Value="public class LocalHcd : Vhci.LocalHcd" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LocalHcd extends Vhci.LocalHcd" />
+  <AssemblyInfo>
+    <AssemblyName>Vhci</AssemblyName>
+    <AssemblyVersion>1.4.2.4</AssemblyVersion>
+    <AssemblyVersion>1.5.2.4</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Vhci.LocalHcd</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public LocalHcd (byte ports);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8 ports) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="ports" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="ports">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AddressFromPort">
+      <MemberSignature Language="C#" Value="protected override byte AddressFromPort (byte port);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance unsigned int8 AddressFromPort(unsigned int8 port) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="port" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="port">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BGWork">
+      <MemberSignature Language="C#" Value="protected override sealed void BGWork ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void BGWork() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BusID">
+      <MemberSignature Language="C#" Value="public override string BusID { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string BusID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CancelingWork">
+      <MemberSignature Language="C#" Value="protected override void CancelingWork (Vhci.Work work, bool inProgress);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CancelingWork(class Vhci.Work work, bool inProgress) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="work" Type="Vhci.Work" />
+        <Parameter Name="inProgress" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="work">To be added.</param>
+        <param name="inProgress">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FinishingWork">
+      <MemberSignature Language="C#" Value="protected override void FinishingWork (Vhci.Work work);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void FinishingWork(class Vhci.Work work) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="work" Type="Vhci.Work" />
+      </Parameters>
+      <Docs>
+        <param name="work">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPortStat">
+      <MemberSignature Language="C#" Value="public override Vhci.PortStat GetPortStat (byte port);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype Vhci.PortStat GetPortStat(unsigned int8 port) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Vhci.PortStat</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="port" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="port">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PortConnect">
+      <MemberSignature Language="C#" Value="public override void PortConnect (byte port, Usb.DeviceDescriptor device, Usb.DataRate dataRate);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void PortConnect(unsigned int8 port, class Usb.DeviceDescriptor device, valuetype Usb.DataRate dataRate) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="port" Type="System.Byte" />
+        <Parameter Name="device" Type="Usb.DeviceDescriptor" />
+        <Parameter Name="dataRate" Type="Usb.DataRate" />
+      </Parameters>
+      <Docs>
+        <param name="port">To be added.</param>
+        <param name="device">To be added.</param>
+        <param name="dataRate">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PortDisable">
+      <MemberSignature Language="C#" Value="public override void PortDisable (byte port);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void PortDisable(unsigned int8 port) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="port" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="port">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PortDisconnect">
+      <MemberSignature Language="C#" Value="public override void PortDisconnect (byte port);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void PortDisconnect(unsigned int8 port) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="port" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="port">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PortFromAddress">
+      <MemberSignature Language="C#" Value="protected override byte PortFromAddress (byte address);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance unsigned int8 PortFromAddress(unsigned int8 address) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="address" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="address">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PortOvercurrent">
+      <MemberSignature Language="C#" Value="public override void PortOvercurrent (byte port, bool setOC);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void PortOvercurrent(unsigned int8 port, bool setOC) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="port" Type="System.Byte" />
+        <Parameter Name="setOC" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="port">To be added.</param>
+        <param name="setOC">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PortResetDone">
+      <MemberSignature Language="C#" Value="public override void PortResetDone (byte port, bool enable);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void PortResetDone(unsigned int8 port, bool enable) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="port" Type="System.Byte" />
+        <Parameter Name="enable" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="port">To be added.</param>
+        <param name="enable">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PortResumed">
+      <MemberSignature Language="C#" Value="public override void PortResumed (byte port);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void PortResumed(unsigned int8 port) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="port" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="port">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UsbBusNum">
+      <MemberSignature Language="C#" Value="public override int UsbBusNum { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 UsbBusNum" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VhciID">
+      <MemberSignature Language="C#" Value="public override int VhciID { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 VhciID" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

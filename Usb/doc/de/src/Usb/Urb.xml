@@ -1,0 +1,473 @@
+<Type Name="Urb" FullName="Usb.Urb">
+  <TypeSignature Language="C#" Value="public abstract class Urb" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Urb extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>Usb</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>1.3.1.7</AssemblyVersion>
+    <AssemblyVersion>1.4.2.8</AssemblyVersion>
+    <AssemblyVersion>1.5.2.9</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected Urb (long handle, byte[] buffer, int buffer_actual, Usb.UrbStatus status, Usb.UrbFlags flags, byte epadr, Usb.Endpoint ep);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(int64 handle, unsigned int8[] buffer, int32 buffer_actual, valuetype Usb.UrbStatus status, valuetype Usb.UrbFlags flags, unsigned int8 epadr, class Usb.Endpoint ep) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="handle" Type="System.Int64" />
+        <Parameter Name="buffer" Type="System.Byte[]" />
+        <Parameter Name="buffer_actual" Type="System.Int32" />
+        <Parameter Name="status" Type="Usb.UrbStatus" />
+        <Parameter Name="flags" Type="Usb.UrbFlags" />
+        <Parameter Name="epadr" Type="System.Byte" />
+        <Parameter Name="ep" Type="Usb.Endpoint" />
+      </Parameters>
+      <Docs>
+        <param name="handle">To be added.</param>
+        <param name="buffer">To be added.</param>
+        <param name="buffer_actual">To be added.</param>
+        <param name="status">To be added.</param>
+        <param name="flags">To be added.</param>
+        <param name="epadr">To be added.</param>
+        <param name="ep">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Ack">
+      <MemberSignature Language="C#" Value="public void Ack ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Ack() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BufferActual">
+      <MemberSignature Language="C#" Value="public int BufferActual { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 BufferActual" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BufferLength">
+      <MemberSignature Language="C#" Value="public int BufferLength { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 BufferLength" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Direction">
+      <MemberSignature Language="C#" Value="public virtual Usb.EndpointDirection Direction { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Usb.EndpointDirection Direction" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Usb.EndpointDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dump">
+      <MemberSignature Language="C#" Value="public void Dump (System.Text.StringBuilder s);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Dump(class System.Text.StringBuilder s) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="s" Type="System.Text.StringBuilder" />
+      </Parameters>
+      <Docs>
+        <param name="s">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dump">
+      <MemberSignature Language="C#" Value="public void Dump (System.Text.StringBuilder s, bool buffer, bool full);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Dump(class System.Text.StringBuilder s, bool buffer, bool full) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="s" Type="System.Text.StringBuilder" />
+        <Parameter Name="buffer" Type="System.Boolean" />
+        <Parameter Name="full" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="s">To be added.</param>
+        <param name="buffer">To be added.</param>
+        <param name="full">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DumpBuffer">
+      <MemberSignature Language="C#" Value="protected virtual void DumpBuffer (System.Text.StringBuilder s, bool full);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void DumpBuffer(class System.Text.StringBuilder s, bool full) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="s" Type="System.Text.StringBuilder" />
+        <Parameter Name="full" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="s">To be added.</param>
+        <param name="full">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DumpProperties">
+      <MemberSignature Language="C#" Value="protected virtual void DumpProperties (System.Text.StringBuilder s);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void DumpProperties(class System.Text.StringBuilder s) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="s" Type="System.Text.StringBuilder" />
+      </Parameters>
+      <Docs>
+        <param name="s">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Endpoint">
+      <MemberSignature Language="C#" Value="public Usb.Endpoint Endpoint { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Usb.Endpoint Endpoint" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Usb.Endpoint</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EndpointAddress">
+      <MemberSignature Language="C#" Value="public byte EndpointAddress { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8 EndpointAddress" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Flags">
+      <MemberSignature Language="C#" Value="public Usb.UrbFlags Flags { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Usb.UrbFlags Flags" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Usb.UrbFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStatusString">
+      <MemberSignature Language="C#" Value="public static string GetStatusString (Usb.UrbStatus status);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetStatusString(valuetype Usb.UrbStatus status) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="status" Type="Usb.UrbStatus" />
+      </Parameters>
+      <Docs>
+        <param name="status">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Handle">
+      <MemberSignature Language="C#" Value="public long Handle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int64 Handle" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsIn">
+      <MemberSignature Language="C#" Value="public bool IsIn { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsIn" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsOut">
+      <MemberSignature Language="C#" Value="public bool IsOut { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsOut" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsShortNotOk">
+      <MemberSignature Language="C#" Value="public bool IsShortNotOk { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsShortNotOk" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsZeroPacket">
+      <MemberSignature Language="C#" Value="public bool IsZeroPacket { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsZeroPacket" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Stall">
+      <MemberSignature Language="C#" Value="public void Stall ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Stall() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Status">
+      <MemberSignature Language="C#" Value="public Usb.UrbStatus Status { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Usb.UrbStatus Status" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Usb.UrbStatus</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TransferBuffer">
+      <MemberSignature Language="C#" Value="public byte[] TransferBuffer { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] TransferBuffer" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public abstract Usb.EndpointType Type { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Usb.EndpointType Type" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Usb.EndpointType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

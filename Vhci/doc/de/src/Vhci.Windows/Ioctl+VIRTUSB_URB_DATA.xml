@@ -1,0 +1,83 @@
+<Type Name="Ioctl+VIRTUSB_URB_DATA" FullName="Vhci.Windows.Ioctl+VIRTUSB_URB_DATA">
+  <TypeSignature Language="C#" Value="public struct Ioctl.VIRTUSB_URB_DATA" />
+  <TypeSignature Language="ILAsm" Value=".class nested public sequential ansi sealed beforefieldinit Ioctl/VIRTUSB_URB_DATA extends System.ValueType" />
+  <AssemblyInfo>
+    <AssemblyName>Vhci</AssemblyName>
+    <AssemblyVersion>1.4.2.4</AssemblyVersion>
+    <AssemblyVersion>1.5.2.4</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="_reserved">
+      <MemberSignature Language="C#" Value="public uint _reserved;" />
+      <MemberSignature Language="ILAsm" Value=".field public unsigned int32 _reserved" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Handle">
+      <MemberSignature Language="C#" Value="public ulong Handle;" />
+      <MemberSignature Language="ILAsm" Value=".field public unsigned int64 Handle" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt64</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsoPackets">
+      <MemberSignature Language="C#" Value="public Vhci.Windows.Ioctl.VIRTUSB_URB_DATA.&lt;IsoPackets&gt;__FixedBuffer1 IsoPackets;" />
+      <MemberSignature Language="ILAsm" Value=".field public valuetype Vhci.Windows.Ioctl/VIRTUSB_URB_DATA/&lt;IsoPackets&gt;__FixedBuffer1 IsoPackets" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Vhci.Windows.Ioctl+VIRTUSB_URB_DATA+&lt;IsoPackets&gt;__FixedBuffer1</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PacketCount">
+      <MemberSignature Language="C#" Value="public uint PacketCount;" />
+      <MemberSignature Language="ILAsm" Value=".field public unsigned int32 PacketCount" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,766 @@
+<Type Name="Ioctl" FullName="Vhci.Linux.Ioctl">
+  <TypeSignature Language="C#" Value="public static class Ioctl" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed Ioctl extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>Vhci</AssemblyName>
+    <AssemblyVersion>1.4.2.4</AssemblyVersion>
+    <AssemblyVersion>1.5.2.4</AssemblyVersion>
+  </AssemblyInfo>
+  <ThreadingSafetyStatement>Dieser Typ ist threadsicher.</ThreadingSafetyStatement>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CLSCompliant(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="close">
+      <MemberSignature Language="C#" Value="public static int close (int fd);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig pinvokeimpl (&quot;libc&quot; as &quot;close&quot; ansi cdecl lasterr)int32 close(int32 fd) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fd" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="fd">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IOC_MAGIC">
+      <MemberSignature Language="C#" Value="public const byte IOC_MAGIC = 138;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 IOC_MAGIC = (138)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <MemberValue>138</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IOCFETCHDATA">
+      <MemberSignature Language="C#" Value="public static readonly uint IOCFETCHDATA;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly unsigned int32 IOCFETCHDATA" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IOCFETCHWORK">
+      <MemberSignature Language="C#" Value="public static readonly uint IOCFETCHWORK;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly unsigned int32 IOCFETCHWORK" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IOCGIVEBACK">
+      <MemberSignature Language="C#" Value="public static readonly uint IOCGIVEBACK;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly unsigned int32 IOCGIVEBACK" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IOCPORTSTAT">
+      <MemberSignature Language="C#" Value="public static readonly uint IOCPORTSTAT;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly unsigned int32 IOCPORTSTAT" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IOCREGISTER">
+      <MemberSignature Language="C#" Value="public static readonly uint IOCREGISTER;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly unsigned int32 IOCREGISTER" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ioctl">
+      <MemberSignature Language="C#" Value="public static int ioctl (int fd, uint cmd, ref Vhci.Linux.Ioctl.vhci_ioc_giveback arg);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig pinvokeimpl (&quot;libc&quot; as &quot;ioctl&quot; ansi cdecl lasterr)int32 ioctl(int32 fd, unsigned int32 cmd, valuetype Vhci.Linux.Ioctl/vhci_ioc_giveback arg) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fd" Type="System.Int32" />
+        <Parameter Name="cmd" Type="System.UInt32" />
+        <Parameter Name="arg" Type="Vhci.Linux.Ioctl+vhci_ioc_giveback&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="fd">To be added.</param>
+        <param name="cmd">To be added.</param>
+        <param name="arg">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ioctl">
+      <MemberSignature Language="C#" Value="public static int ioctl (int fd, uint cmd, ref Vhci.Linux.Ioctl.vhci_ioc_port_stat arg);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig pinvokeimpl (&quot;libc&quot; as &quot;ioctl&quot; ansi cdecl lasterr)int32 ioctl(int32 fd, unsigned int32 cmd, valuetype Vhci.Linux.Ioctl/vhci_ioc_port_stat arg) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fd" Type="System.Int32" />
+        <Parameter Name="cmd" Type="System.UInt32" />
+        <Parameter Name="arg" Type="Vhci.Linux.Ioctl+vhci_ioc_port_stat&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="fd">To be added.</param>
+        <param name="cmd">To be added.</param>
+        <param name="arg">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ioctl">
+      <MemberSignature Language="C#" Value="public static int ioctl (int fd, uint cmd, ref Vhci.Linux.Ioctl.vhci_ioc_register arg);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig pinvokeimpl (&quot;libc&quot; as &quot;ioctl&quot; ansi cdecl lasterr)int32 ioctl(int32 fd, unsigned int32 cmd, valuetype Vhci.Linux.Ioctl/vhci_ioc_register arg) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fd" Type="System.Int32" />
+        <Parameter Name="cmd" Type="System.UInt32" />
+        <Parameter Name="arg" Type="Vhci.Linux.Ioctl+vhci_ioc_register&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="fd">To be added.</param>
+        <param name="cmd">To be added.</param>
+        <param name="arg">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ioctl">
+      <MemberSignature Language="C#" Value="public static int ioctl (int fd, uint cmd, ref Vhci.Linux.Ioctl.vhci_ioc_urb_data arg);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig pinvokeimpl (&quot;libc&quot; as &quot;ioctl&quot; ansi cdecl lasterr)int32 ioctl(int32 fd, unsigned int32 cmd, valuetype Vhci.Linux.Ioctl/vhci_ioc_urb_data arg) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fd" Type="System.Int32" />
+        <Parameter Name="cmd" Type="System.UInt32" />
+        <Parameter Name="arg" Type="Vhci.Linux.Ioctl+vhci_ioc_urb_data&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="fd">To be added.</param>
+        <param name="cmd">To be added.</param>
+        <param name="arg">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ioctl">
+      <MemberSignature Language="C#" Value="public static int ioctl (int fd, uint cmd, out Vhci.Linux.Ioctl.vhci_ioc_work arg);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig pinvokeimpl (&quot;libc&quot; as &quot;ioctl&quot; ansi cdecl lasterr)int32 ioctl(int32 fd, unsigned int32 cmd, valuetype Vhci.Linux.Ioctl/vhci_ioc_work arg) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fd" Type="System.Int32" />
+        <Parameter Name="cmd" Type="System.UInt32" />
+        <Parameter Name="arg" Type="Vhci.Linux.Ioctl+vhci_ioc_work&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="fd">To be added.</param>
+        <param name="cmd">To be added.</param>
+        <param name="arg">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="O_RDWR">
+      <MemberSignature Language="C#" Value="public const int O_RDWR = 2;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 O_RDWR = (2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="open">
+      <MemberSignature Language="C#" Value="public static int open (string pathname, int flags);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig pinvokeimpl (&quot;libc&quot; as &quot;open&quot; ansi cdecl lasterr)int32 open(string pathname, int32 flags) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pathname" Type="System.String" />
+        <Parameter Name="flags" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="pathname">To be added.</param>
+        <param name="flags">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="USB_PORT_STAT_C_CONNECTION">
+      <MemberSignature Language="C#" Value="public const ushort USB_PORT_STAT_C_CONNECTION = 1;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int16 USB_PORT_STAT_C_CONNECTION = (1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="USB_PORT_STAT_C_ENABLE">
+      <MemberSignature Language="C#" Value="public const ushort USB_PORT_STAT_C_ENABLE = 2;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int16 USB_PORT_STAT_C_ENABLE = (2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="USB_PORT_STAT_C_MASK">
+      <MemberSignature Language="C#" Value="public const ushort USB_PORT_STAT_C_MASK = 31;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int16 USB_PORT_STAT_C_MASK = (31)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <MemberValue>31</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="USB_PORT_STAT_C_OVERCURRENT">
+      <MemberSignature Language="C#" Value="public const ushort USB_PORT_STAT_C_OVERCURRENT = 8;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int16 USB_PORT_STAT_C_OVERCURRENT = (8)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <MemberValue>8</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="USB_PORT_STAT_C_RESET">
+      <MemberSignature Language="C#" Value="public const ushort USB_PORT_STAT_C_RESET = 16;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int16 USB_PORT_STAT_C_RESET = (16)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <MemberValue>16</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="USB_PORT_STAT_C_SUSPEND">
+      <MemberSignature Language="C#" Value="public const ushort USB_PORT_STAT_C_SUSPEND = 4;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int16 USB_PORT_STAT_C_SUSPEND = (4)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="USB_PORT_STAT_CONNECTION">
+      <MemberSignature Language="C#" Value="public const ushort USB_PORT_STAT_CONNECTION = 1;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int16 USB_PORT_STAT_CONNECTION = (1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="USB_PORT_STAT_ENABLE">
+      <MemberSignature Language="C#" Value="public const ushort USB_PORT_STAT_ENABLE = 2;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int16 USB_PORT_STAT_ENABLE = (2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="USB_PORT_STAT_HIGH_SPEED">
+      <MemberSignature Language="C#" Value="public const ushort USB_PORT_STAT_HIGH_SPEED = 1024;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int16 USB_PORT_STAT_HIGH_SPEED = (1024)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <MemberValue>1024</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="USB_PORT_STAT_LOW_SPEED">
+      <MemberSignature Language="C#" Value="public const ushort USB_PORT_STAT_LOW_SPEED = 512;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int16 USB_PORT_STAT_LOW_SPEED = (512)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <MemberValue>512</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="USB_PORT_STAT_MASK">
+      <MemberSignature Language="C#" Value="public const ushort USB_PORT_STAT_MASK = 1823;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int16 USB_PORT_STAT_MASK = (1823)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <MemberValue>1823</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="USB_PORT_STAT_OVERCURRENT">
+      <MemberSignature Language="C#" Value="public const ushort USB_PORT_STAT_OVERCURRENT = 8;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int16 USB_PORT_STAT_OVERCURRENT = (8)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <MemberValue>8</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="USB_PORT_STAT_POWER">
+      <MemberSignature Language="C#" Value="public const ushort USB_PORT_STAT_POWER = 256;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int16 USB_PORT_STAT_POWER = (256)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <MemberValue>256</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="USB_PORT_STAT_RESET">
+      <MemberSignature Language="C#" Value="public const ushort USB_PORT_STAT_RESET = 16;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int16 USB_PORT_STAT_RESET = (16)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <MemberValue>16</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="USB_PORT_STAT_SUSPEND">
+      <MemberSignature Language="C#" Value="public const ushort USB_PORT_STAT_SUSPEND = 4;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int16 USB_PORT_STAT_SUSPEND = (4)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VHCI_IOC_PORT_STAT_FLAGS_RESUMING">
+      <MemberSignature Language="C#" Value="public const byte VHCI_IOC_PORT_STAT_FLAGS_RESUMING = 1;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 VHCI_IOC_PORT_STAT_FLAGS_RESUMING = (1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VHCI_IOC_URB_FLAGS_ISO_ASAP">
+      <MemberSignature Language="C#" Value="public const ushort VHCI_IOC_URB_FLAGS_ISO_ASAP = 2;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int16 VHCI_IOC_URB_FLAGS_ISO_ASAP = (2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VHCI_IOC_URB_FLAGS_SHORT_NOT_OK">
+      <MemberSignature Language="C#" Value="public const ushort VHCI_IOC_URB_FLAGS_SHORT_NOT_OK = 1;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int16 VHCI_IOC_URB_FLAGS_SHORT_NOT_OK = (1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VHCI_IOC_URB_FLAGS_ZERO_PACKET">
+      <MemberSignature Language="C#" Value="public const ushort VHCI_IOC_URB_FLAGS_ZERO_PACKET = 64;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int16 VHCI_IOC_URB_FLAGS_ZERO_PACKET = (64)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <MemberValue>64</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VHCI_IOC_URB_TYPE_BULK">
+      <MemberSignature Language="C#" Value="public const byte VHCI_IOC_URB_TYPE_BULK = 3;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 VHCI_IOC_URB_TYPE_BULK = (3)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VHCI_IOC_URB_TYPE_CONTROL">
+      <MemberSignature Language="C#" Value="public const byte VHCI_IOC_URB_TYPE_CONTROL = 2;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 VHCI_IOC_URB_TYPE_CONTROL = (2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VHCI_IOC_URB_TYPE_INT">
+      <MemberSignature Language="C#" Value="public const byte VHCI_IOC_URB_TYPE_INT = 1;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 VHCI_IOC_URB_TYPE_INT = (1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VHCI_IOC_URB_TYPE_ISO">
+      <MemberSignature Language="C#" Value="public const byte VHCI_IOC_URB_TYPE_ISO = 0;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 VHCI_IOC_URB_TYPE_ISO = (0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VHCI_IOC_WORK_TYPE_CANCEL_URB">
+      <MemberSignature Language="C#" Value="public const byte VHCI_IOC_WORK_TYPE_CANCEL_URB = 2;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 VHCI_IOC_WORK_TYPE_CANCEL_URB = (2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VHCI_IOC_WORK_TYPE_PORT_STAT">
+      <MemberSignature Language="C#" Value="public const byte VHCI_IOC_WORK_TYPE_PORT_STAT = 0;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 VHCI_IOC_WORK_TYPE_PORT_STAT = (0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VHCI_IOC_WORK_TYPE_PROCESS_URB">
+      <MemberSignature Language="C#" Value="public const byte VHCI_IOC_WORK_TYPE_PROCESS_URB = 1;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 VHCI_IOC_WORK_TYPE_PROCESS_URB = (1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VhciCtrlFile">
+      <MemberSignature Language="C#" Value="public const string VhciCtrlFile;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal string VhciCtrlFile" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

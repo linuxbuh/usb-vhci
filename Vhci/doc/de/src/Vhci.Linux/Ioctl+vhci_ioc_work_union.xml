@@ -1,0 +1,51 @@
+<Type Name="Ioctl+vhci_ioc_work_union" FullName="Vhci.Linux.Ioctl+vhci_ioc_work_union">
+  <TypeSignature Language="C#" Value="public struct Ioctl.vhci_ioc_work_union" />
+  <TypeSignature Language="ILAsm" Value=".class nested public ansi sealed beforefieldinit Ioctl/vhci_ioc_work_union extends System.ValueType" />
+  <AssemblyInfo>
+    <AssemblyName>Vhci</AssemblyName>
+    <AssemblyVersion>1.4.2.4</AssemblyVersion>
+    <AssemblyVersion>1.5.2.4</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="port">
+      <MemberSignature Language="C#" Value="public Vhci.Linux.Ioctl.vhci_ioc_port_stat port;" />
+      <MemberSignature Language="ILAsm" Value=".field public valuetype Vhci.Linux.Ioctl/vhci_ioc_port_stat port" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Vhci.Linux.Ioctl+vhci_ioc_port_stat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="urb">
+      <MemberSignature Language="C#" Value="public Vhci.Linux.Ioctl.vhci_ioc_urb urb;" />
+      <MemberSignature Language="ILAsm" Value=".field public valuetype Vhci.Linux.Ioctl/vhci_ioc_urb urb" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Vhci.Linux.Ioctl+vhci_ioc_urb</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

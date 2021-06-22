@@ -1,0 +1,237 @@
+<Type Name="Ioctl+usbdevfs_urb" FullName="Usb.UsbFS.Ioctl+usbdevfs_urb">
+  <TypeSignature Language="C#" Value="public struct Ioctl.usbdevfs_urb" />
+  <TypeSignature Language="ILAsm" Value=".class nested public sequential ansi sealed beforefieldinit Ioctl/usbdevfs_urb extends System.ValueType" />
+  <AssemblyInfo>
+    <AssemblyName>Usb.UsbFS</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>1.3.0.6</AssemblyVersion>
+    <AssemblyVersion>1.4.1.7</AssemblyVersion>
+    <AssemblyVersion>1.5.1.7</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="actual_length">
+      <MemberSignature Language="C#" Value="public int actual_length;" />
+      <MemberSignature Language="ILAsm" Value=".field public int32 actual_length" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="buffer">
+      <MemberSignature Language="C#" Value="public IntPtr buffer;" />
+      <MemberSignature Language="ILAsm" Value=".field public native int buffer" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="buffer_length">
+      <MemberSignature Language="C#" Value="public int buffer_length;" />
+      <MemberSignature Language="ILAsm" Value=".field public int32 buffer_length" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="endpoint">
+      <MemberSignature Language="C#" Value="public byte endpoint;" />
+      <MemberSignature Language="ILAsm" Value=".field public unsigned int8 endpoint" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="error_count">
+      <MemberSignature Language="C#" Value="public int error_count;" />
+      <MemberSignature Language="ILAsm" Value=".field public int32 error_count" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="flags">
+      <MemberSignature Language="C#" Value="public uint flags;" />
+      <MemberSignature Language="ILAsm" Value=".field public unsigned int32 flags" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="number_of_packets">
+      <MemberSignature Language="C#" Value="public int number_of_packets;" />
+      <MemberSignature Language="ILAsm" Value=".field public int32 number_of_packets" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="signr">
+      <MemberSignature Language="C#" Value="public uint signr;" />
+      <MemberSignature Language="ILAsm" Value=".field public unsigned int32 signr" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="start_frame">
+      <MemberSignature Language="C#" Value="public int start_frame;" />
+      <MemberSignature Language="ILAsm" Value=".field public int32 start_frame" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="status">
+      <MemberSignature Language="C#" Value="public int status;" />
+      <MemberSignature Language="ILAsm" Value=".field public int32 status" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="type">
+      <MemberSignature Language="C#" Value="public byte type;" />
+      <MemberSignature Language="ILAsm" Value=".field public unsigned int8 type" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="usercontext">
+      <MemberSignature Language="C#" Value="public IntPtr usercontext;" />
+      <MemberSignature Language="ILAsm" Value=".field public native int usercontext" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

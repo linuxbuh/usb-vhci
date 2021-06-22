@@ -1,0 +1,405 @@
+<Type Name="PortStat" FullName="Vhci.PortStat">
+  <TypeSignature Language="C#" Value="public struct PortStat" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit PortStat extends System.ValueType" />
+  <AssemblyInfo>
+    <AssemblyName>Vhci</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>1.3.0.2</AssemblyVersion>
+    <AssemblyVersion>1.3.1.3</AssemblyVersion>
+    <AssemblyVersion>1.4.2.4</AssemblyVersion>
+    <AssemblyVersion>1.5.2.4</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PortStat (Vhci.PortStatStatusFlags status, Vhci.PortStatChangeFlags change, Vhci.PortStatFlags flags);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Vhci.PortStatStatusFlags status, valuetype Vhci.PortStatChangeFlags change, valuetype Vhci.PortStatFlags flags) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.3.1.3</AssemblyVersion>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="status" Type="Vhci.PortStatStatusFlags" />
+        <Parameter Name="change" Type="Vhci.PortStatChangeFlags" />
+        <Parameter Name="flags" Type="Vhci.PortStatFlags" />
+      </Parameters>
+      <Docs>
+        <param name="status">To be added.</param>
+        <param name="change">To be added.</param>
+        <param name="flags">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Change">
+      <MemberSignature Language="C#" Value="public Vhci.PortStatChangeFlags Change { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Vhci.PortStatChangeFlags Change" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.3.1.3</AssemblyVersion>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Vhci.PortStatChangeFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Connection">
+      <MemberSignature Language="C#" Value="public bool Connection { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Connection" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.3.1.3</AssemblyVersion>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectionChanged">
+      <MemberSignature Language="C#" Value="public bool ConnectionChanged { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ConnectionChanged" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.3.1.3</AssemblyVersion>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Enable">
+      <MemberSignature Language="C#" Value="public bool Enable { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Enable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.3.1.3</AssemblyVersion>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EnableChanged">
+      <MemberSignature Language="C#" Value="public bool EnableChanged { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool EnableChanged" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.3.1.3</AssemblyVersion>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Flags">
+      <MemberSignature Language="C#" Value="public Vhci.PortStatFlags Flags { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Vhci.PortStatFlags Flags" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.3.1.3</AssemblyVersion>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Vhci.PortStatFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HighSpeed">
+      <MemberSignature Language="C#" Value="public bool HighSpeed { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool HighSpeed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.3.1.3</AssemblyVersion>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LowSpeed">
+      <MemberSignature Language="C#" Value="public bool LowSpeed { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool LowSpeed" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.3.1.3</AssemblyVersion>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Overcurrent">
+      <MemberSignature Language="C#" Value="public bool Overcurrent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Overcurrent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.3.1.3</AssemblyVersion>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OvercurrentChanged">
+      <MemberSignature Language="C#" Value="public bool OvercurrentChanged { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool OvercurrentChanged" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.3.1.3</AssemblyVersion>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Power">
+      <MemberSignature Language="C#" Value="public bool Power { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Power" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.3.1.3</AssemblyVersion>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reset">
+      <MemberSignature Language="C#" Value="public bool Reset { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Reset" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.3.1.3</AssemblyVersion>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResetChanged">
+      <MemberSignature Language="C#" Value="public bool ResetChanged { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ResetChanged" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.3.1.3</AssemblyVersion>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Resuming">
+      <MemberSignature Language="C#" Value="public bool Resuming { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Resuming" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.3.1.3</AssemblyVersion>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Status">
+      <MemberSignature Language="C#" Value="public Vhci.PortStatStatusFlags Status { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Vhci.PortStatStatusFlags Status" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.3.1.3</AssemblyVersion>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Vhci.PortStatStatusFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Suspend">
+      <MemberSignature Language="C#" Value="public bool Suspend { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool Suspend" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.3.1.3</AssemblyVersion>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SuspendChanged">
+      <MemberSignature Language="C#" Value="public bool SuspendChanged { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool SuspendChanged" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.3.1.3</AssemblyVersion>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Zero">
+      <MemberSignature Language="C#" Value="public static readonly Vhci.PortStat Zero;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype Vhci.PortStat Zero" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.3.1.3</AssemblyVersion>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Vhci.PortStat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

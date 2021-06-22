@@ -1,0 +1,75 @@
+<Type Name="Ioctl+pollfd" FullName="Usb.UsbFS.Ioctl+pollfd">
+  <TypeSignature Language="C#" Value="public struct Ioctl.pollfd" />
+  <TypeSignature Language="ILAsm" Value=".class nested public sequential ansi sealed beforefieldinit Ioctl/pollfd extends System.ValueType" />
+  <AssemblyInfo>
+    <AssemblyName>Usb.UsbFS</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>1.3.0.6</AssemblyVersion>
+    <AssemblyVersion>1.4.1.7</AssemblyVersion>
+    <AssemblyVersion>1.5.1.7</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="events">
+      <MemberSignature Language="C#" Value="public short events;" />
+      <MemberSignature Language="ILAsm" Value=".field public int16 events" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int16</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="fd">
+      <MemberSignature Language="C#" Value="public int fd;" />
+      <MemberSignature Language="ILAsm" Value=".field public int32 fd" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="revents">
+      <MemberSignature Language="C#" Value="public short revents;" />
+      <MemberSignature Language="ILAsm" Value=".field public int16 revents" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int16</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

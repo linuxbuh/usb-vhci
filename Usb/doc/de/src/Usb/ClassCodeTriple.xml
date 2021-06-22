@@ -1,0 +1,813 @@
+<Type Name="ClassCodeTriple" FullName="Usb.ClassCodeTriple">
+  <TypeSignature Language="C#" Value="public struct ClassCodeTriple : IEquatable&lt;Usb.ClassCodeTriple&gt;, Usb.IValidable" />
+  <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ClassCodeTriple extends System.ValueType implements class System.IEquatable`1&lt;valuetype Usb.ClassCodeTriple&gt;, class Usb.IValidable" />
+  <AssemblyInfo>
+    <AssemblyName>Usb</AssemblyName>
+    <AssemblyVersion>1.3.1.7</AssemblyVersion>
+    <AssemblyVersion>1.4.2.8</AssemblyVersion>
+    <AssemblyVersion>1.5.2.9</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IEquatable&lt;Usb.ClassCodeTriple&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Usb.IValidable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ClassCodeTriple (byte baseClass, byte subClass, byte protocol);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8 baseClass, unsigned int8 subClass, unsigned int8 protocol) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="baseClass" Type="System.Byte" />
+        <Parameter Name="subClass" Type="System.Byte" />
+        <Parameter Name="protocol" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="baseClass">To be added.</param>
+        <param name="subClass">To be added.</param>
+        <param name="protocol">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BaseClass">
+      <MemberSignature Language="C#" Value="public byte BaseClass { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8 BaseClass" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BaseClassApplicationSpecific">
+      <MemberSignature Language="C#" Value="public const byte BaseClassApplicationSpecific = 254;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 BaseClassApplicationSpecific = (254)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <MemberValue>254</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BaseClassAudio">
+      <MemberSignature Language="C#" Value="public const byte BaseClassAudio = 1;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 BaseClassAudio = (1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BaseClassCdcData">
+      <MemberSignature Language="C#" Value="public const byte BaseClassCdcData = 10;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 BaseClassCdcData = (10)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <MemberValue>10</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BaseClassCommunications">
+      <MemberSignature Language="C#" Value="public const byte BaseClassCommunications = 2;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 BaseClassCommunications = (2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BaseClassContentSecurity">
+      <MemberSignature Language="C#" Value="public const byte BaseClassContentSecurity = 13;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 BaseClassContentSecurity = (13)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <MemberValue>13</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BaseClassDiagnosticDevice">
+      <MemberSignature Language="C#" Value="public const byte BaseClassDiagnosticDevice = 220;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 BaseClassDiagnosticDevice = (220)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <MemberValue>220</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BaseClassHub">
+      <MemberSignature Language="C#" Value="public const byte BaseClassHub = 9;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 BaseClassHub = (9)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <MemberValue>9</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BaseClassHumanInterfaceDevice">
+      <MemberSignature Language="C#" Value="public const byte BaseClassHumanInterfaceDevice = 3;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 BaseClassHumanInterfaceDevice = (3)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BaseClassImage">
+      <MemberSignature Language="C#" Value="public const byte BaseClassImage = 6;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 BaseClassImage = (6)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <MemberValue>6</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BaseClassMassStorage">
+      <MemberSignature Language="C#" Value="public const byte BaseClassMassStorage = 8;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 BaseClassMassStorage = (8)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <MemberValue>8</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BaseClassMiscellaneous">
+      <MemberSignature Language="C#" Value="public const byte BaseClassMiscellaneous = 239;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 BaseClassMiscellaneous = (239)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <MemberValue>239</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BaseClassNull">
+      <MemberSignature Language="C#" Value="public const byte BaseClassNull = 0;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 BaseClassNull = (0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BaseClassPersonalHealthcare">
+      <MemberSignature Language="C#" Value="public const byte BaseClassPersonalHealthcare = 15;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 BaseClassPersonalHealthcare = (15)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <MemberValue>15</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BaseClassPhysical">
+      <MemberSignature Language="C#" Value="public const byte BaseClassPhysical = 5;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 BaseClassPhysical = (5)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <MemberValue>5</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BaseClassPrinter">
+      <MemberSignature Language="C#" Value="public const byte BaseClassPrinter = 7;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 BaseClassPrinter = (7)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <MemberValue>7</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BaseClassSmartCard">
+      <MemberSignature Language="C#" Value="public const byte BaseClassSmartCard = 11;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 BaseClassSmartCard = (11)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <MemberValue>11</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BaseClassString">
+      <MemberSignature Language="C#" Value="public string BaseClassString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string BaseClassString() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BaseClassString">
+      <MemberSignature Language="C#" Value="public static string BaseClassString (byte baseClass);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string BaseClassString(unsigned int8 baseClass) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="baseClass" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="baseClass">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BaseClassVendorSpecific">
+      <MemberSignature Language="C#" Value="public const byte BaseClassVendorSpecific = 255;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 BaseClassVendorSpecific = (255)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <MemberValue>255</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BaseClassVideo">
+      <MemberSignature Language="C#" Value="public const byte BaseClassVideo = 14;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 BaseClassVideo = (14)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <MemberValue>14</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BaseClassWirelessController">
+      <MemberSignature Language="C#" Value="public const byte BaseClassWirelessController = 224;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 BaseClassWirelessController = (224)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <MemberValue>224</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public override bool Equals (object o);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object o) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="o" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="o">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public bool Equals (Usb.ClassCodeTriple o);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype Usb.ClassCodeTriple o) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="o" Type="Usb.ClassCodeTriple" />
+      </Parameters>
+      <Docs>
+        <param name="o">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Equals">
+      <MemberSignature Language="C#" Value="public static bool Equals (Usb.ClassCodeTriple o1, Usb.ClassCodeTriple o2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Equals(valuetype Usb.ClassCodeTriple o1, valuetype Usb.ClassCodeTriple o2) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="o1" Type="Usb.ClassCodeTriple" />
+        <Parameter Name="o2" Type="Usb.ClassCodeTriple" />
+      </Parameters>
+      <Docs>
+        <param name="o1">To be added.</param>
+        <param name="o2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HubProtocolFullSpeed">
+      <MemberSignature Language="C#" Value="public const byte HubProtocolFullSpeed = 0;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 HubProtocolFullSpeed = (0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HubProtocolHighSpeedMultipleTT">
+      <MemberSignature Language="C#" Value="public const byte HubProtocolHighSpeedMultipleTT = 2;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 HubProtocolHighSpeedMultipleTT = (2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HubProtocolHighSpeedSingleTT">
+      <MemberSignature Language="C#" Value="public const byte HubProtocolHighSpeedSingleTT = 1;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 HubProtocolHighSpeedSingleTT = (1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Null">
+      <MemberSignature Language="C#" Value="public static readonly Usb.ClassCodeTriple Null;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype Usb.ClassCodeTriple Null" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Usb.ClassCodeTriple</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality">
+      <MemberSignature Language="C#" Value="public static bool op_Equality (Usb.ClassCodeTriple o1, Usb.ClassCodeTriple o2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype Usb.ClassCodeTriple o1, valuetype Usb.ClassCodeTriple o2) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="o1" Type="Usb.ClassCodeTriple" />
+        <Parameter Name="o2" Type="Usb.ClassCodeTriple" />
+      </Parameters>
+      <Docs>
+        <param name="o1">To be added.</param>
+        <param name="o2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality">
+      <MemberSignature Language="C#" Value="public static bool op_Inequality (Usb.ClassCodeTriple o1, Usb.ClassCodeTriple o2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype Usb.ClassCodeTriple o1, valuetype Usb.ClassCodeTriple o2) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="o1" Type="Usb.ClassCodeTriple" />
+        <Parameter Name="o2" Type="Usb.ClassCodeTriple" />
+      </Parameters>
+      <Docs>
+        <param name="o1">To be added.</param>
+        <param name="o2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Protocol">
+      <MemberSignature Language="C#" Value="public byte Protocol { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8 Protocol" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProtocolString">
+      <MemberSignature Language="C#" Value="public string ProtocolString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ProtocolString() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProtocolString">
+      <MemberSignature Language="C#" Value="public static string ProtocolString (byte baseClass, byte subClass, byte protocol);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig string ProtocolString(unsigned int8 baseClass, unsigned int8 subClass, unsigned int8 protocol) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="baseClass" Type="System.Byte" />
+        <Parameter Name="subClass" Type="System.Byte" />
+        <Parameter Name="protocol" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="baseClass">To be added.</param>
+        <param name="subClass">To be added.</param>
+        <param name="protocol">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SubClass">
+      <MemberSignature Language="C#" Value="public byte SubClass { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8 SubClass" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToString">
+      <MemberSignature Language="C#" Value="public override string ToString ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public bool Validate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Validate() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateForDevice">
+      <MemberSignature Language="C#" Value="public bool ValidateForDevice ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ValidateForDevice() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateForInterface">
+      <MemberSignature Language="C#" Value="public bool ValidateForInterface ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ValidateForInterface() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,337 @@
+<Type Name="Hub" FullName="Usb.UsbFS.Enumeration.Hub">
+  <TypeSignature Language="C#" Value="public class Hub : Usb.UsbFS.Enumeration.Device, System.Collections.Generic.ICollection&lt;Usb.Enumeration.IDevice&gt;, System.Collections.Generic.IEnumerable&lt;Usb.Enumeration.IDevice&gt;, System.Collections.Generic.IList&lt;Usb.Enumeration.IDevice&gt;, Usb.Enumeration.IHub" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Hub extends Usb.UsbFS.Enumeration.Device implements class System.Collections.Generic.ICollection`1&lt;class Usb.Enumeration.IDevice&gt;, class System.Collections.Generic.IEnumerable`1&lt;class Usb.Enumeration.IDevice&gt;, class System.Collections.Generic.IList`1&lt;class Usb.Enumeration.IDevice&gt;, class System.Collections.IEnumerable, class Usb.Enumeration.IDevice, class Usb.Enumeration.IHub" />
+  <AssemblyInfo>
+    <AssemblyName>Usb.UsbFS</AssemblyName>
+    <AssemblyVersion>1.3.0.6</AssemblyVersion>
+    <AssemblyVersion>1.4.1.7</AssemblyVersion>
+    <AssemblyVersion>1.5.1.7</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Usb.UsbFS.Enumeration.Device</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.ICollection&lt;Usb.Enumeration.IDevice&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IEnumerable&lt;Usb.Enumeration.IDevice&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.Generic.IList&lt;Usb.Enumeration.IDevice&gt;</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Usb.Enumeration.IHub</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Contains">
+      <MemberSignature Language="C#" Value="public bool Contains (Usb.Enumeration.IDevice item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Contains(class Usb.Enumeration.IDevice item) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="Usb.Enumeration.IDevice" />
+      </Parameters>
+      <Docs>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo">
+      <MemberSignature Language="C#" Value="public void CopyTo (Usb.Enumeration.IDevice[] arr, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class Usb.Enumeration.IDevice[] arr, int32 index) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="arr" Type="Usb.Enumeration.IDevice[]" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="arr">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerator&lt;Usb.Enumeration.IDevice&gt; GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;class Usb.Enumeration.IDevice&gt; GetEnumerator() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IEnumerator&lt;Usb.Enumeration.IDevice&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IndexOf">
+      <MemberSignature Language="C#" Value="public int IndexOf (Usb.Enumeration.IDevice item);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 IndexOf(class Usb.Enumeration.IDevice item) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="Usb.Enumeration.IDevice" />
+      </Parameters>
+      <Docs>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsAcquireable">
+      <MemberSignature Language="C#" Value="public override bool IsAcquireable { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsAcquireable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsRoot">
+      <MemberSignature Language="C#" Value="public virtual bool IsRoot { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsRoot" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Usb.Enumeration.IDevice this[int index] { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Usb.Enumeration.IDevice Item(int32)" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Usb.Enumeration.IDevice</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.Generic.ICollection&lt;Usb.Enumeration.IDevice&gt;.Add">
+      <MemberSignature Language="C#" Value="void ICollection&lt;IDevice&gt;.Add (Usb.Enumeration.IDevice item);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.Generic.ICollection&lt;Usb.Enumeration.IDevice&gt;.Add(class Usb.Enumeration.IDevice item) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="Usb.Enumeration.IDevice" />
+      </Parameters>
+      <Docs>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.Generic.ICollection&lt;Usb.Enumeration.IDevice&gt;.Clear">
+      <MemberSignature Language="C#" Value="void ICollection&lt;IDevice&gt;.Clear ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.Generic.ICollection&lt;Usb.Enumeration.IDevice&gt;.Clear() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.Generic.ICollection&lt;Usb.Enumeration.IDevice&gt;.IsReadOnly">
+      <MemberSignature Language="C#" Value="bool System.Collections.Generic.ICollection&lt;Usb.Enumeration.IDevice&gt;.IsReadOnly { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.Generic.ICollection&lt;Usb.Enumeration.IDevice&gt;.IsReadOnly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.Generic.ICollection&lt;Usb.Enumeration.IDevice&gt;.Remove">
+      <MemberSignature Language="C#" Value="bool ICollection&lt;IDevice&gt;.Remove (Usb.Enumeration.IDevice item);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.Generic.ICollection&lt;Usb.Enumeration.IDevice&gt;.Remove(class Usb.Enumeration.IDevice item) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="item" Type="Usb.Enumeration.IDevice" />
+      </Parameters>
+      <Docs>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.Generic.IList&lt;Usb.Enumeration.IDevice&gt;.Insert">
+      <MemberSignature Language="C#" Value="void IList&lt;IDevice&gt;.Insert (int index, Usb.Enumeration.IDevice item);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.Generic.IList&lt;Usb.Enumeration.IDevice&gt;.Insert(int32 index, class Usb.Enumeration.IDevice item) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="item" Type="Usb.Enumeration.IDevice" />
+      </Parameters>
+      <Docs>
+        <param name="index">To be added.</param>
+        <param name="item">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.Generic.IList&lt;Usb.Enumeration.IDevice&gt;.RemoveAt">
+      <MemberSignature Language="C#" Value="void IList&lt;IDevice&gt;.RemoveAt (int index);" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.Generic.IList&lt;Usb.Enumeration.IDevice&gt;.RemoveAt(int32 index) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
+      <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

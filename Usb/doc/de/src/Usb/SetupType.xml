@@ -1,0 +1,88 @@
+<Type Name="SetupType" FullName="Usb.SetupType">
+  <TypeSignature Language="C#" Value="public enum SetupType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed SetupType extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>Usb</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>1.3.1.7</AssemblyVersion>
+    <AssemblyVersion>1.4.2.8</AssemblyVersion>
+    <AssemblyVersion>1.5.2.9</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Class">
+      <MemberSignature Language="C#" Value="Class" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Usb.SetupType Class = int32(1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Usb.SetupType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Reserved">
+      <MemberSignature Language="C#" Value="Reserved" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Usb.SetupType Reserved = int32(3)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Usb.SetupType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Standard">
+      <MemberSignature Language="C#" Value="Standard" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Usb.SetupType Standard = int32(0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Usb.SetupType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Vendor">
+      <MemberSignature Language="C#" Value="Vendor" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Usb.SetupType Vendor = int32(2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Usb.SetupType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

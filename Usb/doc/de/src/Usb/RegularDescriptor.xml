@@ -1,0 +1,650 @@
+<Type Name="RegularDescriptor" FullName="Usb.RegularDescriptor">
+  <TypeSignature Language="C#" Value="public abstract class RegularDescriptor : Usb.ContainerDescriptor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit RegularDescriptor extends Usb.ContainerDescriptor" />
+  <AssemblyInfo>
+    <AssemblyName>Usb</AssemblyName>
+    <AssemblyVersion>1.3.1.7</AssemblyVersion>
+    <AssemblyVersion>1.4.2.8</AssemblyVersion>
+    <AssemblyVersion>1.5.2.9</AssemblyVersion>
+  </AssemblyInfo>
+  <ThreadingSafetyStatement>Öffentliche statische (<see langword="Shared" /> in
+  Visual Basic) Member dieses Typs sind threadsicher. Bei Instanz-Membern ist
+  die Threadsicherheit nicht gewährleistet.</ThreadingSafetyStatement>
+  <Base>
+    <BaseTypeName>Usb.ContainerDescriptor</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected RegularDescriptor ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CustomDescriptorAdded">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Usb.CollectionModifiedEventArgs&lt;Usb.CustomDescriptor&gt;&gt; CustomDescriptorAdded;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Usb.CollectionModifiedEventArgs`1&lt;class Usb.CustomDescriptor&gt;&gt; CustomDescriptorAdded" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Usb.CollectionModifiedEventArgs&lt;Usb.CustomDescriptor&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CustomDescriptorRemoved">
+      <MemberSignature Language="C#" Value="public event EventHandler&lt;Usb.CollectionModifiedEventArgs&lt;Usb.CustomDescriptor&gt;&gt; CustomDescriptorRemoved;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class Usb.CollectionModifiedEventArgs`1&lt;class Usb.CustomDescriptor&gt;&gt; CustomDescriptorRemoved" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;Usb.CollectionModifiedEventArgs&lt;Usb.CustomDescriptor&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CustomDescriptors">
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;Usb.CustomDescriptor&gt; CustomDescriptors { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class Usb.CustomDescriptor&gt; CustomDescriptors" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IList&lt;Usb.CustomDescriptor&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dump">
+      <MemberSignature Language="C#" Value="public override void Dump (System.IO.TextWriter stm, string prefix);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Dump(class System.IO.TextWriter stm, string prefix) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stm" Type="System.IO.TextWriter" />
+        <Parameter Name="prefix" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="stm">To be added.</param>
+        <param name="prefix">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDescriptor">
+      <MemberSignature Language="C#" Value="public byte[] GetDescriptor (Usb.Endianness endian);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] GetDescriptor(valuetype Usb.Endianness endian) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="endian" Type="Usb.Endianness" />
+      </Parameters>
+      <Docs>
+        <param name="endian">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDescriptor">
+      <MemberSignature Language="C#" Value="public override sealed int GetDescriptor (byte[] desc, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetDescriptor(unsigned int8[] desc, int32 index) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="desc" Type="System.Byte[]" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="desc">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDescriptor">
+      <MemberSignature Language="C#" Value="public int GetDescriptor (byte[] desc, int index, Usb.Endianness endian);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetDescriptor(unsigned int8[] desc, int32 index, valuetype Usb.Endianness endian) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="desc" Type="System.Byte[]" />
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="endian" Type="Usb.Endianness" />
+      </Parameters>
+      <Docs>
+        <param name="desc">To be added.</param>
+        <param name="index">To be added.</param>
+        <param name="endian">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDescriptorContent">
+      <MemberSignature Language="C#" Value="protected abstract void GetDescriptorContent (byte[] desc, int index, Usb.Endianness endian);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void GetDescriptorContent(unsigned int8[] desc, int32 index, valuetype Usb.Endianness endian) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="desc" Type="System.Byte[]" />
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="endian" Type="Usb.Endianness" />
+      </Parameters>
+      <Docs>
+        <param name="desc">To be added.</param>
+        <param name="index">To be added.</param>
+        <param name="endian">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLocalDescriptor">
+      <MemberSignature Language="C#" Value="public byte[] GetLocalDescriptor ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] GetLocalDescriptor() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLocalDescriptor">
+      <MemberSignature Language="C#" Value="public int GetLocalDescriptor (byte[] desc);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetLocalDescriptor(unsigned int8[] desc) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="desc" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="desc">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLocalDescriptor">
+      <MemberSignature Language="C#" Value="public byte[] GetLocalDescriptor (Usb.Endianness endian);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] GetLocalDescriptor(valuetype Usb.Endianness endian) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="endian" Type="Usb.Endianness" />
+      </Parameters>
+      <Docs>
+        <param name="endian">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLocalDescriptor">
+      <MemberSignature Language="C#" Value="public int GetLocalDescriptor (byte[] desc, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetLocalDescriptor(unsigned int8[] desc, int32 index) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="desc" Type="System.Byte[]" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="desc">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLocalDescriptor">
+      <MemberSignature Language="C#" Value="public int GetLocalDescriptor (byte[] desc, Usb.Endianness endian);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetLocalDescriptor(unsigned int8[] desc, valuetype Usb.Endianness endian) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="desc" Type="System.Byte[]" />
+        <Parameter Name="endian" Type="Usb.Endianness" />
+      </Parameters>
+      <Docs>
+        <param name="desc">To be added.</param>
+        <param name="endian">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetLocalDescriptor">
+      <MemberSignature Language="C#" Value="public int GetLocalDescriptor (byte[] desc, int index, Usb.Endianness endian);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetLocalDescriptor(unsigned int8[] desc, int32 index, valuetype Usb.Endianness endian) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="desc" Type="System.Byte[]" />
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="endian" Type="Usb.Endianness" />
+      </Parameters>
+      <Docs>
+        <param name="desc">To be added.</param>
+        <param name="index">To be added.</param>
+        <param name="endian">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetSubDescriptors">
+      <MemberSignature Language="C#" Value="protected virtual int GetSubDescriptors (byte[] desc, int index, Usb.Endianness endian);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance int32 GetSubDescriptors(unsigned int8[] desc, int32 index, valuetype Usb.Endianness endian) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="desc" Type="System.Byte[]" />
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="endian" Type="Usb.Endianness" />
+      </Parameters>
+      <Docs>
+        <param name="desc">To be added.</param>
+        <param name="index">To be added.</param>
+        <param name="endian">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LocalSize">
+      <MemberSignature Language="C#" Value="public int LocalSize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 LocalSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnCustomDescriptorAdded">
+      <MemberSignature Language="C#" Value="protected virtual void OnCustomDescriptorAdded (Usb.CollectionModifiedEventArgs&lt;Usb.CustomDescriptor&gt; e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnCustomDescriptorAdded(class Usb.CollectionModifiedEventArgs`1&lt;class Usb.CustomDescriptor&gt; e) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="Usb.CollectionModifiedEventArgs&lt;Usb.CustomDescriptor&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnCustomDescriptorRemoved">
+      <MemberSignature Language="C#" Value="protected virtual void OnCustomDescriptorRemoved (Usb.CollectionModifiedEventArgs&lt;Usb.CustomDescriptor&gt; e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnCustomDescriptorRemoved(class Usb.CollectionModifiedEventArgs`1&lt;class Usb.CustomDescriptor&gt; e) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="Usb.CollectionModifiedEventArgs&lt;Usb.CustomDescriptor&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnTailChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnTailChanged (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnTailChanged(class System.EventArgs e) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParseCustomDescriptors">
+      <MemberSignature Language="C#" Value="protected void ParseCustomDescriptors (byte[] desc, ref int pos);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ParseCustomDescriptors(unsigned int8[] desc, int32 pos) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="desc" Type="System.Byte[]" />
+        <Parameter Name="pos" Type="System.Int32&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="desc">Deskriptordaten</param>
+        <param name="pos">Index in <paramref name="desc" />, an dem der erste
+        Custom-Deskriptor beginnt. Nach Ausführung der Methode zeigt
+        <paramref name="pos" /> auf das Byte, welches direkt auf den letzten
+        Custom-Deskriptor folgt.</param>
+        <summary>Parst möglicherweise vorhandene hersteller- oder
+        klassen-spezifische Deskriptoren und stellt diese über die
+        <see cref="P:Usb.RegularDescriptor.CustomDescriptors" />-Eigenschaft
+        zur Verfügung.</summary>
+        <remarks>
+          <block subset="none" type="behaviors">
+            <para>
+              <paramref name="pos" /> wird nach erfolgreicher Abarbeitung
+            der Methode um die Anzahl der geparsten Bytes erhöht, so dass
+            der Wert direkt an den Konstruktor des eventuell folgenden
+            Deskriptors übergeben werden kann. Beim Wurf einer Ausnahme wird
+            <paramref name="pos" /> nicht verändert und die gegebenenfalls
+            bereits erfolgreich geparsten Deskriptoren werden verworfen.</para>
+            <para>Diese Methode terminiert erfolgreich, sobald sie auf einen
+            Deskriptor stößt, der nicht als Custom-Deskriptor angesehen wird,
+            oder das Ende von <paramref name="desc" /> erreicht wurde. Zur
+            Bestimmung, ob ein Deskriptor als Custom-Deskriptor angesehen wird,
+            wird die
+            <see cref="M:Usb.Descriptor.IsCustomType(System.Byte)" />-Methode
+            verwendet.</para>
+          </block>
+          <block subset="none" type="usage">
+            <para>Diese Methode wird von Konstruktoren der von der
+            <see cref="T:Usb.RegularDescriptor" />-Klasse erbenden Klassen
+            aufgerufen.</para>
+          </block>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <para>
+            <paramref name="desc" /> ist <see langword="null" />
+          (<see langword="Nothing" /> in Visual Basic)</para>
+        </exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <para>
+            <paramref name="pos" /> ist kleiner als 0 oder größer als die
+          Länge von <paramref name="desc" />.</para>
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <para>Die in <c>desc[n]</c> angegebene Länge eines
+          Deskriptors ist kleiner als 2, wobei <c>n</c> der Index des ersten
+          Bytes dieses Deskriptors ist.</para>
+          <para>- oder -</para>
+          <para>Beim Versuch einen Deskriptor zu parsen stellt sich heraus,
+          dass <c>n + desc[n]</c> größer als die Länge von
+          <paramref name="desc" /> ist, wobei <c>n</c> der Index des ersten
+          Bytes dieses Deskriptors ist.</para>
+          <para>- oder -</para>
+          <para>Der in <c>desc[n + 1]</c> angegebene Typ eines
+          Deskriptors ist 0, wobei <c>n</c> der Index des ersten
+          Bytes dieses Deskriptors ist.</para>
+        </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ParseTail">
+      <MemberSignature Language="C#" Value="protected void ParseTail (byte[] desc, ref int pos);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ParseTail(unsigned int8[] desc, int32 pos) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="desc" Type="System.Byte[]" />
+        <Parameter Name="pos" Type="System.Int32&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="desc">Deskriptordaten</param>
+        <param name="pos">Index in <paramref name="desc" />, an dem der
+        Deskriptor, dessen Anhängsel geparst werden soll, beginnt. Nach
+        Ausführung der Methode zeigt <paramref name="pos" /> auf das Byte,
+        welches direkt auf den Deskriptor und – falls vorhanden – dessen
+        Anhängsel folgt.</param>
+        <summary>Parst möglicherweise vorhandene, nicht in der
+        USB-Spezifikation enthaltene, an einen Deskriptor angehängte
+        Daten und stellt diese über die
+        <see cref="P:Usb.RegularDescriptor.Tail" />-Eigenschaft
+        zur Verfügung.</summary>
+        <remarks>
+          <block subset="none" type="behaviors">
+            <para>
+              <paramref name="pos" /> wird nach erfolgreicher Abarbeitung
+            der Methode um die Länge des Deskriptors erhöht, so dass der Wert
+            direkt an den Konstruktor des eventuell folgenden Deskriptors
+            übergeben werden kann. Beim Wurf einer Ausnahme wird
+            <paramref name="pos" /> nicht verändert.</para>
+          </block>
+          <block subset="none" type="usage">
+            <para>Diese Methode wird von Konstruktoren der von der
+            <see cref="T:Usb.RegularDescriptor" />-Klasse erbenden Klassen
+            aufgerufen.</para>
+          </block>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <para>
+            <paramref name="desc" /> ist <see langword="null" />
+          (<see langword="Nothing" /> in Visual Basic)</para>
+        </exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <para>
+            <paramref name="pos" /> ist kleiner als 0 oder größer gleich der
+          Länge von <paramref name="desc" />.</para>
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <para>Die in <c>desc[pos]</c> angegebene Länge des
+          Deskriptors ist kleiner als 2.</para>
+          <para>- oder -</para>
+          <para>
+            <paramref name="pos" /> + <c>desc[pos]</c> ist größer als die
+          Länge von <paramref name="desc" />.</para>
+          <para>- oder -</para>
+          <para>Die in <c>desc[pos]</c> angegebene Länge des
+          Deskriptors ist kleiner als der von der
+          <see cref="P:Usb.RegularDescriptor.RegularSize" />-Eigenschaft
+          gelieferte Wert.</para>
+        </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="RegularSize">
+      <MemberSignature Language="C#" Value="public abstract int RegularSize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 RegularSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Tail">
+      <MemberSignature Language="C#" Value="public Usb.RegularDescriptor.TailByteCollection Tail { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Usb.RegularDescriptor/TailByteCollection Tail" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Usb.RegularDescriptor+TailByteCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TailChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler TailChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler TailChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

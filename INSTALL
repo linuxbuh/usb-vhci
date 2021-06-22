@@ -1,0 +1,13 @@
+Install
+=======
+
+Just run
+
+  ./configure
+  make
+  make install   # (as root)
+
+to build and install it.
+
+If the documentation won't build, try "./configure --disable-doc".
+

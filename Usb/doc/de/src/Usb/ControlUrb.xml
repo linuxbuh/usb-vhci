@@ -1,0 +1,597 @@
+<Type Name="ControlUrb" FullName="Usb.ControlUrb">
+  <TypeSignature Language="C#" Value="public class ControlUrb : Usb.Urb" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ControlUrb extends Usb.Urb" />
+  <AssemblyInfo>
+    <AssemblyName>Usb</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>1.3.1.7</AssemblyVersion>
+    <AssemblyVersion>1.4.2.8</AssemblyVersion>
+    <AssemblyVersion>1.5.2.9</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Usb.Urb</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public ControlUrb (long handle, byte[] buffer, int buffer_actual, Usb.UrbStatus status, Usb.UrbFlags flags, byte epadr, Usb.ControlEndpoint ep, byte bmRequestType, byte bRequest, short wValue, short wIndex, short wLength);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int64 handle, unsigned int8[] buffer, int32 buffer_actual, valuetype Usb.UrbStatus status, valuetype Usb.UrbFlags flags, unsigned int8 epadr, class Usb.ControlEndpoint ep, unsigned int8 bmRequestType, unsigned int8 bRequest, int16 wValue, int16 wIndex, int16 wLength) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="handle" Type="System.Int64" />
+        <Parameter Name="buffer" Type="System.Byte[]" />
+        <Parameter Name="buffer_actual" Type="System.Int32" />
+        <Parameter Name="status" Type="Usb.UrbStatus" />
+        <Parameter Name="flags" Type="Usb.UrbFlags" />
+        <Parameter Name="epadr" Type="System.Byte" />
+        <Parameter Name="ep" Type="Usb.ControlEndpoint" />
+        <Parameter Name="bmRequestType" Type="System.Byte" />
+        <Parameter Name="bRequest" Type="System.Byte" />
+        <Parameter Name="wValue" Type="System.Int16" />
+        <Parameter Name="wIndex" Type="System.Int16" />
+        <Parameter Name="wLength" Type="System.Int16" />
+      </Parameters>
+      <Docs>
+        <param name="handle">To be added.</param>
+        <param name="buffer">To be added.</param>
+        <param name="buffer_actual">To be added.</param>
+        <param name="status">To be added.</param>
+        <param name="flags">To be added.</param>
+        <param name="epadr">To be added.</param>
+        <param name="ep">To be added.</param>
+        <param name="bmRequestType">To be added.</param>
+        <param name="bRequest">To be added.</param>
+        <param name="wValue">To be added.</param>
+        <param name="wIndex">To be added.</param>
+        <param name="wLength">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CLEAR_FEATURE">
+      <MemberSignature Language="C#" Value="public const byte CLEAR_FEATURE = 1;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 CLEAR_FEATURE = (1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Direction">
+      <MemberSignature Language="C#" Value="public override Usb.EndpointDirection Direction { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Usb.EndpointDirection Direction" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Usb.EndpointDirection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DumpProperties">
+      <MemberSignature Language="C#" Value="protected override void DumpProperties (System.Text.StringBuilder s);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DumpProperties(class System.Text.StringBuilder s) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="s" Type="System.Text.StringBuilder" />
+      </Parameters>
+      <Docs>
+        <param name="s">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GET_CONFIGURATION">
+      <MemberSignature Language="C#" Value="public const byte GET_CONFIGURATION = 8;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 GET_CONFIGURATION = (8)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <MemberValue>8</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GET_DESCRIPTOR">
+      <MemberSignature Language="C#" Value="public const byte GET_DESCRIPTOR = 6;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 GET_DESCRIPTOR = (6)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <MemberValue>6</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GET_INTERFACE">
+      <MemberSignature Language="C#" Value="public const byte GET_INTERFACE = 10;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 GET_INTERFACE = (10)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <MemberValue>10</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GET_STATUS_REQ">
+      <MemberSignature Language="C#" Value="public const byte GET_STATUS_REQ = 0;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 GET_STATUS_REQ = (0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSetupRecipientDevice">
+      <MemberSignature Language="C#" Value="public bool IsSetupRecipientDevice { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSetupRecipientDevice" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSetupRecipientEndpoint">
+      <MemberSignature Language="C#" Value="public bool IsSetupRecipientEndpoint { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSetupRecipientEndpoint" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSetupRecipientInterface">
+      <MemberSignature Language="C#" Value="public bool IsSetupRecipientInterface { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSetupRecipientInterface" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSetupRecipientOther">
+      <MemberSignature Language="C#" Value="public bool IsSetupRecipientOther { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSetupRecipientOther" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSetupTypeClass">
+      <MemberSignature Language="C#" Value="public bool IsSetupTypeClass { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSetupTypeClass" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSetupTypeStandard">
+      <MemberSignature Language="C#" Value="public bool IsSetupTypeStandard { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSetupTypeStandard" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSetupTypeVendor">
+      <MemberSignature Language="C#" Value="public bool IsSetupTypeVendor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsSetupTypeVendor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SET_ADDRESS">
+      <MemberSignature Language="C#" Value="public const byte SET_ADDRESS = 5;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 SET_ADDRESS = (5)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <MemberValue>5</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SET_CONFIGURATION">
+      <MemberSignature Language="C#" Value="public const byte SET_CONFIGURATION = 9;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 SET_CONFIGURATION = (9)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <MemberValue>9</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SET_DESCRIPTOR">
+      <MemberSignature Language="C#" Value="public const byte SET_DESCRIPTOR = 7;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 SET_DESCRIPTOR = (7)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <MemberValue>7</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SET_FEATURE">
+      <MemberSignature Language="C#" Value="public const byte SET_FEATURE = 3;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 SET_FEATURE = (3)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SET_INTERFACE">
+      <MemberSignature Language="C#" Value="public const byte SET_INTERFACE = 11;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 SET_INTERFACE = (11)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <MemberValue>11</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetupPacketIndex">
+      <MemberSignature Language="C#" Value="public short SetupPacketIndex { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int16 SetupPacketIndex" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int16</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetupPacketLength">
+      <MemberSignature Language="C#" Value="public short SetupPacketLength { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int16 SetupPacketLength" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int16</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetupPacketRequest">
+      <MemberSignature Language="C#" Value="public byte SetupPacketRequest { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8 SetupPacketRequest" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetupPacketRequestType">
+      <MemberSignature Language="C#" Value="public byte SetupPacketRequestType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8 SetupPacketRequestType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetupPacketValue">
+      <MemberSignature Language="C#" Value="public short SetupPacketValue { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int16 SetupPacketValue" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int16</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetupRecipient">
+      <MemberSignature Language="C#" Value="public Usb.SetupRecipient SetupRecipient { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Usb.SetupRecipient SetupRecipient" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Usb.SetupRecipient</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetupType">
+      <MemberSignature Language="C#" Value="public Usb.SetupType SetupType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Usb.SetupType SetupType" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Usb.SetupType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SYNCH_FRAME">
+      <MemberSignature Language="C#" Value="public const byte SYNCH_FRAME = 12;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 SYNCH_FRAME = (12)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <MemberValue>12</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public override sealed Usb.EndpointType Type { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Usb.EndpointType Type" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Usb.EndpointType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,379 @@
+<Type Name="errno" FullName="Usb.Linux.errno">
+  <TypeSignature Language="C#" Value="public static class errno" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit errno extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>Usb</AssemblyName>
+    <AssemblyVersion>1.4.2.8</AssemblyVersion>
+    <AssemblyVersion>1.5.2.9</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ECOMM">
+      <MemberSignature Language="C#" Value="public const int ECOMM = -70;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 ECOMM = (-70)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-70</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ECONNRESET">
+      <MemberSignature Language="C#" Value="public const int ECONNRESET = -104;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 ECONNRESET = (-104)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-104</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EILSEQ">
+      <MemberSignature Language="C#" Value="public const int EILSEQ = -84;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 EILSEQ = (-84)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-84</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EINPROGRESS">
+      <MemberSignature Language="C#" Value="public const int EINPROGRESS = -115;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 EINPROGRESS = (-115)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-115</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EINVAL">
+      <MemberSignature Language="C#" Value="public const int EINVAL = -22;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 EINVAL = (-22)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-22</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ENODEV">
+      <MemberSignature Language="C#" Value="public const int ENODEV = -19;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 ENODEV = (-19)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-19</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ENOENT">
+      <MemberSignature Language="C#" Value="public const int ENOENT = -2;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 ENOENT = (-2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ENOSR">
+      <MemberSignature Language="C#" Value="public const int ENOSR = -63;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 ENOSR = (-63)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-63</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EOVERFLOW">
+      <MemberSignature Language="C#" Value="public const int EOVERFLOW = -75;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 EOVERFLOW = (-75)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-75</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EPIPE">
+      <MemberSignature Language="C#" Value="public const int EPIPE = -32;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 EPIPE = (-32)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-32</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EPROTO">
+      <MemberSignature Language="C#" Value="public const int EPROTO = -71;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 EPROTO = (-71)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-71</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EREMOTEIO">
+      <MemberSignature Language="C#" Value="public const int EREMOTEIO = -121;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 EREMOTEIO = (-121)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-121</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ESHUTDOWN">
+      <MemberSignature Language="C#" Value="public const int ESHUTDOWN = -108;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 ESHUTDOWN = (-108)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-108</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ETIME">
+      <MemberSignature Language="C#" Value="public const int ETIME = -62;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 ETIME = (-62)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-62</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ETIMEDOUT">
+      <MemberSignature Language="C#" Value="public const int ETIMEDOUT = -110;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 ETIMEDOUT = (-110)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-110</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="EXDEV">
+      <MemberSignature Language="C#" Value="public const int EXDEV = -18;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 EXDEV = (-18)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-18</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromErrno">
+      <MemberSignature Language="C#" Value="public static Usb.UrbStatus FromErrno (int status, bool isoUrb);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Usb.UrbStatus FromErrno(int32 status, bool isoUrb) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Usb.UrbStatus</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="status" Type="System.Int32" />
+        <Parameter Name="isoUrb" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="status">To be added.</param>
+        <param name="isoUrb">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromIsoPacketsErrno">
+      <MemberSignature Language="C#" Value="public static Usb.UrbStatus FromIsoPacketsErrno (int status);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Usb.UrbStatus FromIsoPacketsErrno(int32 status) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Usb.UrbStatus</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="status" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="status">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToErrno">
+      <MemberSignature Language="C#" Value="public static int ToErrno (Usb.UrbStatus status, bool isoUrb);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 ToErrno(valuetype Usb.UrbStatus status, bool isoUrb) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="status" Type="Usb.UrbStatus" />
+        <Parameter Name="isoUrb" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="status">To be added.</param>
+        <param name="isoUrb">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToIsoPacketsErrno">
+      <MemberSignature Language="C#" Value="public static int ToIsoPacketsErrno (Usb.UrbStatus status);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 ToIsoPacketsErrno(valuetype Usb.UrbStatus status) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="status" Type="Usb.UrbStatus" />
+      </Parameters>
+      <Docs>
+        <param name="status">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

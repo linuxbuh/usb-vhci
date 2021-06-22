@@ -1,0 +1,68 @@
+<Type Name="StatefullEnumerator+RootHub" FullName="Usb.Enumeration.StatefullEnumerator+RootHub">
+  <TypeSignature Language="C#" Value="protected class StatefullEnumerator.RootHub : Usb.Enumeration.StatefullEnumerator.Hub" />
+  <TypeSignature Language="ILAsm" Value=".class nested protected auto ansi beforefieldinit StatefullEnumerator/RootHub extends Usb.Enumeration.StatefullEnumerator/Hub" />
+  <AssemblyInfo>
+    <AssemblyName>Usb</AssemblyName>
+    <AssemblyVersion>1.5.2.9</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Usb.Enumeration.StatefullEnumerator+Hub</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public RootHub (Usb.Enumeration.StatefullEnumerator enm, Usb.Enumeration.IHub inner);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Usb.Enumeration.StatefullEnumerator enm, class Usb.Enumeration.IHub inner) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="enm" Type="Usb.Enumeration.StatefullEnumerator" />
+        <Parameter Name="inner" Type="Usb.Enumeration.IHub" />
+      </Parameters>
+      <Docs>
+        <param name="enm">To be added.</param>
+        <param name="inner">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsRoot">
+      <MemberSignature Language="C#" Value="public override bool IsRoot { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsRoot" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Root">
+      <MemberSignature Language="C#" Value="public override Usb.Enumeration.IHub Root { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Usb.Enumeration.IHub Root" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Usb.Enumeration.IHub</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

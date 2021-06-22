@@ -1,0 +1,92 @@
+<Type Name="RootHub" FullName="Usb.UsbFS.Enumeration.RootHub">
+  <TypeSignature Language="C#" Value="public sealed class RootHub : Usb.UsbFS.Enumeration.Hub" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RootHub extends Usb.UsbFS.Enumeration.Hub" />
+  <AssemblyInfo>
+    <AssemblyName>Usb.UsbFS</AssemblyName>
+    <AssemblyVersion>1.3.0.6</AssemblyVersion>
+    <AssemblyVersion>1.4.1.7</AssemblyVersion>
+    <AssemblyVersion>1.5.1.7</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Usb.UsbFS.Enumeration.Hub</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Bus">
+      <MemberSignature Language="C#" Value="public override int Bus { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Bus" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsRoot">
+      <MemberSignature Language="C#" Value="public override bool IsRoot { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsRoot" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Root">
+      <MemberSignature Language="C#" Value="public override Usb.Enumeration.IHub Root { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Usb.Enumeration.IHub Root" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Usb.Enumeration.IHub</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Tier">
+      <MemberSignature Language="C#" Value="public override int Tier { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Tier" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,11 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+libexecdir=@libexecdir@
+
+Name: Usb
+Description: Usb
+Version: @USB_DLL_VERSION@
+
+Requires: 
+Libs: -r:${libexecdir}/@PACKAGE@/Usb.dll

@@ -1,0 +1,51 @@
+<Type Name="Ioctl+VIRTUSB_WORK_UNION" FullName="Vhci.Windows.Ioctl+VIRTUSB_WORK_UNION">
+  <TypeSignature Language="C#" Value="public struct Ioctl.VIRTUSB_WORK_UNION" />
+  <TypeSignature Language="ILAsm" Value=".class nested public ansi sealed beforefieldinit Ioctl/VIRTUSB_WORK_UNION extends System.ValueType" />
+  <AssemblyInfo>
+    <AssemblyName>Vhci</AssemblyName>
+    <AssemblyVersion>1.4.2.4</AssemblyVersion>
+    <AssemblyVersion>1.5.2.4</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.ValueType</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="PortStat">
+      <MemberSignature Language="C#" Value="public Vhci.Windows.Ioctl.VIRTUSB_PORT_STAT PortStat;" />
+      <MemberSignature Language="ILAsm" Value=".field public valuetype Vhci.Windows.Ioctl/VIRTUSB_PORT_STAT PortStat" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Vhci.Windows.Ioctl+VIRTUSB_PORT_STAT</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Urb">
+      <MemberSignature Language="C#" Value="public Vhci.Windows.Ioctl.VIRTUSB_URB Urb;" />
+      <MemberSignature Language="ILAsm" Value=".field public valuetype Vhci.Windows.Ioctl/VIRTUSB_URB Urb" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Vhci.Windows.Ioctl+VIRTUSB_URB</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

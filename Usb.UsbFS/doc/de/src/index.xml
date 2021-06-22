@@ -1,0 +1,71 @@
+<Overview>
+  <Assemblies>
+    <Assembly Name="Usb.UsbFS" Version="1.5.1.7">
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 11 00 00 00 33 38 81 2b 44 f3 f4 08 ea 6d 7f 75 40 fc 25 c6 c8 db 80 41 54 b3 26 37 81 b1 25 ce 47 07 54 72 6b 7c e5 49 d4 02 cf 9f 4f 6b 79 47 91 d8 f0 e5 2a 9e 14 97 eb 7d 48 f0 49 78 18 dc 1e 6b da 8b fc 47 24 54 d4 eb 5f 62 19 d4 4d 16 30 5c f7 bb 03 69 21 e7 3f d6 cf da 40 90 79 44 52 6b d1 aa 04 45 db 2c 5d b9 d0 3a 04 11 3a 6f 94 f4 38 38 f3 26 10 6c c2 4c b5 46 21 c4 c8 ee 24 2b eb 8d ]</AssemblyPublicKey>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyCompany("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyConfiguration("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyCopyright("Copyright © 2008-2015 Michael Singer")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyDescription("USB-FS related classes")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyFileVersion("1.5.1.7")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyInformationalVersion("1.5.0.0")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyProduct("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyTitle("Usb.UsbFS")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyTrademark("")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.CompilerServices.RuntimeCompatibility(WrapNonExceptionThrows=true)</AttributeName>
+        </Attribute>
+      </Attributes>
+    </Assembly>
+  </Assemblies>
+  <Remarks>To be added.</Remarks>
+  <Copyright>To be added.</Copyright>
+  <Types>
+    <Namespace Name="Usb.UsbFS">
+      <Type Name="DeviceFile" Kind="Class" />
+      <Type Name="Ioctl" Kind="Class" />
+      <Type Name="Ioctl+pollfd" Kind="Structure" />
+      <Type Name="Ioctl+usbdevfs_bulktransfer" Kind="Structure" />
+      <Type Name="Ioctl+usbdevfs_bulktransfer_ptr" Kind="Structure" />
+      <Type Name="Ioctl+usbdevfs_connectinfo" Kind="Structure" />
+      <Type Name="Ioctl+usbdevfs_ctrltransfer" Kind="Structure" />
+      <Type Name="Ioctl+usbdevfs_ctrltransfer_ptr" Kind="Structure" />
+      <Type Name="Ioctl+usbdevfs_disconnectsignal" Kind="Structure" />
+      <Type Name="Ioctl+usbdevfs_getdriver" Kind="Structure" />
+      <Type Name="Ioctl+usbdevfs_hub_portinfo" Kind="Structure" />
+      <Type Name="Ioctl+usbdevfs_ioctl" Kind="Structure" />
+      <Type Name="Ioctl+usbdevfs_iso_packet_desc" Kind="Structure" />
+      <Type Name="Ioctl+usbdevfs_setinterface" Kind="Structure" />
+      <Type Name="Ioctl+usbdevfs_urb" Kind="Structure" />
+      <Type Name="UsbDevice" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Usb.UsbFS.Enumeration">
+      <Type Name="Device" Kind="Class" />
+      <Type Name="Enumerator" Kind="Class" />
+      <Type Name="Hub" Kind="Class" />
+      <Type Name="RootHub" Kind="Class" />
+    </Namespace>
+  </Types>
+  <Title>Usb.UsbFS</Title>
+</Overview>

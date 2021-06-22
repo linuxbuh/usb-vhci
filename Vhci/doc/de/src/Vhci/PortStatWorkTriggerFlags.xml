@@ -1,0 +1,152 @@
+<Type Name="PortStatWorkTriggerFlags" FullName="Vhci.PortStatWorkTriggerFlags">
+  <TypeSignature Language="C#" Value="public enum PortStatWorkTriggerFlags" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed PortStatWorkTriggerFlags extends System.Enum" />
+  <AssemblyInfo>
+    <AssemblyName>Vhci</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>1.3.0.2</AssemblyVersion>
+    <AssemblyVersion>1.3.1.3</AssemblyVersion>
+    <AssemblyVersion>1.4.2.4</AssemblyVersion>
+    <AssemblyVersion>1.5.2.4</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Flags</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Disable">
+      <MemberSignature Language="C#" Value="Disable" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Vhci.PortStatWorkTriggerFlags Disable = int32(1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.3.1.3</AssemblyVersion>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Vhci.PortStatWorkTriggerFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="None">
+      <MemberSignature Language="C#" Value="None" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Vhci.PortStatWorkTriggerFlags None = int32(0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.3.1.3</AssemblyVersion>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Vhci.PortStatWorkTriggerFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PowerOff">
+      <MemberSignature Language="C#" Value="PowerOff" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Vhci.PortStatWorkTriggerFlags PowerOff = int32(32)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.3.1.3</AssemblyVersion>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Vhci.PortStatWorkTriggerFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="PowerOn">
+      <MemberSignature Language="C#" Value="PowerOn" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Vhci.PortStatWorkTriggerFlags PowerOn = int32(16)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.3.1.3</AssemblyVersion>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Vhci.PortStatWorkTriggerFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Reset">
+      <MemberSignature Language="C#" Value="Reset" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Vhci.PortStatWorkTriggerFlags Reset = int32(8)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.3.1.3</AssemblyVersion>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Vhci.PortStatWorkTriggerFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Resuming">
+      <MemberSignature Language="C#" Value="Resuming" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Vhci.PortStatWorkTriggerFlags Resuming = int32(4)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.3.1.3</AssemblyVersion>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Vhci.PortStatWorkTriggerFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="Suspend">
+      <MemberSignature Language="C#" Value="Suspend" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Vhci.PortStatWorkTriggerFlags Suspend = int32(2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.3.1.3</AssemblyVersion>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Vhci.PortStatWorkTriggerFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

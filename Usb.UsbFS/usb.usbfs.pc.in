@@ -1,0 +1,11 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+libexecdir=@libexecdir@
+
+Name: Usb.UsbFS
+Description: Usb.UsbFS
+Version: @USB_USBFS_DLL_VERSION@
+
+Requires: 
+Libs: -r:${libexecdir}/@PACKAGE@/Usb.UsbFS.dll

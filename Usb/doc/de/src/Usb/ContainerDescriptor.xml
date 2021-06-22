@@ -1,0 +1,628 @@
+<Type Name="ContainerDescriptor" FullName="Usb.ContainerDescriptor">
+  <TypeSignature Language="C#" Value="public abstract class ContainerDescriptor : Usb.Descriptor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ContainerDescriptor extends Usb.Descriptor" />
+  <AssemblyInfo>
+    <AssemblyName>Usb</AssemblyName>
+    <AssemblyVersion>1.3.1.7</AssemblyVersion>
+    <AssemblyVersion>1.4.2.8</AssemblyVersion>
+    <AssemblyVersion>1.5.2.9</AssemblyVersion>
+  </AssemblyInfo>
+  <ThreadingSafetyStatement>Öffentliche statische (<see langword="Shared" /> in
+  Visual Basic) Member dieses Typs sind threadsicher. Bei Instanz-Membern ist
+  die Threadsicherheit nicht gewährleistet.</ThreadingSafetyStatement>
+  <Base>
+    <BaseTypeName>Usb.Descriptor</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected ContainerDescriptor ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initialisiert eine neue Instanz der
+        <see cref="T:Usb.ContainerDescriptor" />-Klasse.</summary>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName="ParseChildDescriptor">
+      <MemberSignature Language="C#" Value="protected virtual bool ParseChildDescriptor (byte[] desc, ref int pos, Usb.Endianness endian, object context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool ParseChildDescriptor(unsigned int8[] desc, int32 pos, valuetype Usb.Endianness endian, object context) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="desc" Type="System.Byte[]" />
+        <Parameter Name="pos" Type="System.Int32&amp;" RefType="ref" />
+        <Parameter Name="endian" Type="Usb.Endianness" />
+        <Parameter Name="context" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="desc">Deskriptordaten</param>
+        <param name="pos">Index in <paramref name="desc" />, an dem der
+        Deskriptor beginnt. Nach Ausführung der Methode zeigt
+        <paramref name="pos" /> auf das Byte, welches direkt auf den Deskriptor
+        folgt.</param>
+        <param name="endian">Gibt an, in welcher Bytereihenfolge die
+        Integer-Werte des Deskriptors interpretiert werden sollen.</param>
+        <param name="context">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <block subset="none" type="note">
+            <para>Wird von dieser Klasse nicht geworfen.</para>
+          </block>
+          <block subset="none" type="overrides">
+            <para>Erben sollten diese Ausnahme werfen, wenn:</para>
+            <para>
+              <paramref name="desc" /> ist <see langword="null" />
+            (<see langword="Nothing" /> in Visual Basic)</para>
+          </block>
+        </exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <block subset="none" type="note">
+            <para>Wird von dieser Klasse nicht geworfen.</para>
+          </block>
+          <block subset="none" type="overrides">
+            <para>Erben sollten diese Ausnahme werfen, wenn:</para>
+            <para>
+              <paramref name="pos" /> ist kleiner als 0 oder größer als die
+            Länge von <paramref name="desc" />.</para>
+          </block>
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <block subset="none" type="note">
+            <para>Wird von dieser Klasse nicht geworfen.</para>
+          </block>
+          <block subset="none" type="overrides">
+            <para>Erben sollten diese Ausnahme werfen, wenn:</para>
+            <para>Die in <c>desc[n]</c> angegebene Länge eines
+            Deskriptors ist kleiner als für einen Deskriptor dieses Typs
+            vorgeschrieben, wobei <c>n</c> der Index des ersten
+            Bytes dieses Deskriptors ist.</para>
+            <para>- oder -</para>
+            <para>Beim Versuch einen Deskriptor zu parsen stellt sich heraus,
+            dass <c>n + desc[n]</c> größer als die Länge von
+            <paramref name="desc" /> ist, wobei <c>n</c> der Index des ersten
+            Bytes dieses Deskriptors ist.</para>
+            <para>- oder -</para>
+            <para>Der in <c>desc[n + 1]</c> angegebene Typ eines
+            Deskriptors ist 0, wobei <c>n</c> der Index des ersten
+            Bytes dieses Deskriptors ist.</para>
+            <para>- oder -</para>
+            <para>Ein Deskriptor enthält unstimmige Werte.</para>
+          </block>
+        </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WalkChildDescriptors">
+      <MemberSignature Language="C#" Value="protected void WalkChildDescriptors (byte[] desc, ref int pos);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WalkChildDescriptors(unsigned int8[] desc, int32 pos) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="desc" Type="System.Byte[]" />
+        <Parameter Name="pos" Type="System.Int32&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="desc">Deskriptordaten</param>
+        <param name="pos">Index in <paramref name="desc" />, an dem der erste
+        Kind-Deskriptor beginnt. Nach Ausführung der Methode zeigt
+        <paramref name="pos" /> auf das Byte, welches direkt auf den letzten
+        Kind-Deskriptor folgt.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <para>
+            <paramref name="desc" /> ist <see langword="null" />
+          (<see langword="Nothing" /> in Visual Basic)</para>
+        </exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <para>
+            <paramref name="pos" /> ist kleiner als 0 oder größer als die
+          Länge von <paramref name="desc" />.</para>
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <para>Die in <c>desc[n]</c> angegebene Länge eines
+          Deskriptors ist kleiner als 2, wobei <c>n</c> der Index des ersten
+          Bytes dieses Deskriptors ist.</para>
+          <para>- oder -</para>
+          <para>Beim Versuch einen Deskriptor zu parsen stellt sich heraus,
+          dass <c>n + desc[n]</c> größer als die Länge von
+          <paramref name="desc" /> ist, wobei <c>n</c> der Index des ersten
+          Bytes dieses Deskriptors ist.</para>
+          <para>- oder -</para>
+          <para>Der in <c>desc[n + 1]</c> angegebene Typ eines
+          Deskriptors ist 0, wobei <c>n</c> der Index des ersten
+          Bytes dieses Deskriptors ist.</para>
+        </exception>
+        <exception cref="T:System.InvalidOperationException">
+          <para>Beim Parsen eines Deskriptors verhält sich die
+          <see cref="M:Usb.ContainerDescriptor.ParseChildDescriptor(System.Byte[],System.Int32@,Usb.Endianness,System.Object)" />-Methode
+          fehlerhaft: Der Wert, um den sie ihr <c>pos</c>-Argument
+          inkrementiert, ist kleiner als <c>desc[n]</c>, wobei <c>n</c> der
+          Index des ersten Bytes dieses Deskriptors ist.</para>
+        </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WalkChildDescriptors">
+      <MemberSignature Language="C#" Value="protected void WalkChildDescriptors (byte[] desc, ref int pos, object context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WalkChildDescriptors(unsigned int8[] desc, int32 pos, object context) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="desc" Type="System.Byte[]" />
+        <Parameter Name="pos" Type="System.Int32&amp;" RefType="ref" />
+        <Parameter Name="context" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="desc">Deskriptordaten</param>
+        <param name="pos">Index in <paramref name="desc" />, an dem der erste
+        Kind-Deskriptor beginnt. Nach Ausführung der Methode zeigt
+        <paramref name="pos" /> auf das Byte, welches direkt auf den letzten
+        Kind-Deskriptor folgt.</param>
+        <param name="context">Wird an die
+        <see cref="M:Usb.ContainerDescriptor.ParseChildDescriptor(System.Byte[],System.Int32@,Usb.Endianness,System.Object)" />-Methode
+        weitergegeben.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <para>
+            <paramref name="desc" /> ist <see langword="null" />
+          (<see langword="Nothing" /> in Visual Basic)</para>
+        </exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <para>
+            <paramref name="pos" /> ist kleiner als 0 oder größer als die
+          Länge von <paramref name="desc" />.</para>
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <para>Die in <c>desc[n]</c> angegebene Länge eines
+          Deskriptors ist kleiner als 2, wobei <c>n</c> der Index des ersten
+          Bytes dieses Deskriptors ist.</para>
+          <para>- oder -</para>
+          <para>Beim Versuch einen Deskriptor zu parsen stellt sich heraus,
+          dass <c>n + desc[n]</c> größer als die Länge von
+          <paramref name="desc" /> ist, wobei <c>n</c> der Index des ersten
+          Bytes dieses Deskriptors ist.</para>
+          <para>- oder -</para>
+          <para>Der in <c>desc[n + 1]</c> angegebene Typ eines
+          Deskriptors ist 0, wobei <c>n</c> der Index des ersten
+          Bytes dieses Deskriptors ist.</para>
+        </exception>
+        <exception cref="T:System.InvalidOperationException">
+          <para>Beim Parsen eines Deskriptors verhält sich die
+          <see cref="M:Usb.ContainerDescriptor.ParseChildDescriptor(System.Byte[],System.Int32@,Usb.Endianness,System.Object)" />-Methode
+          fehlerhaft: Der Wert, um den sie ihr <c>pos</c>-Argument
+          inkrementiert, ist kleiner als <c>desc[n]</c>, wobei <c>n</c> der
+          Index des ersten Bytes dieses Deskriptors ist.</para>
+        </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WalkChildDescriptors">
+      <MemberSignature Language="C#" Value="protected void WalkChildDescriptors (byte[] desc, ref int pos, Usb.Endianness endian);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WalkChildDescriptors(unsigned int8[] desc, int32 pos, valuetype Usb.Endianness endian) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="desc" Type="System.Byte[]" />
+        <Parameter Name="pos" Type="System.Int32&amp;" RefType="ref" />
+        <Parameter Name="endian" Type="Usb.Endianness" />
+      </Parameters>
+      <Docs>
+        <param name="desc">Deskriptordaten</param>
+        <param name="pos">Index in <paramref name="desc" />, an dem der erste
+        Kind-Deskriptor beginnt. Nach Ausführung der Methode zeigt
+        <paramref name="pos" /> auf das Byte, welches direkt auf den letzten
+        Kind-Deskriptor folgt.</param>
+        <param name="endian">Gibt an, in welcher Bytereihenfolge die
+        Integer-Werte der Deskriptoren interpretiert werden sollen.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <para>
+            <paramref name="desc" /> ist <see langword="null" />
+          (<see langword="Nothing" /> in Visual Basic)</para>
+        </exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <para>
+            <paramref name="pos" /> ist kleiner als 0 oder größer als die
+          Länge von <paramref name="desc" />.</para>
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <para>Die in <c>desc[n]</c> angegebene Länge eines
+          Deskriptors ist kleiner als 2, wobei <c>n</c> der Index des ersten
+          Bytes dieses Deskriptors ist.</para>
+          <para>- oder -</para>
+          <para>Beim Versuch einen Deskriptor zu parsen stellt sich heraus,
+          dass <c>n + desc[n]</c> größer als die Länge von
+          <paramref name="desc" /> ist, wobei <c>n</c> der Index des ersten
+          Bytes dieses Deskriptors ist.</para>
+          <para>- oder -</para>
+          <para>Der in <c>desc[n + 1]</c> angegebene Typ eines
+          Deskriptors ist 0, wobei <c>n</c> der Index des ersten
+          Bytes dieses Deskriptors ist.</para>
+        </exception>
+        <exception cref="T:System.InvalidOperationException">
+          <para>Beim Parsen eines Deskriptors verhält sich die
+          <see cref="M:Usb.ContainerDescriptor.ParseChildDescriptor(System.Byte[],System.Int32@,Usb.Endianness,System.Object)" />-Methode
+          fehlerhaft: Der Wert, um den sie ihr <c>pos</c>-Argument
+          inkrementiert, ist kleiner als <c>desc[n]</c>, wobei <c>n</c> der
+          Index des ersten Bytes dieses Deskriptors ist.</para>
+        </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WalkChildDescriptors">
+      <MemberSignature Language="C#" Value="protected void WalkChildDescriptors (int count, byte[] desc, ref int pos);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WalkChildDescriptors(int32 count, unsigned int8[] desc, int32 pos) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="count" Type="System.Int32" />
+        <Parameter Name="desc" Type="System.Byte[]" />
+        <Parameter Name="pos" Type="System.Int32&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="count">Die Anzahl der zu parsenden
+        Kind-Deskriptoren</param>
+        <param name="desc">Deskriptordaten</param>
+        <param name="pos">Index in <paramref name="desc" />, an dem der erste
+        Kind-Deskriptor beginnt. Nach Ausführung der Methode zeigt
+        <paramref name="pos" /> auf das Byte, welches direkt auf den letzten
+        Kind-Deskriptor folgt.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <para>
+            <paramref name="desc" /> ist <see langword="null" />
+          (<see langword="Nothing" /> in Visual Basic)</para>
+        </exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <para>
+            <paramref name="pos" /> ist kleiner als 0 oder größer als die
+          Länge von <paramref name="desc" />.</para>
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <para>Die in <c>desc[n]</c> angegebene Länge eines
+          Deskriptors ist kleiner als 2, wobei <c>n</c> der Index des ersten
+          Bytes dieses Deskriptors ist.</para>
+          <para>- oder -</para>
+          <para>Beim Versuch einen Deskriptor zu parsen stellt sich heraus,
+          dass <c>n + desc[n]</c> größer als die Länge von
+          <paramref name="desc" /> ist, wobei <c>n</c> der Index des ersten
+          Bytes dieses Deskriptors ist.</para>
+          <para>- oder -</para>
+          <para>Der in <c>desc[n + 1]</c> angegebene Typ eines
+          Deskriptors ist 0, wobei <c>n</c> der Index des ersten
+          Bytes dieses Deskriptors ist.</para>
+          <para>- oder -</para>
+          <para>
+            <paramref name="desc" /> enthält weniger Kind-Deskriptoren, als von
+          <paramref name="count" /> vorgegeben wird.</para>
+        </exception>
+        <exception cref="T:System.InvalidOperationException">
+          <para>Beim Parsen eines Deskriptors verhält sich die
+          <see cref="M:Usb.ContainerDescriptor.ParseChildDescriptor(System.Byte[],System.Int32@,Usb.Endianness,System.Object)" />-Methode
+          fehlerhaft: Der Wert, um den sie ihr <c>pos</c>-Argument
+          inkrementiert, ist kleiner als <c>desc[n]</c>, wobei <c>n</c> der
+          Index des ersten Bytes dieses Deskriptors ist.</para>
+        </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WalkChildDescriptors">
+      <MemberSignature Language="C#" Value="protected void WalkChildDescriptors (byte[] desc, ref int pos, Usb.Endianness endian, object context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WalkChildDescriptors(unsigned int8[] desc, int32 pos, valuetype Usb.Endianness endian, object context) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="desc" Type="System.Byte[]" />
+        <Parameter Name="pos" Type="System.Int32&amp;" RefType="ref" />
+        <Parameter Name="endian" Type="Usb.Endianness" />
+        <Parameter Name="context" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="desc">Deskriptordaten</param>
+        <param name="pos">Index in <paramref name="desc" />, an dem der erste
+        Kind-Deskriptor beginnt. Nach Ausführung der Methode zeigt
+        <paramref name="pos" /> auf das Byte, welches direkt auf den letzten
+        Kind-Deskriptor folgt.</param>
+        <param name="endian">Gibt an, in welcher Bytereihenfolge die
+        Integer-Werte der Deskriptoren interpretiert werden sollen.</param>
+        <param name="context">Wird an die
+        <see cref="M:Usb.ContainerDescriptor.ParseChildDescriptor(System.Byte[],System.Int32@,Usb.Endianness,System.Object)" />-Methode
+        weitergegeben.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <para>
+            <paramref name="desc" /> ist <see langword="null" />
+          (<see langword="Nothing" /> in Visual Basic)</para>
+        </exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <para>
+            <paramref name="pos" /> ist kleiner als 0 oder größer als die
+          Länge von <paramref name="desc" />.</para>
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <para>Die in <c>desc[n]</c> angegebene Länge eines
+          Deskriptors ist kleiner als 2, wobei <c>n</c> der Index des ersten
+          Bytes dieses Deskriptors ist.</para>
+          <para>- oder -</para>
+          <para>Beim Versuch einen Deskriptor zu parsen stellt sich heraus,
+          dass <c>n + desc[n]</c> größer als die Länge von
+          <paramref name="desc" /> ist, wobei <c>n</c> der Index des ersten
+          Bytes dieses Deskriptors ist.</para>
+          <para>- oder -</para>
+          <para>Der in <c>desc[n + 1]</c> angegebene Typ eines
+          Deskriptors ist 0, wobei <c>n</c> der Index des ersten
+          Bytes dieses Deskriptors ist.</para>
+        </exception>
+        <exception cref="T:System.InvalidOperationException">
+          <para>Beim Parsen eines Deskriptors verhält sich die
+          <see cref="M:Usb.ContainerDescriptor.ParseChildDescriptor(System.Byte[],System.Int32@,Usb.Endianness,System.Object)" />-Methode
+          fehlerhaft: Der Wert, um den sie ihr <c>pos</c>-Argument
+          inkrementiert, ist kleiner als <c>desc[n]</c>, wobei <c>n</c> der
+          Index des ersten Bytes dieses Deskriptors ist.</para>
+        </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WalkChildDescriptors">
+      <MemberSignature Language="C#" Value="protected void WalkChildDescriptors (int count, byte[] desc, ref int pos, object context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WalkChildDescriptors(int32 count, unsigned int8[] desc, int32 pos, object context) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="count" Type="System.Int32" />
+        <Parameter Name="desc" Type="System.Byte[]" />
+        <Parameter Name="pos" Type="System.Int32&amp;" RefType="ref" />
+        <Parameter Name="context" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="count">Die Anzahl der zu parsenden
+        Kind-Deskriptoren</param>
+        <param name="desc">Deskriptordaten</param>
+        <param name="pos">Index in <paramref name="desc" />, an dem der erste
+        Kind-Deskriptor beginnt. Nach Ausführung der Methode zeigt
+        <paramref name="pos" /> auf das Byte, welches direkt auf den letzten
+        Kind-Deskriptor folgt.</param>
+        <param name="context">Wird an die
+        <see cref="M:Usb.ContainerDescriptor.ParseChildDescriptor(System.Byte[],System.Int32@,Usb.Endianness,System.Object)" />-Methode
+        weitergegeben.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <para>
+            <paramref name="desc" /> ist <see langword="null" />
+          (<see langword="Nothing" /> in Visual Basic)</para>
+        </exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <para>
+            <paramref name="pos" /> ist kleiner als 0 oder größer als die
+          Länge von <paramref name="desc" />.</para>
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <para>Die in <c>desc[n]</c> angegebene Länge eines
+          Deskriptors ist kleiner als 2, wobei <c>n</c> der Index des ersten
+          Bytes dieses Deskriptors ist.</para>
+          <para>- oder -</para>
+          <para>Beim Versuch einen Deskriptor zu parsen stellt sich heraus,
+          dass <c>n + desc[n]</c> größer als die Länge von
+          <paramref name="desc" /> ist, wobei <c>n</c> der Index des ersten
+          Bytes dieses Deskriptors ist.</para>
+          <para>- oder -</para>
+          <para>Der in <c>desc[n + 1]</c> angegebene Typ eines
+          Deskriptors ist 0, wobei <c>n</c> der Index des ersten
+          Bytes dieses Deskriptors ist.</para>
+          <para>- oder -</para>
+          <para>
+            <paramref name="desc" /> enthält weniger Kind-Deskriptoren, als von
+          <paramref name="count" /> vorgegeben wird.</para>
+        </exception>
+        <exception cref="T:System.InvalidOperationException">
+          <para>Beim Parsen eines Deskriptors verhält sich die
+          <see cref="M:Usb.ContainerDescriptor.ParseChildDescriptor(System.Byte[],System.Int32@,Usb.Endianness,System.Object)" />-Methode
+          fehlerhaft: Der Wert, um den sie ihr <c>pos</c>-Argument
+          inkrementiert, ist kleiner als <c>desc[n]</c>, wobei <c>n</c> der
+          Index des ersten Bytes dieses Deskriptors ist.</para>
+        </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WalkChildDescriptors">
+      <MemberSignature Language="C#" Value="protected void WalkChildDescriptors (int count, byte[] desc, ref int pos, Usb.Endianness endian);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WalkChildDescriptors(int32 count, unsigned int8[] desc, int32 pos, valuetype Usb.Endianness endian) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="count" Type="System.Int32" />
+        <Parameter Name="desc" Type="System.Byte[]" />
+        <Parameter Name="pos" Type="System.Int32&amp;" RefType="ref" />
+        <Parameter Name="endian" Type="Usb.Endianness" />
+      </Parameters>
+      <Docs>
+        <param name="count">Die Anzahl der zu parsenden
+        Kind-Deskriptoren</param>
+        <param name="desc">Deskriptordaten</param>
+        <param name="pos">Index in <paramref name="desc" />, an dem der erste
+        Kind-Deskriptor beginnt. Nach Ausführung der Methode zeigt
+        <paramref name="pos" /> auf das Byte, welches direkt auf den letzten
+        Kind-Deskriptor folgt.</param>
+        <param name="endian">Gibt an, in welcher Bytereihenfolge die
+        Integer-Werte der Deskriptoren interpretiert werden sollen.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <para>
+            <paramref name="desc" /> ist <see langword="null" />
+          (<see langword="Nothing" /> in Visual Basic)</para>
+        </exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <para>
+            <paramref name="pos" /> ist kleiner als 0 oder größer als die
+          Länge von <paramref name="desc" />.</para>
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <para>Die in <c>desc[n]</c> angegebene Länge eines
+          Deskriptors ist kleiner als 2, wobei <c>n</c> der Index des ersten
+          Bytes dieses Deskriptors ist.</para>
+          <para>- oder -</para>
+          <para>Beim Versuch einen Deskriptor zu parsen stellt sich heraus,
+          dass <c>n + desc[n]</c> größer als die Länge von
+          <paramref name="desc" /> ist, wobei <c>n</c> der Index des ersten
+          Bytes dieses Deskriptors ist.</para>
+          <para>- oder -</para>
+          <para>Der in <c>desc[n + 1]</c> angegebene Typ eines
+          Deskriptors ist 0, wobei <c>n</c> der Index des ersten
+          Bytes dieses Deskriptors ist.</para>
+          <para>- oder -</para>
+          <para>
+            <paramref name="desc" /> enthält weniger Kind-Deskriptoren, als von
+          <paramref name="count" /> vorgegeben wird.</para>
+        </exception>
+        <exception cref="T:System.InvalidOperationException">
+          <para>Beim Parsen eines Deskriptors verhält sich die
+          <see cref="M:Usb.ContainerDescriptor.ParseChildDescriptor(System.Byte[],System.Int32@,Usb.Endianness,System.Object)" />-Methode
+          fehlerhaft: Der Wert, um den sie ihr <c>pos</c>-Argument
+          inkrementiert, ist kleiner als <c>desc[n]</c>, wobei <c>n</c> der
+          Index des ersten Bytes dieses Deskriptors ist.</para>
+        </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="WalkChildDescriptors">
+      <MemberSignature Language="C#" Value="protected void WalkChildDescriptors (int count, byte[] desc, ref int pos, Usb.Endianness endian, object context);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WalkChildDescriptors(int32 count, unsigned int8[] desc, int32 pos, valuetype Usb.Endianness endian, object context) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="count" Type="System.Int32" />
+        <Parameter Name="desc" Type="System.Byte[]" />
+        <Parameter Name="pos" Type="System.Int32&amp;" RefType="ref" />
+        <Parameter Name="endian" Type="Usb.Endianness" />
+        <Parameter Name="context" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="count">Die Anzahl der zu parsenden
+        Kind-Deskriptoren</param>
+        <param name="desc">Deskriptordaten</param>
+        <param name="pos">Index in <paramref name="desc" />, an dem der erste
+        Kind-Deskriptor beginnt. Nach Ausführung der Methode zeigt
+        <paramref name="pos" /> auf das Byte, welches direkt auf den letzten
+        Kind-Deskriptor folgt.</param>
+        <param name="endian">Gibt an, in welcher Bytereihenfolge die
+        Integer-Werte der Deskriptoren interpretiert werden sollen.</param>
+        <param name="context">Wird an die
+        <see cref="M:Usb.ContainerDescriptor.ParseChildDescriptor(System.Byte[],System.Int32@,Usb.Endianness,System.Object)" />-Methode
+        weitergegeben.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <para>
+            <paramref name="desc" /> ist <see langword="null" />
+          (<see langword="Nothing" /> in Visual Basic)</para>
+        </exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <para>
+            <paramref name="pos" /> ist kleiner als 0 oder größer als die
+          Länge von <paramref name="desc" />.</para>
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <para>Die in <c>desc[n]</c> angegebene Länge eines
+          Deskriptors ist kleiner als 2, wobei <c>n</c> der Index des ersten
+          Bytes dieses Deskriptors ist.</para>
+          <para>- oder -</para>
+          <para>Beim Versuch einen Deskriptor zu parsen stellt sich heraus,
+          dass <c>n + desc[n]</c> größer als die Länge von
+          <paramref name="desc" /> ist, wobei <c>n</c> der Index des ersten
+          Bytes dieses Deskriptors ist.</para>
+          <para>- oder -</para>
+          <para>Der in <c>desc[n + 1]</c> angegebene Typ eines
+          Deskriptors ist 0, wobei <c>n</c> der Index des ersten
+          Bytes dieses Deskriptors ist.</para>
+          <para>- oder -</para>
+          <para>
+            <paramref name="desc" /> enthält weniger Kind-Deskriptoren, als von
+          <paramref name="count" /> vorgegeben wird.</para>
+        </exception>
+        <exception cref="T:System.InvalidOperationException">
+          <para>Beim Parsen eines Deskriptors verhält sich die
+          <see cref="M:Usb.ContainerDescriptor.ParseChildDescriptor(System.Byte[],System.Int32@,Usb.Endianness,System.Object)" />-Methode
+          fehlerhaft: Der Wert, um den sie ihr <c>pos</c>-Argument
+          inkrementiert, ist kleiner als <c>desc[n]</c>, wobei <c>n</c> der
+          Index des ersten Bytes dieses Deskriptors ist.</para>
+        </exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

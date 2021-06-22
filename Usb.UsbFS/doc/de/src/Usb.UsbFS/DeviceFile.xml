@@ -1,0 +1,830 @@
+<Type Name="DeviceFile" FullName="Usb.UsbFS.DeviceFile">
+  <TypeSignature Language="C#" Value="public class DeviceFile : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DeviceFile extends System.Object implements class System.IDisposable" />
+  <AssemblyInfo>
+    <AssemblyName>Usb.UsbFS</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>1.3.0.6</AssemblyVersion>
+    <AssemblyVersion>1.4.1.7</AssemblyVersion>
+    <AssemblyVersion>1.5.1.7</AssemblyVersion>
+  </AssemblyInfo>
+  <ThreadingSafetyStatement>Dieser Typ ist threadsicher.</ThreadingSafetyStatement>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DeviceFile (string path);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="path">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public DeviceFile (string path, bool ro);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path, bool ro) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="path" Type="System.String" />
+        <Parameter Name="ro" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="path">To be added.</param>
+        <param name="ro">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BulkTransfer">
+      <MemberSignature Language="C#" Value="public int BulkTransfer (IntPtr urb);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 BulkTransfer(native int urb) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="urb" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="urb">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BulkTransfer">
+      <MemberSignature Language="C#" Value="public int BulkTransfer (ref Usb.UsbFS.Ioctl.usbdevfs_bulktransfer urb);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 BulkTransfer(valuetype Usb.UsbFS.Ioctl/usbdevfs_bulktransfer urb) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="urb" Type="Usb.UsbFS.Ioctl+usbdevfs_bulktransfer&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="urb">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BulkTransfer">
+      <MemberSignature Language="C#" Value="public int BulkTransfer (ref Usb.UsbFS.Ioctl.usbdevfs_bulktransfer_ptr urb);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 BulkTransfer(valuetype Usb.UsbFS.Ioctl/usbdevfs_bulktransfer_ptr urb) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="urb" Type="Usb.UsbFS.Ioctl+usbdevfs_bulktransfer_ptr&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="urb">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClaimInterface">
+      <MemberSignature Language="C#" Value="public void ClaimInterface (byte ifc);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ClaimInterface(unsigned int8 ifc) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ifc" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="ifc">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearHalt">
+      <MemberSignature Language="C#" Value="public void ClearHalt (byte epadr);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ClearHalt(unsigned int8 epadr) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="epadr" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="epadr">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Connect">
+      <MemberSignature Language="C#" Value="public void Connect (byte ifc);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Connect(unsigned int8 ifc) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ifc" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="ifc">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConnectInfo">
+      <MemberSignature Language="C#" Value="public void ConnectInfo (out byte devnum, out bool lowspeed);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ConnectInfo(unsigned int8 devnum, bool lowspeed) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="devnum" Type="System.Byte&amp;" RefType="out" />
+        <Parameter Name="lowspeed" Type="System.Boolean&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="devnum">To be added.</param>
+        <param name="lowspeed">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ControlTransfer">
+      <MemberSignature Language="C#" Value="public int ControlTransfer (IntPtr urb);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 ControlTransfer(native int urb) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="urb" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="urb">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ControlTransfer">
+      <MemberSignature Language="C#" Value="public int ControlTransfer (ref Usb.UsbFS.Ioctl.usbdevfs_ctrltransfer urb);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 ControlTransfer(valuetype Usb.UsbFS.Ioctl/usbdevfs_ctrltransfer urb) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="urb" Type="Usb.UsbFS.Ioctl+usbdevfs_ctrltransfer&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="urb">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ControlTransfer">
+      <MemberSignature Language="C#" Value="public int ControlTransfer (ref Usb.UsbFS.Ioctl.usbdevfs_ctrltransfer_ptr urb);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 ControlTransfer(valuetype Usb.UsbFS.Ioctl/usbdevfs_ctrltransfer_ptr urb) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="urb" Type="Usb.UsbFS.Ioctl+usbdevfs_ctrltransfer_ptr&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="urb">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DiscardUrb">
+      <MemberSignature Language="C#" Value="public void DiscardUrb (IntPtr urb);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DiscardUrb(native int urb) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="urb" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="urb">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Disconnect">
+      <MemberSignature Language="C#" Value="public bool Disconnect (byte ifc);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Disconnect(unsigned int8 ifc) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ifc" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="ifc">Die Nummer des Interfaces, dessen Treiber gelöst werden soll.</param>
+        <summary>Löst den Treiber, der im Moment mit dem Interface
+        <paramref name="ifc" /> verbunden ist von diesem Interface.</summary>
+        <returns>
+          <see langword="true" />, wenn ein Treiber verbunden war oder <see langword="false" />, wenn
+          kein Trieber verbunden war. (In beiden Fällen ist nach Rückkehr der
+          Methode kein Treiber mehr verbunden.)
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Disconnected">
+      <MemberSignature Language="C#" Value="public event EventHandler Disconnected;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Disconnected" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FileDescriptor">
+      <MemberSignature Language="C#" Value="public int FileDescriptor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 FileDescriptor" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Finalize">
+      <MemberSignature Language="C#" Value="~DeviceFile ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDescriptors">
+      <MemberSignature Language="C#" Value="public byte[] GetDescriptors ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] GetDescriptors() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+        Ruft den Device-Deskriptor, alle Configuration-Deskriptoren und
+        deren Unter-Deskriptoren ab.
+        </summary>
+        <returns>
+        Die Deskriptoren des Geräts. UsbFS bringt dabei die 16-bit Integer
+        im Device- und in den Configuration-Deskriptoren in die
+        Byte-Reihenfolge des Systems. Die Endpoint-Deskriptoren bleiben
+        in Little-Endian, also so wie das Gerät sie übermittelt hat.
+        (Interface-Deskriptoren bestehen nur aus 8-bit Integern.)
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDriver">
+      <MemberSignature Language="C#" Value="public string GetDriver (byte ifc);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetDriver(unsigned int8 ifc) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ifc" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="ifc">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnDisconnected">
+      <MemberSignature Language="C#" Value="protected virtual void OnDisconnected (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDisconnected(class System.EventArgs e) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Path">
+      <MemberSignature Language="C#" Value="public string Path { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Path" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Poll">
+      <MemberSignature Language="C#" Value="public void Poll (int timeout, out bool discon, out bool idle);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Poll(int32 timeout, bool discon, bool idle) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeout" Type="System.Int32" />
+        <Parameter Name="discon" Type="System.Boolean&amp;" RefType="out" />
+        <Parameter Name="idle" Type="System.Boolean&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="timeout">To be added.</param>
+        <param name="discon">To be added.</param>
+        <param name="idle">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PollDiscon">
+      <MemberSignature Language="C#" Value="public bool PollDiscon (int timeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool PollDiscon(int32 timeout) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeout" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="timeout">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PollIdle">
+      <MemberSignature Language="C#" Value="public bool PollIdle (int timeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool PollIdle(int32 timeout) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeout" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="timeout">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReapUrb">
+      <MemberSignature Language="C#" Value="public IntPtr ReapUrb ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance native int ReapUrb() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReapUrbNoDelay">
+      <MemberSignature Language="C#" Value="public IntPtr ReapUrbNoDelay ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance native int ReapUrbNoDelay() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReleaseInterface">
+      <MemberSignature Language="C#" Value="public void ReleaseInterface (byte ifc);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ReleaseInterface(unsigned int8 ifc) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ifc" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="ifc">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reset">
+      <MemberSignature Language="C#" Value="public void Reset ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Reset() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetConfiguration">
+      <MemberSignature Language="C#" Value="public void SetConfiguration (byte config);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetConfiguration(unsigned int8 config) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="config" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="config">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetInterface">
+      <MemberSignature Language="C#" Value="public void SetInterface (byte ifc, byte alt);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetInterface(unsigned int8 ifc, unsigned int8 alt) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ifc" Type="System.Byte" />
+        <Parameter Name="alt" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="ifc">To be added.</param>
+        <param name="alt">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SubmitUrb">
+      <MemberSignature Language="C#" Value="public void SubmitUrb (IntPtr urb);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SubmitUrb(native int urb) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="urb" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="urb">Ein angepinnter Zeiger auf eine Struktur, die der nativen
+        Interpretation von <see cref="T:Usb.UsbFS.Ioctl.usbdevfs_urb" /> entspricht.</param>
+        <summary>Ruft den USBDEVFS_SUBMITURB Ioctl auf.</summary>
+        <remarks>
+          <para>Falls <see cref="F:Usb.UsbFS.Ioctl.usbdevfs_urb.buffer" /> nicht
+          <see langword="null" /> (<see langword="Nothing" /> in Visual Basic) ist, dann muss dieser
+          Zeiger ebenfalls angepinnt sein. Die Zeiger dürfen erst wieder
+          freigegeben werden, wenn <see cref="M:Usb.UsbFS.DeviceFile.ReapUrb" /> oder
+          <see cref="M:Usb.UsbFS.DeviceFile.ReapUrbNoDelay" /> den Zeiger dieser URB-Struktur
+          zurückgegeben haben.</para>
+          <para>Falls die verwendete Programmiersprache das dauerhafte
+          Anpinnen von Objekten nicht zulässt, dann kann
+          <see cref="T:System.Runtime.InteropServices.GCHandle" /> dazu benutzt
+          werden.</para>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateDescriptorActiveState">
+      <MemberSignature Language="C#" Value="public void UpdateDescriptorActiveState (Usb.DeviceDescriptor dev);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UpdateDescriptorActiveState(class Usb.DeviceDescriptor dev) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dev" Type="Usb.DeviceDescriptor" />
+      </Parameters>
+      <Docs>
+        <param name="dev">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UpdateDescriptorActiveState">
+      <MemberSignature Language="C#" Value="public void UpdateDescriptorActiveState (Usb.DeviceDescriptor dev, bool claimAll);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UpdateDescriptorActiveState(class Usb.DeviceDescriptor dev, bool claimAll) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="dev" Type="Usb.DeviceDescriptor" />
+        <Parameter Name="claimAll" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="dev">To be added.</param>
+        <param name="claimAll">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

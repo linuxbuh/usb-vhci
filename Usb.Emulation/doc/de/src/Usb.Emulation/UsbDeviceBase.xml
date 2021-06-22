@@ -1,0 +1,760 @@
+<Type Name="UsbDeviceBase" FullName="Usb.Emulation.UsbDeviceBase">
+  <TypeSignature Language="C#" Value="public abstract class UsbDeviceBase : IDisposable, Usb.IUsbDevice" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit UsbDeviceBase extends System.Object implements class System.IDisposable, class Usb.IUsbDevice" />
+  <AssemblyInfo>
+    <AssemblyName>Usb.Emulation</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>1.3.0.2</AssemblyVersion>
+    <AssemblyVersion>1.4.0.2</AssemblyVersion>
+    <AssemblyVersion>1.5.0.2</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>Usb.IUsbDevice</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected UsbDeviceBase (Usb.DeviceDescriptor device, Usb.DataRate dataRate);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class Usb.DeviceDescriptor device, valuetype Usb.DataRate dataRate) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.4.0.2</AssemblyVersion>
+        <AssemblyVersion>1.5.0.2</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="device" Type="Usb.DeviceDescriptor" />
+        <Parameter Name="dataRate" Type="Usb.DataRate" />
+      </Parameters>
+      <Docs>
+        <param name="device">To be added.</param>
+        <param name="dataRate">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Address">
+      <MemberSignature Language="C#" Value="public byte Address { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8 Address" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.4.0.2</AssemblyVersion>
+        <AssemblyVersion>1.5.0.2</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AsyncSubmitUrb">
+      <MemberSignature Language="C#" Value="public void AsyncSubmitUrb (Usb.Urb urb, System.Threading.EventWaitHandle ewh);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AsyncSubmitUrb(class Usb.Urb urb, class System.Threading.EventWaitHandle ewh) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.4.0.2</AssemblyVersion>
+        <AssemblyVersion>1.5.0.2</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="urb" Type="Usb.Urb" />
+        <Parameter Name="ewh" Type="System.Threading.EventWaitHandle" />
+      </Parameters>
+      <Docs>
+        <param name="urb">To be added.</param>
+        <param name="ewh">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CancelAsyncUrb">
+      <MemberSignature Language="C#" Value="public void CancelAsyncUrb (Usb.Urb urb);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CancelAsyncUrb(class Usb.Urb urb) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.4.0.2</AssemblyVersion>
+        <AssemblyVersion>1.5.0.2</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="urb" Type="Usb.Urb" />
+      </Parameters>
+      <Docs>
+        <param name="urb">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DataRate">
+      <MemberSignature Language="C#" Value="public Usb.DataRate DataRate { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Usb.DataRate DataRate" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.4.0.2</AssemblyVersion>
+        <AssemblyVersion>1.5.0.2</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Usb.DataRate</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Device">
+      <MemberSignature Language="C#" Value="public Usb.DeviceDescriptor Device { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Usb.DeviceDescriptor Device" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.4.0.2</AssemblyVersion>
+        <AssemblyVersion>1.5.0.2</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Usb.DeviceDescriptor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="public void Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.4.0.2</AssemblyVersion>
+        <AssemblyVersion>1.5.0.2</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dispose">
+      <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.4.0.2</AssemblyVersion>
+        <AssemblyVersion>1.5.0.2</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="disposing" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="disposing">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Finalize">
+      <MemberSignature Language="C#" Value="~UsbDeviceBase ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.4.0.2</AssemblyVersion>
+        <AssemblyVersion>1.5.0.2</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForgetAsyncUrb">
+      <MemberSignature Language="C#" Value="public void ForgetAsyncUrb (Usb.Urb urb);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ForgetAsyncUrb(class Usb.Urb urb) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.4.0.2</AssemblyVersion>
+        <AssemblyVersion>1.5.0.2</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="urb" Type="Usb.Urb" />
+      </Parameters>
+      <Docs>
+        <param name="urb">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnProcBulkUrb">
+      <MemberSignature Language="C#" Value="protected virtual bool OnProcBulkUrb (Usb.BulkUrb urb);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnProcBulkUrb(class Usb.BulkUrb urb) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.4.0.2</AssemblyVersion>
+        <AssemblyVersion>1.5.0.2</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="urb" Type="Usb.BulkUrb" />
+      </Parameters>
+      <Docs>
+        <param name="urb">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnProcClearFeature">
+      <MemberSignature Language="C#" Value="protected virtual bool OnProcClearFeature (Usb.ControlUrb urb);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnProcClearFeature(class Usb.ControlUrb urb) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.4.0.2</AssemblyVersion>
+        <AssemblyVersion>1.5.0.2</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="urb" Type="Usb.ControlUrb" />
+      </Parameters>
+      <Docs>
+        <param name="urb">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnProcControlUrb">
+      <MemberSignature Language="C#" Value="protected virtual bool OnProcControlUrb (Usb.ControlUrb urb);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnProcControlUrb(class Usb.ControlUrb urb) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.4.0.2</AssemblyVersion>
+        <AssemblyVersion>1.5.0.2</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="urb" Type="Usb.ControlUrb" />
+      </Parameters>
+      <Docs>
+        <param name="urb">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnProcGetConfiguration">
+      <MemberSignature Language="C#" Value="protected virtual bool OnProcGetConfiguration (Usb.ControlUrb urb);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnProcGetConfiguration(class Usb.ControlUrb urb) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.4.0.2</AssemblyVersion>
+        <AssemblyVersion>1.5.0.2</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="urb" Type="Usb.ControlUrb" />
+      </Parameters>
+      <Docs>
+        <param name="urb">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnProcGetDescriptor">
+      <MemberSignature Language="C#" Value="protected virtual bool OnProcGetDescriptor (Usb.ControlUrb urb);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnProcGetDescriptor(class Usb.ControlUrb urb) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.4.0.2</AssemblyVersion>
+        <AssemblyVersion>1.5.0.2</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="urb" Type="Usb.ControlUrb" />
+      </Parameters>
+      <Docs>
+        <param name="urb">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnProcGetInterface">
+      <MemberSignature Language="C#" Value="protected virtual bool OnProcGetInterface (Usb.ControlUrb urb);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnProcGetInterface(class Usb.ControlUrb urb) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.4.0.2</AssemblyVersion>
+        <AssemblyVersion>1.5.0.2</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="urb" Type="Usb.ControlUrb" />
+      </Parameters>
+      <Docs>
+        <param name="urb">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnProcGetStatus">
+      <MemberSignature Language="C#" Value="protected virtual bool OnProcGetStatus (Usb.ControlUrb urb);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnProcGetStatus(class Usb.ControlUrb urb) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.4.0.2</AssemblyVersion>
+        <AssemblyVersion>1.5.0.2</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="urb" Type="Usb.ControlUrb" />
+      </Parameters>
+      <Docs>
+        <param name="urb">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnProcGetStringDescriptor">
+      <MemberSignature Language="C#" Value="protected virtual bool OnProcGetStringDescriptor (Usb.ControlUrb urb, byte index);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnProcGetStringDescriptor(class Usb.ControlUrb urb, unsigned int8 index) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.4.0.2</AssemblyVersion>
+        <AssemblyVersion>1.5.0.2</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="urb" Type="Usb.ControlUrb" />
+        <Parameter Name="index" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="urb">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnProcInterruptUrb">
+      <MemberSignature Language="C#" Value="protected virtual bool OnProcInterruptUrb (Usb.InterruptUrb urb);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnProcInterruptUrb(class Usb.InterruptUrb urb) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.4.0.2</AssemblyVersion>
+        <AssemblyVersion>1.5.0.2</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="urb" Type="Usb.InterruptUrb" />
+      </Parameters>
+      <Docs>
+        <param name="urb">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnProcIsochronousUrb">
+      <MemberSignature Language="C#" Value="protected virtual bool OnProcIsochronousUrb (Usb.IsochronousUrb urb);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnProcIsochronousUrb(class Usb.IsochronousUrb urb) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.4.0.2</AssemblyVersion>
+        <AssemblyVersion>1.5.0.2</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="urb" Type="Usb.IsochronousUrb" />
+      </Parameters>
+      <Docs>
+        <param name="urb">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnProcSetAddress">
+      <MemberSignature Language="C#" Value="protected virtual bool OnProcSetAddress (Usb.ControlUrb urb, byte adr);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnProcSetAddress(class Usb.ControlUrb urb, unsigned int8 adr) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.4.0.2</AssemblyVersion>
+        <AssemblyVersion>1.5.0.2</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="urb" Type="Usb.ControlUrb" />
+        <Parameter Name="adr" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="urb">To be added.</param>
+        <param name="adr">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnProcSetConfiguration">
+      <MemberSignature Language="C#" Value="protected virtual bool OnProcSetConfiguration (Usb.ControlUrb urb, byte config);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnProcSetConfiguration(class Usb.ControlUrb urb, unsigned int8 config) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.4.0.2</AssemblyVersion>
+        <AssemblyVersion>1.5.0.2</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="urb" Type="Usb.ControlUrb" />
+        <Parameter Name="config" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="urb">To be added.</param>
+        <param name="config">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnProcSetDescriptor">
+      <MemberSignature Language="C#" Value="protected virtual bool OnProcSetDescriptor (Usb.ControlUrb urb);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnProcSetDescriptor(class Usb.ControlUrb urb) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.4.0.2</AssemblyVersion>
+        <AssemblyVersion>1.5.0.2</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="urb" Type="Usb.ControlUrb" />
+      </Parameters>
+      <Docs>
+        <param name="urb">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnProcSetInterface">
+      <MemberSignature Language="C#" Value="protected virtual bool OnProcSetInterface (Usb.ControlUrb urb, byte ifc, byte altifc);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnProcSetInterface(class Usb.ControlUrb urb, unsigned int8 ifc, unsigned int8 altifc) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.4.0.2</AssemblyVersion>
+        <AssemblyVersion>1.5.0.2</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="urb" Type="Usb.ControlUrb" />
+        <Parameter Name="ifc" Type="System.Byte" />
+        <Parameter Name="altifc" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="urb">To be added.</param>
+        <param name="ifc">To be added.</param>
+        <param name="altifc">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnProcUrb">
+      <MemberSignature Language="C#" Value="protected virtual bool OnProcUrb (Usb.Urb urb);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnProcUrb(class Usb.Urb urb) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.4.0.2</AssemblyVersion>
+        <AssemblyVersion>1.5.0.2</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="urb" Type="Usb.Urb" />
+      </Parameters>
+      <Docs>
+        <param name="urb">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcAsyncUrbs">
+      <MemberSignature Language="C#" Value="public void ProcAsyncUrbs ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ProcAsyncUrbs() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.4.0.2</AssemblyVersion>
+        <AssemblyVersion>1.5.0.2</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcBulkUrb">
+      <MemberSignature Language="C#" Value="public void ProcBulkUrb (Usb.BulkUrb urb);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ProcBulkUrb(class Usb.BulkUrb urb) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.4.0.2</AssemblyVersion>
+        <AssemblyVersion>1.5.0.2</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="urb" Type="Usb.BulkUrb" />
+      </Parameters>
+      <Docs>
+        <param name="urb">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ProcControlUrb">
+      <MemberSignature Language="C#" Value="public void ProcControlUrb (Usb.ControlUrb urb);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ProcControlUrb(class Usb.ControlUrb urb) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.4.0.2</AssemblyVersion>
+        <AssemblyVersion>1.5.0.2</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="urb" Type="Usb.ControlUrb" />
+      </Parameters>
+      <Docs>
+        <param name="urb">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReapAnyAsyncUrb">
+      <MemberSignature Language="C#" Value="public Usb.Urb ReapAnyAsyncUrb ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Usb.Urb ReapAnyAsyncUrb() cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.4.0.2</AssemblyVersion>
+        <AssemblyVersion>1.5.0.2</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Usb.Urb</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReapAnyAsyncUrb">
+      <MemberSignature Language="C#" Value="public Usb.Urb ReapAnyAsyncUrb (int millisecondsTimeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Usb.Urb ReapAnyAsyncUrb(int32 millisecondsTimeout) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.4.0.2</AssemblyVersion>
+        <AssemblyVersion>1.5.0.2</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Usb.Urb</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="millisecondsTimeout" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="millisecondsTimeout">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReapAnyAsyncUrb">
+      <MemberSignature Language="C#" Value="public Usb.Urb ReapAnyAsyncUrb (TimeSpan timeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Usb.Urb ReapAnyAsyncUrb(valuetype System.TimeSpan timeout) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.4.0.2</AssemblyVersion>
+        <AssemblyVersion>1.5.0.2</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Usb.Urb</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="timeout" Type="System.TimeSpan" />
+      </Parameters>
+      <Docs>
+        <param name="timeout">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReapAsyncUrb">
+      <MemberSignature Language="C#" Value="public bool ReapAsyncUrb (Usb.Urb urb);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ReapAsyncUrb(class Usb.Urb urb) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.4.0.2</AssemblyVersion>
+        <AssemblyVersion>1.5.0.2</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="urb" Type="Usb.Urb" />
+      </Parameters>
+      <Docs>
+        <param name="urb">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="State">
+      <MemberSignature Language="C#" Value="public Usb.DeviceState State { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Usb.DeviceState State" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.4.0.2</AssemblyVersion>
+        <AssemblyVersion>1.5.0.2</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Usb.DeviceState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

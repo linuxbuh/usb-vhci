@@ -1,0 +1,894 @@
+<Type Name="Endpoint" FullName="Usb.Endpoint">
+  <TypeSignature Language="C#" Value="public abstract class Endpoint : Usb.RegularDescriptor" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Endpoint extends Usb.RegularDescriptor" />
+  <AssemblyInfo>
+    <AssemblyName>Usb</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>1.3.1.7</AssemblyVersion>
+    <AssemblyVersion>1.4.2.8</AssemblyVersion>
+    <AssemblyVersion>1.5.2.9</AssemblyVersion>
+  </AssemblyInfo>
+  <ThreadingSafetyStatement>Öffentliche statische (<see langword="Shared" /> in
+  Visual Basic) Member dieses Typs sind threadsicher. Bei Instanz-Membern ist
+  die Threadsicherheit nicht gewährleistet.</ThreadingSafetyStatement>
+  <Base>
+    <BaseTypeName>Usb.RegularDescriptor</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected Endpoint ();" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Initialisiert eine neue Instanz der
+        <see cref="Usb.Endpoint" />-Klasse.</summary>
+        <remarks />
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected Endpoint (byte[] desc);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(unsigned int8[] desc) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="desc" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="desc">Deskriptordaten</param>
+        <summary>Initialisiert eine neue Instanz der
+        <see cref="Usb.Endpoint" />-Klasse.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentException">
+          <block subset="none" type="note">
+            <para>Für die folgenden Bedingungen gilt außerdem, dass
+            <paramref name="desc" /> nicht <see langword="null" />
+            (<see langword="Nothing" /> in Visual Basic) ist.</para>
+          </block>
+          <para>
+            <paramref name="desc" /> hat die Länge 0.</para>
+          <para>- oder -</para>
+          <para>Am Ende von <paramref name="desc" /> hängen nicht-verwertbare
+          Daten.</para>
+          <para>- oder -</para>
+          <para>Die in <c>desc[0]</c> angegebene Länge des
+          Endpunkt-Deskriptors ist kleiner als 7.</para>
+          <para>- oder -</para>
+          <para>Die in <c>desc[n]</c> angegebene Länge eines
+          Deskriptors ist kleiner als 2, wobei <c>n</c> der Index des ersten
+          Bytes dieses Deskriptors ist.</para>
+          <para>- oder -</para>
+          <para>Beim Versuch einen Deskriptor zu parsen stellt sich heraus,
+          dass <c>n + desc[n]</c> größer als die Länge von
+          <paramref name="desc" /> ist, wobei <c>n</c> der Index des ersten
+          Bytes dieses Deskriptors ist.</para>
+          <para>- oder -</para>
+          <para>Der in <c>desc[1]</c> angegebene Typ des
+          Endpunkt-Deskriptors entspricht nicht der Konstante, die den Typ eines
+          Endpunkt-Deskriptors (0x05) darstellt.</para>
+          <para>- oder -</para>
+          <para>Der in <c>desc[n + 1]</c> angegebene Typ eines
+          Deskriptors ist 0, wobei <c>n</c> der Index des ersten
+          Bytes dieses Deskriptors ist.</para>
+          <para>- oder -</para>
+          <para>
+            <c>desc[2]</c> enthält keine gültige Endpunkt-Adresse und ist
+          ungleich 0x7f und 0xff.</para>
+        </exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected Endpoint (byte[] desc, ref int pos);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(unsigned int8[] desc, int32 pos) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="desc" Type="System.Byte[]" />
+        <Parameter Name="pos" Type="System.Int32&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="desc">Deskriptordaten</param>
+        <param name="pos">Index in <paramref name="desc" />, an dem der
+        Deskriptor beginnt. Nach Ausführung des Konstruktors zeigt
+        <paramref name="pos" /> auf das Byte, welches direkt auf den Deskriptor
+        folgt.</param>
+        <summary>Initialisiert eine neue Instanz der
+        <see cref="Usb.Endpoint" />-Klasse.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <para>
+            <paramref name="desc" /> ist <see langword="null" />
+          (<see langword="Nothing" /> in Visual Basic)</para>
+        </exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <para>
+            <paramref name="pos" /> ist kleiner als 0 oder größer gleich der
+          Länge von <paramref name="desc" />.</para>
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <para>Die in <c>desc[pos]</c> angegebene Länge des
+          Endpunkt-Deskriptors ist kleiner als 7.</para>
+          <para>- oder -</para>
+          <para>Die in <c>desc[n]</c> angegebene Länge eines
+          Deskriptors ist kleiner als 2, wobei <c>n</c> der Index des ersten
+          Bytes dieses Deskriptors ist.</para>
+          <para>- oder -</para>
+          <para>Beim Versuch einen Deskriptor zu parsen stellt sich heraus,
+          dass <c>n + desc[n]</c> größer als die Länge von
+          <paramref name="desc" /> ist, wobei <c>n</c> der Index des ersten
+          Bytes dieses Deskriptors ist.</para>
+          <para>- oder -</para>
+          <para>Der in <c>desc[pos + 1]</c> angegebene Typ des
+          Endpunkt-Deskriptors entspricht nicht der Konstante, die den Typ eines
+          Endpunkt-Deskriptors (0x05) darstellt.</para>
+          <para>- oder -</para>
+          <para>Der in <c>desc[n + 1]</c> angegebene Typ eines
+          Deskriptors ist 0, wobei <c>n</c> der Index des ersten
+          Bytes dieses Deskriptors ist.</para>
+          <para>- oder -</para>
+          <para>
+            <c>desc[pos + 2]</c> enthält keine gültige Endpunkt-Adresse und ist
+          ungleich 0x7f und 0xff.</para>
+        </exception>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected Endpoint (short maxPacketSize, byte interval);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(int16 maxPacketSize, unsigned int8 interval) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="maxPacketSize" Type="System.Int16" />
+        <Parameter Name="interval" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="maxPacketSize">To be added.</param>
+        <param name="interval">To be added.</param>
+        <summary>Initialisiert eine neue Instanz der
+        <see cref="Usb.Endpoint" />-Klasse.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="protected Endpoint (ushort maxPacketSize, byte interval);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(unsigned int16 maxPacketSize, unsigned int8 interval) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(false)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <Parameters>
+        <Parameter Name="maxPacketSize" Type="System.UInt16" />
+        <Parameter Name="interval" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="maxPacketSize">To be added.</param>
+        <param name="interval">To be added.</param>
+        <summary>Initialisiert eine neue Instanz der
+        <see cref="Usb.Endpoint" />-Klasse.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BaseAddress">
+      <MemberSignature Language="C#" Value="public abstract byte BaseAddress { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8 BaseAddress" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BaseAddressComparer">
+      <MemberSignature Language="C#" Value="public static readonly System.Collections.Generic.IComparer&lt;byte&gt; BaseAddressComparer;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Collections.Generic.IComparer`1&lt;unsigned int8&gt; BaseAddressComparer" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.Generic.IComparer&lt;System.Byte&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Conflicts">
+      <MemberSignature Language="C#" Value="public static bool Conflicts (Usb.Endpoint ep1, Usb.Endpoint ep2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Conflicts(class Usb.Endpoint ep1, class Usb.Endpoint ep2) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ep1" Type="Usb.Endpoint" />
+        <Parameter Name="ep2" Type="Usb.Endpoint" />
+      </Parameters>
+      <Docs>
+        <param name="ep1">To be added.</param>
+        <param name="ep2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Conflicts">
+      <MemberSignature Language="C#" Value="public static bool Conflicts (byte epadr1, bool bi1, byte epadr2, bool bi2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Conflicts(unsigned int8 epadr1, bool bi1, unsigned int8 epadr2, bool bi2) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="epadr1" Type="System.Byte" />
+        <Parameter Name="bi1" Type="System.Boolean" />
+        <Parameter Name="epadr2" Type="System.Byte" />
+        <Parameter Name="bi2" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="epadr1">To be added.</param>
+        <param name="bi1">To be added.</param>
+        <param name="epadr2">To be added.</param>
+        <param name="bi2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConflictsWith">
+      <MemberSignature Language="C#" Value="public bool ConflictsWith (Usb.Endpoint other);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ConflictsWith(class Usb.Endpoint other) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="other" Type="Usb.Endpoint" />
+      </Parameters>
+      <Docs>
+        <param name="other">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConflictsWithBidirectional">
+      <MemberSignature Language="C#" Value="public bool ConflictsWithBidirectional (byte epadr);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ConflictsWithBidirectional(unsigned int8 epadr) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="epadr" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="epadr">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ConflictsWithUnidirectional">
+      <MemberSignature Language="C#" Value="public bool ConflictsWithUnidirectional (byte epadr);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ConflictsWithUnidirectional(unsigned int8 epadr) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="epadr" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="epadr">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static Usb.Endpoint Create (byte[] desc);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Usb.Endpoint Create(unsigned int8[] desc) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Usb.Endpoint</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="desc" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="desc">Deskriptordaten</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static Usb.Endpoint Create (byte[] desc, ref int pos);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Usb.Endpoint Create(unsigned int8[] desc, int32 pos) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Usb.Endpoint</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="desc" Type="System.Byte[]" />
+        <Parameter Name="pos" Type="System.Int32&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="desc">Deskriptordaten</param>
+        <param name="pos">Index in <paramref name="desc" />, an dem der
+        Deskriptor beginnt. Nach Ausführung der Methode zeigt
+        <paramref name="pos" /> auf das Byte, welches direkt auf den Deskriptor
+        folgt.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static Usb.Endpoint Create (Usb.IEndpointParent parent, byte[] desc);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Usb.Endpoint Create(class Usb.IEndpointParent parent, unsigned int8[] desc) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Usb.Endpoint</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parent" Type="Usb.IEndpointParent" />
+        <Parameter Name="desc" Type="System.Byte[]" />
+      </Parameters>
+      <Docs>
+        <param name="parent">To be added.</param>
+        <param name="desc">Deskriptordaten</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create">
+      <MemberSignature Language="C#" Value="public static Usb.Endpoint Create (Usb.IEndpointParent parent, byte[] desc, ref int pos);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Usb.Endpoint Create(class Usb.IEndpointParent parent, unsigned int8[] desc, int32 pos) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Usb.Endpoint</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="parent" Type="Usb.IEndpointParent" />
+        <Parameter Name="desc" Type="System.Byte[]" />
+        <Parameter Name="pos" Type="System.Int32&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="parent">To be added.</param>
+        <param name="desc">Deskriptordaten</param>
+        <param name="pos">Index in <paramref name="desc" />, an dem der
+        Deskriptor beginnt. Nach Ausführung der Methode zeigt
+        <paramref name="pos" /> auf das Byte, welches direkt auf den Deskriptor
+        folgt.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Dump">
+      <MemberSignature Language="C#" Value="public override void Dump (System.IO.TextWriter stm, string prefix);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Dump(class System.IO.TextWriter stm, string prefix) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="stm" Type="System.IO.TextWriter" />
+        <Parameter Name="prefix" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="stm">To be added.</param>
+        <param name="prefix">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetDescriptorContent">
+      <MemberSignature Language="C#" Value="protected override void GetDescriptorContent (byte[] desc, int index, Usb.Endianness endian);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void GetDescriptorContent(unsigned int8[] desc, int32 index, valuetype Usb.Endianness endian) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="desc" Type="System.Byte[]" />
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="endian" Type="Usb.Endianness" />
+      </Parameters>
+      <Docs>
+        <param name="desc">To be added.</param>
+        <param name="index">To be added.</param>
+        <param name="endian">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Init">
+      <MemberSignature Language="C#" Value="protected virtual void Init (byte[] desc, ref int pos);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Init(unsigned int8[] desc, int32 pos) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="desc" Type="System.Byte[]" />
+        <Parameter Name="pos" Type="System.Int32&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="desc">Deskriptordaten</param>
+        <param name="pos">Index in <paramref name="desc" />, an dem der
+        Deskriptor beginnt. Nach Ausführung der Methode zeigt
+        <paramref name="pos" /> auf das Byte, welches direkt auf den Deskriptor
+        folgt.</param>
+        <summary>Führt Initialisierungsaufgaben durch, die mehrere Konstruktoren
+        dieser Klasse und deren Erben gemeinsam haben.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <para>
+            <paramref name="desc" /> ist <see langword="null" />
+          (<see langword="Nothing" /> in Visual Basic)</para>
+        </exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <para>
+            <paramref name="pos" /> ist kleiner als 0 oder größer gleich der
+          Länge von <paramref name="desc" />.</para>
+        </exception>
+        <exception cref="T:System.ArgumentException">
+          <para>Die in <c>desc[pos]</c> angegebene Länge des
+          Endpunkt-Deskriptors ist kleiner als 7.</para>
+          <para>- oder -</para>
+          <para>Der in <c>desc[pos + 1]</c> angegebene Typ des
+          Endpunkt-Deskriptors entspricht nicht der Konstante, die den Typ eines
+          Endpunkt-Deskriptors (0x05) darstellt.</para>
+          <para>- oder -</para>
+          <para>
+            <paramref name="pos" /> + <c>desc[pos]</c> ist größer als die
+          Länge von <paramref name="desc" />.</para>
+          <para>- oder -</para>
+          <para>
+            <c>desc[pos + 2]</c> enthält keine gültige Endpunkt-Adresse und ist
+          ungleich 0x7f und 0xff.</para>
+        </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="IsAddressValid">
+      <MemberSignature Language="C#" Value="protected virtual bool IsAddressValid (byte epadr);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool IsAddressValid(unsigned int8 epadr) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="epadr" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="epadr">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsUsingAddress">
+      <MemberSignature Language="C#" Value="public abstract bool IsUsingAddress (byte epadr);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsUsingAddress(unsigned int8 epadr) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="epadr" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="epadr">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxPacketSize">
+      <MemberSignature Language="C#" Value="public short MaxPacketSize { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int16 MaxPacketSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int16</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MaxPacketSizeChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler MaxPacketSizeChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler MaxPacketSizeChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Number">
+      <MemberSignature Language="C#" Value="public byte Number { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8 Number" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnMaxPacketSizeChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnMaxPacketSizeChanged (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnMaxPacketSizeChanged(class System.EventArgs e) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OnParentChanged">
+      <MemberSignature Language="C#" Value="protected virtual void OnParentChanged (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnParentChanged(class System.EventArgs e) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="e" Type="System.EventArgs" />
+      </Parameters>
+      <Docs>
+        <param name="e">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public Usb.IEndpointParent Parent { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Usb.IEndpointParent Parent" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Usb.IEndpointParent</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParentChanged">
+      <MemberSignature Language="C#" Value="public event EventHandler ParentChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ParentChanged" />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RawInterval">
+      <MemberSignature Language="C#" Value="protected byte RawInterval { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance unsigned int8 RawInterval" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RegularSize">
+      <MemberSignature Language="C#" Value="public override sealed int RegularSize { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 RegularSize" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public abstract Usb.EndpointType Type { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Usb.EndpointType Type" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Usb.EndpointType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Validate">
+      <MemberSignature Language="C#" Value="public override bool Validate (Usb.ValidationMode mode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Validate(valuetype Usb.ValidationMode mode) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="mode" Type="Usb.ValidationMode" />
+      </Parameters>
+      <Docs>
+        <param name="mode">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateAddress">
+      <MemberSignature Language="C#" Value="public static bool ValidateAddress (byte epadr);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ValidateAddress(unsigned int8 epadr) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="epadr" Type="System.Byte" />
+      </Parameters>
+      <Docs>
+        <param name="epadr">Die Endpunktadresse</param>
+        <summary>Prüft, ob die Endpunktadresse <paramref name="epadr" /> im
+        Allgemeinen gültig ist.</summary>
+        <returns>
+          <see langword="true" />, wenn <paramref name="epadr" /> im
+        Allgemeinen gültig ist, sonst <see langword="false" />.</returns>
+        <remarks />
+        <seealso cref="M:Usb.Endpoint.ValidateAddressForInstance(System.Byte,Usb.Endpoint)" />
+        <seealso cref="M:Usb.UnidirectionalEndpoint.ValidateAddress(System.Byte,Usb.EndpointDirection)" />
+        <seealso cref="M:Usb.BidirectionalEndpoint.ValidateAddress(System.Byte)" />
+      </Docs>
+    </Member>
+    <Member MemberName="ValidateAddressForInstance">
+      <MemberSignature Language="C#" Value="public static bool ValidateAddressForInstance (byte epadr, Usb.Endpoint ep);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool ValidateAddressForInstance(unsigned int8 epadr, class Usb.Endpoint ep) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="epadr" Type="System.Byte" />
+        <Parameter Name="ep" Type="Usb.Endpoint" />
+      </Parameters>
+      <Docs>
+        <param name="epadr">Die Endpunktadresse</param>
+        <param name="ep">Der <see cref="T:Usb.Endpoint" /></param>
+        <summary>Prüft, ob die Endpunktadresse <paramref name="epadr" /> für
+          <paramref name="ep" /> gültig ist.</summary>
+        <returns>
+          <see langword="true" />, wenn <paramref name="epadr" /> für
+          <paramref name="ep" /> gültig ist,
+        sonst <see langword="false" />.</returns>
+        <remarks />
+        <seealso cref="M:Usb.Endpoint.ValidateAddress(System.Byte)" />
+        <seealso cref="M:Usb.UnidirectionalEndpoint.ValidateAddress(System.Byte,Usb.EndpointDirection)" />
+        <seealso cref="M:Usb.BidirectionalEndpoint.ValidateAddress(System.Byte)" />
+      </Docs>
+    </Member>
+  </Members>
+</Type>

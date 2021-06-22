@@ -1,0 +1,1367 @@
+<Type Name="Ioctl" FullName="Usb.UsbFS.Ioctl">
+  <TypeSignature Language="C#" Value="public static class Ioctl" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed Ioctl extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>Usb.UsbFS</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>1.3.0.6</AssemblyVersion>
+    <AssemblyVersion>1.4.1.7</AssemblyVersion>
+    <AssemblyVersion>1.5.1.7</AssemblyVersion>
+  </AssemblyInfo>
+  <ThreadingSafetyStatement>Dieser Typ ist threadsicher.</ThreadingSafetyStatement>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CLSCompliant(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="close">
+      <MemberSignature Language="C#" Value="public static int close (int fd);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig pinvokeimpl (&quot;libc&quot; as &quot;close&quot; ansi cdecl lasterr)int32 close(int32 fd) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fd" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="fd">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ioctl">
+      <MemberSignature Language="C#" Value="public static int ioctl (int fd, int cmd);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig pinvokeimpl (&quot;libc&quot; as &quot;ioctl&quot; ansi cdecl lasterr)int32 ioctl(int32 fd, int32 cmd) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fd" Type="System.Int32" />
+        <Parameter Name="cmd" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="fd">To be added.</param>
+        <param name="cmd">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ioctl">
+      <MemberSignature Language="C#" Value="public static int ioctl (int fd, int cmd, IntPtr arg);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig pinvokeimpl (&quot;libc&quot; as &quot;ioctl&quot; ansi cdecl lasterr)int32 ioctl(int32 fd, int32 cmd, native int arg) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fd" Type="System.Int32" />
+        <Parameter Name="cmd" Type="System.Int32" />
+        <Parameter Name="arg" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="fd">To be added.</param>
+        <param name="cmd">To be added.</param>
+        <param name="arg">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ioctl">
+      <MemberSignature Language="C#" Value="public static int ioctl (int fd, int cmd, out IntPtr arg);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig pinvokeimpl (&quot;libc&quot; as &quot;ioctl&quot; ansi cdecl lasterr)int32 ioctl(int32 fd, int32 cmd, native int arg) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fd" Type="System.Int32" />
+        <Parameter Name="cmd" Type="System.Int32" />
+        <Parameter Name="arg" Type="System.IntPtr&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="fd">To be added.</param>
+        <param name="cmd">To be added.</param>
+        <param name="arg">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ioctl">
+      <MemberSignature Language="C#" Value="public static int ioctl (int fd, int cmd, ref uint arg);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig pinvokeimpl (&quot;libc&quot; as &quot;ioctl&quot; ansi cdecl lasterr)int32 ioctl(int32 fd, int32 cmd, unsigned int32 arg) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fd" Type="System.Int32" />
+        <Parameter Name="cmd" Type="System.Int32" />
+        <Parameter Name="arg" Type="System.UInt32&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="fd">To be added.</param>
+        <param name="cmd">To be added.</param>
+        <param name="arg">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ioctl">
+      <MemberSignature Language="C#" Value="public static int ioctl (int fd, int cmd, ref Usb.UsbFS.Ioctl.usbdevfs_bulktransfer_ptr arg);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig pinvokeimpl (&quot;libc&quot; as &quot;ioctl&quot; ansi cdecl lasterr)int32 ioctl(int32 fd, int32 cmd, valuetype Usb.UsbFS.Ioctl/usbdevfs_bulktransfer_ptr arg) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fd" Type="System.Int32" />
+        <Parameter Name="cmd" Type="System.Int32" />
+        <Parameter Name="arg" Type="Usb.UsbFS.Ioctl+usbdevfs_bulktransfer_ptr&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="fd">To be added.</param>
+        <param name="cmd">To be added.</param>
+        <param name="arg">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ioctl">
+      <MemberSignature Language="C#" Value="public static int ioctl (int fd, int cmd, out Usb.UsbFS.Ioctl.usbdevfs_connectinfo arg);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig pinvokeimpl (&quot;libc&quot; as &quot;ioctl&quot; ansi cdecl lasterr)int32 ioctl(int32 fd, int32 cmd, valuetype Usb.UsbFS.Ioctl/usbdevfs_connectinfo arg) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fd" Type="System.Int32" />
+        <Parameter Name="cmd" Type="System.Int32" />
+        <Parameter Name="arg" Type="Usb.UsbFS.Ioctl+usbdevfs_connectinfo&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="fd">To be added.</param>
+        <param name="cmd">To be added.</param>
+        <param name="arg">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ioctl">
+      <MemberSignature Language="C#" Value="public static int ioctl (int fd, int cmd, ref Usb.UsbFS.Ioctl.usbdevfs_ctrltransfer_ptr arg);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig pinvokeimpl (&quot;libc&quot; as &quot;ioctl&quot; ansi cdecl lasterr)int32 ioctl(int32 fd, int32 cmd, valuetype Usb.UsbFS.Ioctl/usbdevfs_ctrltransfer_ptr arg) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fd" Type="System.Int32" />
+        <Parameter Name="cmd" Type="System.Int32" />
+        <Parameter Name="arg" Type="Usb.UsbFS.Ioctl+usbdevfs_ctrltransfer_ptr&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="fd">To be added.</param>
+        <param name="cmd">To be added.</param>
+        <param name="arg">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ioctl">
+      <MemberSignature Language="C#" Value="public static int ioctl (int fd, int cmd, ref Usb.UsbFS.Ioctl.usbdevfs_disconnectsignal arg);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig pinvokeimpl (&quot;libc&quot; as &quot;ioctl&quot; ansi cdecl lasterr)int32 ioctl(int32 fd, int32 cmd, valuetype Usb.UsbFS.Ioctl/usbdevfs_disconnectsignal arg) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fd" Type="System.Int32" />
+        <Parameter Name="cmd" Type="System.Int32" />
+        <Parameter Name="arg" Type="Usb.UsbFS.Ioctl+usbdevfs_disconnectsignal&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="fd">To be added.</param>
+        <param name="cmd">To be added.</param>
+        <param name="arg">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ioctl">
+      <MemberSignature Language="C#" Value="public static int ioctl (int fd, int cmd, ref Usb.UsbFS.Ioctl.usbdevfs_getdriver arg);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig pinvokeimpl (&quot;libc&quot; as &quot;ioctl&quot; ansi cdecl lasterr)int32 ioctl(int32 fd, int32 cmd, valuetype Usb.UsbFS.Ioctl/usbdevfs_getdriver arg) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fd" Type="System.Int32" />
+        <Parameter Name="cmd" Type="System.Int32" />
+        <Parameter Name="arg" Type="Usb.UsbFS.Ioctl+usbdevfs_getdriver&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="fd">To be added.</param>
+        <param name="cmd">To be added.</param>
+        <param name="arg">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ioctl">
+      <MemberSignature Language="C#" Value="public static int ioctl (int fd, int cmd, out Usb.UsbFS.Ioctl.usbdevfs_hub_portinfo arg);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig pinvokeimpl (&quot;libc&quot; as &quot;ioctl&quot; ansi cdecl lasterr)int32 ioctl(int32 fd, int32 cmd, valuetype Usb.UsbFS.Ioctl/usbdevfs_hub_portinfo arg) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fd" Type="System.Int32" />
+        <Parameter Name="cmd" Type="System.Int32" />
+        <Parameter Name="arg" Type="Usb.UsbFS.Ioctl+usbdevfs_hub_portinfo&amp;" RefType="out" />
+      </Parameters>
+      <Docs>
+        <param name="fd">To be added.</param>
+        <param name="cmd">To be added.</param>
+        <param name="arg">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ioctl">
+      <MemberSignature Language="C#" Value="public static int ioctl (int fd, int cmd, ref Usb.UsbFS.Ioctl.usbdevfs_ioctl arg);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig pinvokeimpl (&quot;libc&quot; as &quot;ioctl&quot; ansi cdecl lasterr)int32 ioctl(int32 fd, int32 cmd, valuetype Usb.UsbFS.Ioctl/usbdevfs_ioctl arg) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fd" Type="System.Int32" />
+        <Parameter Name="cmd" Type="System.Int32" />
+        <Parameter Name="arg" Type="Usb.UsbFS.Ioctl+usbdevfs_ioctl&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="fd">To be added.</param>
+        <param name="cmd">To be added.</param>
+        <param name="arg">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ioctl">
+      <MemberSignature Language="C#" Value="public static int ioctl (int fd, int cmd, ref Usb.UsbFS.Ioctl.usbdevfs_setinterface arg);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig pinvokeimpl (&quot;libc&quot; as &quot;ioctl&quot; ansi cdecl lasterr)int32 ioctl(int32 fd, int32 cmd, valuetype Usb.UsbFS.Ioctl/usbdevfs_setinterface arg) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fd" Type="System.Int32" />
+        <Parameter Name="cmd" Type="System.Int32" />
+        <Parameter Name="arg" Type="Usb.UsbFS.Ioctl+usbdevfs_setinterface&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="fd">To be added.</param>
+        <param name="cmd">To be added.</param>
+        <param name="arg">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ioctl">
+      <MemberSignature Language="C#" Value="public static int ioctl (int fd, int cmd, ref Usb.UsbFS.Ioctl.usbdevfs_urb arg);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig pinvokeimpl (&quot;libc&quot; as &quot;ioctl&quot; ansi cdecl lasterr)int32 ioctl(int32 fd, int32 cmd, valuetype Usb.UsbFS.Ioctl/usbdevfs_urb arg) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fd" Type="System.Int32" />
+        <Parameter Name="cmd" Type="System.Int32" />
+        <Parameter Name="arg" Type="Usb.UsbFS.Ioctl+usbdevfs_urb&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="fd">To be added.</param>
+        <param name="cmd">To be added.</param>
+        <param name="arg">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ioctl">
+      <MemberSignature Language="C#" Value="public static int ioctl (int fd, int cmd, ref Usb.UsbFS.Ioctl.usbdevfs_bulktransfer arg, int len);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig pinvokeimpl (&quot;libc&quot; as &quot;ioctl&quot; ansi cdecl lasterr)int32 ioctl(int32 fd, int32 cmd, valuetype Usb.UsbFS.Ioctl/usbdevfs_bulktransfer arg, int32 len) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fd" Type="System.Int32" />
+        <Parameter Name="cmd" Type="System.Int32" />
+        <Parameter Name="arg" Type="Usb.UsbFS.Ioctl+usbdevfs_bulktransfer&amp;" RefType="ref" />
+        <Parameter Name="len" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="fd">To be added.</param>
+        <param name="cmd">To be added.</param>
+        <param name="arg">To be added.</param>
+        <param name="len">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ioctl">
+      <MemberSignature Language="C#" Value="public static int ioctl (int fd, int cmd, ref Usb.UsbFS.Ioctl.usbdevfs_ctrltransfer arg, int wLength);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig pinvokeimpl (&quot;libc&quot; as &quot;ioctl&quot; ansi cdecl lasterr)int32 ioctl(int32 fd, int32 cmd, valuetype Usb.UsbFS.Ioctl/usbdevfs_ctrltransfer arg, int32 wLength) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fd" Type="System.Int32" />
+        <Parameter Name="cmd" Type="System.Int32" />
+        <Parameter Name="arg" Type="Usb.UsbFS.Ioctl+usbdevfs_ctrltransfer&amp;" RefType="ref" />
+        <Parameter Name="wLength" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="fd">To be added.</param>
+        <param name="cmd">To be added.</param>
+        <param name="arg">To be added.</param>
+        <param name="wLength">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MAX_USBFS_BUFFER_SIZE">
+      <MemberSignature Language="C#" Value="public const int MAX_USBFS_BUFFER_SIZE = 16384;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 MAX_USBFS_BUFFER_SIZE = (16384)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>16384</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="O_RDONLY">
+      <MemberSignature Language="C#" Value="public const int O_RDONLY = 0;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 O_RDONLY = (0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="O_RDWR">
+      <MemberSignature Language="C#" Value="public const int O_RDWR = 2;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 O_RDWR = (2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="O_WRONLY">
+      <MemberSignature Language="C#" Value="public const int O_WRONLY = 1;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 O_WRONLY = (1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="open">
+      <MemberSignature Language="C#" Value="public static int open (string pathname, int flags);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig pinvokeimpl (&quot;libc&quot; as &quot;open&quot; ansi cdecl lasterr)int32 open(string pathname, int32 flags) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="pathname" Type="System.String" />
+        <Parameter Name="flags" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="pathname">To be added.</param>
+        <param name="flags">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="poll">
+      <MemberSignature Language="C#" Value="public static int poll (IntPtr fds, uint nfds, int timeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig pinvokeimpl (&quot;libc&quot; as &quot;poll&quot; ansi cdecl lasterr)int32 poll(native int fds, unsigned int32 nfds, int32 timeout) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fds" Type="System.IntPtr" />
+        <Parameter Name="nfds" Type="System.UInt32" />
+        <Parameter Name="timeout" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="fds">To be added.</param>
+        <param name="nfds">To be added.</param>
+        <param name="timeout">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="poll">
+      <MemberSignature Language="C#" Value="public static int poll (ref Usb.UsbFS.Ioctl.pollfd fds, uint nfds, int timeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig pinvokeimpl (&quot;libc&quot; as &quot;poll&quot; ansi cdecl lasterr)int32 poll(valuetype Usb.UsbFS.Ioctl/pollfd fds, unsigned int32 nfds, int32 timeout) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fds" Type="Usb.UsbFS.Ioctl+pollfd&amp;" RefType="ref" />
+        <Parameter Name="nfds" Type="System.UInt32" />
+        <Parameter Name="timeout" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="fds">To be added.</param>
+        <param name="nfds">To be added.</param>
+        <param name="timeout">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="poll">
+      <MemberSignature Language="C#" Value="public static int poll (Usb.UsbFS.Ioctl.pollfd[] fds, uint nfds, int timeout);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig pinvokeimpl (&quot;libc&quot; as &quot;poll&quot; ansi cdecl lasterr)int32 poll(valuetype Usb.UsbFS.Ioctl/pollfd[] fds, unsigned int32 nfds, int32 timeout) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fds" Type="Usb.UsbFS.Ioctl+pollfd[]" />
+        <Parameter Name="nfds" Type="System.UInt32" />
+        <Parameter Name="timeout" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="fds">To be added.</param>
+        <param name="nfds">To be added.</param>
+        <param name="timeout">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="POLLERR">
+      <MemberSignature Language="C#" Value="public const short POLLERR = 8;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int16 POLLERR = (8)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int16</ReturnType>
+      </ReturnValue>
+      <MemberValue>8</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="POLLHUP">
+      <MemberSignature Language="C#" Value="public const short POLLHUP = 16;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int16 POLLHUP = (16)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int16</ReturnType>
+      </ReturnValue>
+      <MemberValue>16</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="POLLOUT">
+      <MemberSignature Language="C#" Value="public const short POLLOUT = 4;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int16 POLLOUT = (4)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int16</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="POLLWRNORM">
+      <MemberSignature Language="C#" Value="public const short POLLWRNORM = 256;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int16 POLLWRNORM = (256)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int16</ReturnType>
+      </ReturnValue>
+      <MemberValue>256</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="pread">
+      <MemberSignature Language="C#" Value="public static IntPtr pread (int fd, IntPtr buf, UIntPtr count, IntPtr offset);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig pinvokeimpl (&quot;libc&quot; as &quot;pread&quot; ansi cdecl lasterr)native int pread(int32 fd, native int buf, native unsigned int count, native int offset) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fd" Type="System.Int32" />
+        <Parameter Name="buf" Type="System.IntPtr" />
+        <Parameter Name="count" Type="System.UIntPtr" />
+        <Parameter Name="offset" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="fd">To be added.</param>
+        <param name="buf">To be added.</param>
+        <param name="count">To be added.</param>
+        <param name="offset">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="pread">
+      <MemberSignature Language="C#" Value="public static IntPtr pread (int fd, void* buf, UIntPtr count, IntPtr offset);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig pinvokeimpl (&quot;libc&quot; as &quot;pread&quot; ansi cdecl lasterr)native int pread(int32 fd, void* buf, native unsigned int count, native int offset) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fd" Type="System.Int32" />
+        <Parameter Name="buf" Type="System.Void*" />
+        <Parameter Name="count" Type="System.UIntPtr" />
+        <Parameter Name="offset" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="fd">To be added.</param>
+        <param name="buf">To be added.</param>
+        <param name="count">To be added.</param>
+        <param name="offset">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="URB_ISO_ASAP">
+      <MemberSignature Language="C#" Value="public const int URB_ISO_ASAP = 2;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 URB_ISO_ASAP = (2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="URB_SHORT_NOT_OK">
+      <MemberSignature Language="C#" Value="public const int URB_SHORT_NOT_OK = 1;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 URB_SHORT_NOT_OK = (1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="URB_ZERO_PACKET">
+      <MemberSignature Language="C#" Value="public const int URB_ZERO_PACKET = 64;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 URB_ZERO_PACKET = (64)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>64</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="USBDEVFS_BULK">
+      <MemberSignature Language="C#" Value="public static readonly int USBDEVFS_BULK;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly int32 USBDEVFS_BULK" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-1072147198</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="USBDEVFS_CLAIMINTERFACE">
+      <MemberSignature Language="C#" Value="public static readonly int USBDEVFS_CLAIMINTERFACE;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly int32 USBDEVFS_CLAIMINTERFACE" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2147199729</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="USBDEVFS_CLEAR_HALT">
+      <MemberSignature Language="C#" Value="public static readonly int USBDEVFS_CLEAR_HALT;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly int32 USBDEVFS_CLEAR_HALT" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2147199723</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="USBDEVFS_CONNECT">
+      <MemberSignature Language="C#" Value="public static readonly int USBDEVFS_CONNECT;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly int32 USBDEVFS_CONNECT" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>21783</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="USBDEVFS_CONNECTINFO">
+      <MemberSignature Language="C#" Value="public static readonly int USBDEVFS_CONNECTINFO;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly int32 USBDEVFS_CONNECTINFO" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>1074287889</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="USBDEVFS_CONTROL">
+      <MemberSignature Language="C#" Value="public static readonly int USBDEVFS_CONTROL;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly int32 USBDEVFS_CONTROL" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-1072147200</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="USBDEVFS_DISCARDURB">
+      <MemberSignature Language="C#" Value="public static readonly int USBDEVFS_DISCARDURB;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly int32 USBDEVFS_DISCARDURB" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>21771</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="USBDEVFS_DISCONNECT">
+      <MemberSignature Language="C#" Value="public static readonly int USBDEVFS_DISCONNECT;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly int32 USBDEVFS_DISCONNECT" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>21782</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="USBDEVFS_DISCSIGNAL">
+      <MemberSignature Language="C#" Value="public static readonly int USBDEVFS_DISCSIGNAL;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly int32 USBDEVFS_DISCSIGNAL" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146413298</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="USBDEVFS_GETDRIVER">
+      <MemberSignature Language="C#" Value="public static readonly int USBDEVFS_GETDRIVER;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly int32 USBDEVFS_GETDRIVER" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>1090802952</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="USBDEVFS_HUB_PORTINFO">
+      <MemberSignature Language="C#" Value="public static readonly int USBDEVFS_HUB_PORTINFO;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly int32 USBDEVFS_HUB_PORTINFO" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2139073261</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="USBDEVFS_IOCTL">
+      <MemberSignature Language="C#" Value="public static readonly int USBDEVFS_IOCTL;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly int32 USBDEVFS_IOCTL" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-1072671470</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="USBDEVFS_MAXDRIVERNAME">
+      <MemberSignature Language="C#" Value="public const int USBDEVFS_MAXDRIVERNAME = 255;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 USBDEVFS_MAXDRIVERNAME = (255)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>255</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="USBDEVFS_REAPURB">
+      <MemberSignature Language="C#" Value="public static readonly int USBDEVFS_REAPURB;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly int32 USBDEVFS_REAPURB" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>1074287884</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="USBDEVFS_REAPURBNDELAY">
+      <MemberSignature Language="C#" Value="public static readonly int USBDEVFS_REAPURBNDELAY;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly int32 USBDEVFS_REAPURBNDELAY" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>1074287885</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="USBDEVFS_RELEASEINTERFACE">
+      <MemberSignature Language="C#" Value="public static readonly int USBDEVFS_RELEASEINTERFACE;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly int32 USBDEVFS_RELEASEINTERFACE" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2147199728</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="USBDEVFS_RESET">
+      <MemberSignature Language="C#" Value="public static readonly int USBDEVFS_RESET;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly int32 USBDEVFS_RESET" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>21780</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="USBDEVFS_RESETEP">
+      <MemberSignature Language="C#" Value="public static readonly int USBDEVFS_RESETEP;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly int32 USBDEVFS_RESETEP" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2147199741</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="USBDEVFS_SETCONFIGURATION">
+      <MemberSignature Language="C#" Value="public static readonly int USBDEVFS_SETCONFIGURATION;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly int32 USBDEVFS_SETCONFIGURATION" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2147199739</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="USBDEVFS_SETINTERFACE">
+      <MemberSignature Language="C#" Value="public static readonly int USBDEVFS_SETINTERFACE;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly int32 USBDEVFS_SETINTERFACE" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2146937596</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="USBDEVFS_SUBMITURB">
+      <MemberSignature Language="C#" Value="public static readonly int USBDEVFS_SUBMITURB;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly int32 USBDEVFS_SUBMITURB" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2143791862</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="USBDEVFS_URB_ISO_ASAP">
+      <MemberSignature Language="C#" Value="public const uint USBDEVFS_URB_ISO_ASAP = 2;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int32 USBDEVFS_URB_ISO_ASAP = (2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="USBDEVFS_URB_SHORT_NOT_OK">
+      <MemberSignature Language="C#" Value="public const uint USBDEVFS_URB_SHORT_NOT_OK = 1;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int32 USBDEVFS_URB_SHORT_NOT_OK = (1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="USBDEVFS_URB_TYPE_BULK">
+      <MemberSignature Language="C#" Value="public const byte USBDEVFS_URB_TYPE_BULK = 3;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 USBDEVFS_URB_TYPE_BULK = (3)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="USBDEVFS_URB_TYPE_CONTROL">
+      <MemberSignature Language="C#" Value="public const byte USBDEVFS_URB_TYPE_CONTROL = 2;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 USBDEVFS_URB_TYPE_CONTROL = (2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="USBDEVFS_URB_TYPE_INTERRUPT">
+      <MemberSignature Language="C#" Value="public const byte USBDEVFS_URB_TYPE_INTERRUPT = 1;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 USBDEVFS_URB_TYPE_INTERRUPT = (1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="USBDEVFS_URB_TYPE_ISO">
+      <MemberSignature Language="C#" Value="public const byte USBDEVFS_URB_TYPE_ISO = 0;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 USBDEVFS_URB_TYPE_ISO = (0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="write">
+      <MemberSignature Language="C#" Value="public static IntPtr write (int fd, void* buf, UIntPtr count);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig pinvokeimpl (&quot;libc&quot; as &quot;write&quot; ansi cdecl lasterr)native int write(int32 fd, void* buf, native unsigned int count) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.3.0.6</AssemblyVersion>
+        <AssemblyVersion>1.4.1.7</AssemblyVersion>
+        <AssemblyVersion>1.5.1.7</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="fd" Type="System.Int32" />
+        <Parameter Name="buf" Type="System.Void*" />
+        <Parameter Name="count" Type="System.UIntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="fd">To be added.</param>
+        <param name="buf">To be added.</param>
+        <param name="count">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

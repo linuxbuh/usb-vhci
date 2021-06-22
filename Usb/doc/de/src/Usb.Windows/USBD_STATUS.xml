@@ -1,0 +1,923 @@
+<Type Name="USBD_STATUS" FullName="Usb.Windows.USBD_STATUS">
+  <TypeSignature Language="C#" Value="public static class USBD_STATUS" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit USBD_STATUS extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>Usb</AssemblyName>
+    <AssemblyVersion>1.4.2.8</AssemblyVersion>
+    <AssemblyVersion>1.5.2.9</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="BABBLE_DETECTED">
+      <MemberSignature Language="C#" Value="public const int BABBLE_DETECTED = -1073741806;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 BABBLE_DETECTED = (-1073741806)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-1073741806</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BAD_START_FRAME">
+      <MemberSignature Language="C#" Value="public const int BAD_START_FRAME = -1073739264;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 BAD_START_FRAME = (-1073739264)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-1073739264</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BTSTUFF">
+      <MemberSignature Language="C#" Value="public const int BTSTUFF = -1073741822;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 BTSTUFF = (-1073741822)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-1073741822</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BUFFER_OVERRUN">
+      <MemberSignature Language="C#" Value="public const int BUFFER_OVERRUN = -1073741812;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 BUFFER_OVERRUN = (-1073741812)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-1073741812</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BUFFER_TOO_SMALL">
+      <MemberSignature Language="C#" Value="public const int BUFFER_TOO_SMALL = -1073729536;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 BUFFER_TOO_SMALL = (-1073729536)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-1073729536</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BUFFER_UNDERRUN">
+      <MemberSignature Language="C#" Value="public const int BUFFER_UNDERRUN = -1073741811;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 BUFFER_UNDERRUN = (-1073741811)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-1073741811</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CANCELED">
+      <MemberSignature Language="C#" Value="public const int CANCELED = -1073676288;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 CANCELED = (-1073676288)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-1073676288</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CRC">
+      <MemberSignature Language="C#" Value="public const int CRC = -1073741823;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 CRC = (-1073741823)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-1073741823</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DATA_BUFFER_ERROR">
+      <MemberSignature Language="C#" Value="public const int DATA_BUFFER_ERROR = -1073741805;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 DATA_BUFFER_ERROR = (-1073741805)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-1073741805</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DATA_OVERRUN">
+      <MemberSignature Language="C#" Value="public const int DATA_OVERRUN = -1073741816;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 DATA_OVERRUN = (-1073741816)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-1073741816</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DATA_TOGGLE_MISMATCH">
+      <MemberSignature Language="C#" Value="public const int DATA_TOGGLE_MISMATCH = -1073741821;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 DATA_TOGGLE_MISMATCH = (-1073741821)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-1073741821</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DATA_UNDERRUN">
+      <MemberSignature Language="C#" Value="public const int DATA_UNDERRUN = -1073741815;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 DATA_UNDERRUN = (-1073741815)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-1073741815</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DEV_NOT_RESPONDING">
+      <MemberSignature Language="C#" Value="public const int DEV_NOT_RESPONDING = -1073741819;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 DEV_NOT_RESPONDING = (-1073741819)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-1073741819</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DEVICE_GONE">
+      <MemberSignature Language="C#" Value="public const int DEVICE_GONE = -1073713152;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 DEVICE_GONE = (-1073713152)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-1073713152</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ENDPOINT_HALTED">
+      <MemberSignature Language="C#" Value="public const int ENDPOINT_HALTED = -1073741776;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 ENDPOINT_HALTED = (-1073741776)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-1073741776</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ERROR_BUSY">
+      <MemberSignature Language="C#" Value="public const int ERROR_BUSY = -1073740800;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 ERROR_BUSY = (-1073740800)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-1073740800</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ERROR_SHORT_TRANSFER">
+      <MemberSignature Language="C#" Value="public const int ERROR_SHORT_TRANSFER = -1073739520;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 ERROR_SHORT_TRANSFER = (-1073739520)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-1073739520</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FIFO">
+      <MemberSignature Language="C#" Value="public const int FIFO = -1073741808;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 FIFO = (-1073741808)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-1073741808</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FRAME_CONTROL_NOT_OWNED">
+      <MemberSignature Language="C#" Value="public const int FRAME_CONTROL_NOT_OWNED = -1073738496;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 FRAME_CONTROL_NOT_OWNED = (-1073738496)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-1073738496</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FRAME_CONTROL_OWNED">
+      <MemberSignature Language="C#" Value="public const int FRAME_CONTROL_OWNED = -1073738752;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 FRAME_CONTROL_OWNED = (-1073738752)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-1073738752</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromIsoPacketsUsbdStatus">
+      <MemberSignature Language="C#" Value="public static Usb.UrbStatus FromIsoPacketsUsbdStatus (int status);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Usb.UrbStatus FromIsoPacketsUsbdStatus(int32 status) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Usb.UrbStatus</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="status" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="status">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FromUsbdStatus">
+      <MemberSignature Language="C#" Value="public static Usb.UrbStatus FromUsbdStatus (int status, bool isoUrb);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype Usb.UrbStatus FromUsbdStatus(int32 status, bool isoUrb) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Usb.UrbStatus</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="status" Type="System.Int32" />
+        <Parameter Name="isoUrb" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="status">To be added.</param>
+        <param name="isoUrb">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="INAVLID_CONFIGURATION_DESCRIPTOR">
+      <MemberSignature Language="C#" Value="public const int INAVLID_CONFIGURATION_DESCRIPTOR = -1073737984;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 INAVLID_CONFIGURATION_DESCRIPTOR = (-1073737984)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-1073737984</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="INAVLID_PIPE_FLAGS">
+      <MemberSignature Language="C#" Value="public const int INAVLID_PIPE_FLAGS = -1073721344;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 INAVLID_PIPE_FLAGS = (-1073721344)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-1073721344</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="INSUFFICIENT_RESOURCES">
+      <MemberSignature Language="C#" Value="public const int INSUFFICIENT_RESOURCES = -1073737728;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 INSUFFICIENT_RESOURCES = (-1073737728)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-1073737728</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="INTERFACE_NOT_FOUND">
+      <MemberSignature Language="C#" Value="public const int INTERFACE_NOT_FOUND = -1073725440;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 INTERFACE_NOT_FOUND = (-1073725440)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-1073725440</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="INTERNAL_HC_ERROR">
+      <MemberSignature Language="C#" Value="public const int INTERNAL_HC_ERROR = -1073739776;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 INTERNAL_HC_ERROR = (-1073739776)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-1073739776</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="INVALID_PARAMETER">
+      <MemberSignature Language="C#" Value="public const int INVALID_PARAMETER = -1073741056;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 INVALID_PARAMETER = (-1073741056)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-1073741056</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="INVALID_PIPE_HANDLE">
+      <MemberSignature Language="C#" Value="public const int INVALID_PIPE_HANDLE = -1073740288;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 INVALID_PIPE_HANDLE = (-1073740288)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-1073740288</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="INVALID_URB_FUNCTION">
+      <MemberSignature Language="C#" Value="public const int INVALID_URB_FUNCTION = -1073741312;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 INVALID_URB_FUNCTION = (-1073741312)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-1073741312</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ISO_NA_LATE_USBPORT">
+      <MemberSignature Language="C#" Value="public const int ISO_NA_LATE_USBPORT = -1073479680;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 ISO_NA_LATE_USBPORT = (-1073479680)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-1073479680</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ISO_NOT_ACCESSED_BY_HW">
+      <MemberSignature Language="C#" Value="public const int ISO_NOT_ACCESSED_BY_HW = -1073610752;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 ISO_NOT_ACCESSED_BY_HW = (-1073610752)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-1073610752</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ISO_NOT_ACCESSED_LATE">
+      <MemberSignature Language="C#" Value="public const int ISO_NOT_ACCESSED_LATE = -1073414144;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 ISO_NOT_ACCESSED_LATE = (-1073414144)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-1073414144</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ISO_TD_ERROR">
+      <MemberSignature Language="C#" Value="public const int ISO_TD_ERROR = -1073545216;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 ISO_TD_ERROR = (-1073545216)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-1073545216</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ISOCH_REQUEST_FAILED">
+      <MemberSignature Language="C#" Value="public const int ISOCH_REQUEST_FAILED = -1073739008;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 ISOCH_REQUEST_FAILED = (-1073739008)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-1073739008</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NO_BANDWIDTH">
+      <MemberSignature Language="C#" Value="public const int NO_BANDWIDTH = -1073740032;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 NO_BANDWIDTH = (-1073740032)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-1073740032</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NOT_ACCESSED">
+      <MemberSignature Language="C#" Value="public const int NOT_ACCESSED = -1073741809;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 NOT_ACCESSED = (-1073741809)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-1073741809</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NOT_SUPPORTED">
+      <MemberSignature Language="C#" Value="public const int NOT_SUPPORTED = -1073738240;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 NOT_SUPPORTED = (-1073738240)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-1073738240</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PENDING">
+      <MemberSignature Language="C#" Value="public const int PENDING = 1073741824;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 PENDING = (1073741824)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>1073741824</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PID_CHECK_FAILURE">
+      <MemberSignature Language="C#" Value="public const int PID_CHECK_FAILURE = -1073741818;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 PID_CHECK_FAILURE = (-1073741818)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-1073741818</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="REQUEST_FAILED">
+      <MemberSignature Language="C#" Value="public const int REQUEST_FAILED = -1073740544;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 REQUEST_FAILED = (-1073740544)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-1073740544</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RESERVED1">
+      <MemberSignature Language="C#" Value="public const int RESERVED1 = -1073741814;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 RESERVED1 = (-1073741814)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-1073741814</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RESERVED2">
+      <MemberSignature Language="C#" Value="public const int RESERVED2 = -1073741813;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 RESERVED2 = (-1073741813)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-1073741813</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SET_CONFIG_FAILED">
+      <MemberSignature Language="C#" Value="public const int SET_CONFIG_FAILED = -1073733632;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 SET_CONFIG_FAILED = (-1073733632)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-1073733632</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="STALL_PID">
+      <MemberSignature Language="C#" Value="public const int STALL_PID = -1073741820;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 STALL_PID = (-1073741820)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-1073741820</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="STATUS_NOT_MAPPED">
+      <MemberSignature Language="C#" Value="public const int STATUS_NOT_MAPPED = -1073709056;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 STATUS_NOT_MAPPED = (-1073709056)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-1073709056</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SUCCESS">
+      <MemberSignature Language="C#" Value="public const int SUCCESS = 0;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 SUCCESS = (0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TIMEOUT">
+      <MemberSignature Language="C#" Value="public const int TIMEOUT = -1073717248;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 TIMEOUT = (-1073717248)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-1073717248</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToIsoPacketsUsbdStatus">
+      <MemberSignature Language="C#" Value="public static int ToIsoPacketsUsbdStatus (Usb.UrbStatus status);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 ToIsoPacketsUsbdStatus(valuetype Usb.UrbStatus status) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="status" Type="Usb.UrbStatus" />
+      </Parameters>
+      <Docs>
+        <param name="status">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToUsbdStatus">
+      <MemberSignature Language="C#" Value="public static int ToUsbdStatus (Usb.UrbStatus status, bool isoUrb);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 ToUsbdStatus(valuetype Usb.UrbStatus status, bool isoUrb) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="status" Type="Usb.UrbStatus" />
+        <Parameter Name="isoUrb" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="status">To be added.</param>
+        <param name="isoUrb">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UNEXPECTED_PID">
+      <MemberSignature Language="C#" Value="public const int UNEXPECTED_PID = -1073741817;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 UNEXPECTED_PID = (-1073741817)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-1073741817</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XACT_ERROR">
+      <MemberSignature Language="C#" Value="public const int XACT_ERROR = -1073741807;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 XACT_ERROR = (-1073741807)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>-1073741807</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

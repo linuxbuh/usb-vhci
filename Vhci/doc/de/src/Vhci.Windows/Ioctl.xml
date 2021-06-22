@@ -1,0 +1,1377 @@
+<Type Name="Ioctl" FullName="Vhci.Windows.Ioctl">
+  <TypeSignature Language="C#" Value="public static class Ioctl" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Ioctl extends System.Object" />
+  <AssemblyInfo>
+    <AssemblyName>Vhci</AssemblyName>
+    <AssemblyVersion>1.4.2.4</AssemblyVersion>
+    <AssemblyVersion>1.5.2.4</AssemblyVersion>
+  </AssemblyInfo>
+  <ThreadingSafetyStatement>Dieser Typ ist threadsicher.</ThreadingSafetyStatement>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CLSCompliant(false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CancelIo">
+      <MemberSignature Language="C#" Value="public static bool CancelIo (Microsoft.Win32.SafeHandles.SafeFileHandle hFile);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig pinvokeimpl (&quot;kernel32&quot; as &quot;CancelIo&quot; auto winapi lasterr)bool CancelIo(class Microsoft.Win32.SafeHandles.SafeFileHandle hFile) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hFile" Type="Microsoft.Win32.SafeHandles.SafeFileHandle" />
+      </Parameters>
+      <Docs>
+        <param name="hFile">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateFile">
+      <MemberSignature Language="C#" Value="public static Microsoft.Win32.SafeHandles.SafeFileHandle CreateFile (string lpFileName, uint dwDesiredAccess, uint dwShareMode, IntPtr lpSecurityAttributes, uint dwCreationDisposition, uint dwFlagsAndAttributes, IntPtr hTemplateFile);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig pinvokeimpl (&quot;kernel32&quot; as &quot;CreateFile&quot; auto winapi lasterr)class Microsoft.Win32.SafeHandles.SafeFileHandle CreateFile(string lpFileName, unsigned int32 dwDesiredAccess, unsigned int32 dwShareMode, native int lpSecurityAttributes, unsigned int32 dwCreationDisposition, unsigned int32 dwFlagsAndAttributes, native int hTemplateFile) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Win32.SafeHandles.SafeFileHandle</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="lpFileName" Type="System.String" />
+        <Parameter Name="dwDesiredAccess" Type="System.UInt32" />
+        <Parameter Name="dwShareMode" Type="System.UInt32" />
+        <Parameter Name="lpSecurityAttributes" Type="System.IntPtr" />
+        <Parameter Name="dwCreationDisposition" Type="System.UInt32" />
+        <Parameter Name="dwFlagsAndAttributes" Type="System.UInt32" />
+        <Parameter Name="hTemplateFile" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="lpFileName">To be added.</param>
+        <param name="dwDesiredAccess">To be added.</param>
+        <param name="dwShareMode">To be added.</param>
+        <param name="lpSecurityAttributes">To be added.</param>
+        <param name="dwCreationDisposition">To be added.</param>
+        <param name="dwFlagsAndAttributes">To be added.</param>
+        <param name="hTemplateFile">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DeviceIoControl">
+      <MemberSignature Language="C#" Value="public static bool DeviceIoControl (Microsoft.Win32.SafeHandles.SafeFileHandle hDevice, uint dwIoControlCode, void* lpInBuffer, uint nInBufferSize, void* lpOutBuffer, uint nOutBufferSize, uint* lpBytesReturned, System.Threading.NativeOverlapped* lpOverlapped);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig pinvokeimpl (&quot;kernel32&quot; as &quot;DeviceIoControl&quot; auto winapi lasterr)bool DeviceIoControl(class Microsoft.Win32.SafeHandles.SafeFileHandle hDevice, unsigned int32 dwIoControlCode, void* lpInBuffer, unsigned int32 nInBufferSize, void* lpOutBuffer, unsigned int32 nOutBufferSize, unsigned int32* lpBytesReturned, valuetype System.Threading.NativeOverlapped* lpOverlapped) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hDevice" Type="Microsoft.Win32.SafeHandles.SafeFileHandle" />
+        <Parameter Name="dwIoControlCode" Type="System.UInt32" />
+        <Parameter Name="lpInBuffer" Type="System.Void*" />
+        <Parameter Name="nInBufferSize" Type="System.UInt32" />
+        <Parameter Name="lpOutBuffer" Type="System.Void*" />
+        <Parameter Name="nOutBufferSize" Type="System.UInt32" />
+        <Parameter Name="lpBytesReturned" Type="System.UInt32*" />
+        <Parameter Name="lpOverlapped" Type="System.Threading.NativeOverlapped*" />
+      </Parameters>
+      <Docs>
+        <param name="hDevice">To be added.</param>
+        <param name="dwIoControlCode">To be added.</param>
+        <param name="lpInBuffer">To be added.</param>
+        <param name="nInBufferSize">To be added.</param>
+        <param name="lpOutBuffer">To be added.</param>
+        <param name="nOutBufferSize">To be added.</param>
+        <param name="lpBytesReturned">To be added.</param>
+        <param name="lpOverlapped">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DIGCF_ALLCLASSES">
+      <MemberSignature Language="C#" Value="public const uint DIGCF_ALLCLASSES = 4;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int32 DIGCF_ALLCLASSES = (4)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DIGCF_DEFAULT">
+      <MemberSignature Language="C#" Value="public const uint DIGCF_DEFAULT = 1;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int32 DIGCF_DEFAULT = (1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DIGCF_DEVICEINTERFACE">
+      <MemberSignature Language="C#" Value="public const uint DIGCF_DEVICEINTERFACE = 16;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int32 DIGCF_DEVICEINTERFACE = (16)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <MemberValue>16</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DIGCF_PRESENT">
+      <MemberSignature Language="C#" Value="public const uint DIGCF_PRESENT = 2;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int32 DIGCF_PRESENT = (2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DIGCF_PROFILE">
+      <MemberSignature Language="C#" Value="public const uint DIGCF_PROFILE = 8;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int32 DIGCF_PROFILE = (8)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <MemberValue>8</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ERROR_ACCESS_DENIED">
+      <MemberSignature Language="C#" Value="public const int ERROR_ACCESS_DENIED = 5;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 ERROR_ACCESS_DENIED = (5)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>5</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ERROR_FILE_NOT_FOUND">
+      <MemberSignature Language="C#" Value="public const int ERROR_FILE_NOT_FOUND = 2;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 ERROR_FILE_NOT_FOUND = (2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ERROR_INSUFFICIENT_BUFFER">
+      <MemberSignature Language="C#" Value="public const int ERROR_INSUFFICIENT_BUFFER = 122;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 ERROR_INSUFFICIENT_BUFFER = (122)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>122</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ERROR_IO_PENDING">
+      <MemberSignature Language="C#" Value="public const int ERROR_IO_PENDING = 997;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 ERROR_IO_PENDING = (997)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>997</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ERROR_NO_MORE_ITEMS">
+      <MemberSignature Language="C#" Value="public const int ERROR_NO_MORE_ITEMS = 259;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 ERROR_NO_MORE_ITEMS = (259)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>259</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ERROR_OPERATION_ABORTED">
+      <MemberSignature Language="C#" Value="public const int ERROR_OPERATION_ABORTED = 995;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 ERROR_OPERATION_ABORTED = (995)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>995</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ERROR_REQUEST_ABORTED">
+      <MemberSignature Language="C#" Value="public const int ERROR_REQUEST_ABORTED = 1235;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 ERROR_REQUEST_ABORTED = (1235)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>1235</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ERROR_UNKNOWN_REVISION">
+      <MemberSignature Language="C#" Value="public const int ERROR_UNKNOWN_REVISION = 1305;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 ERROR_UNKNOWN_REVISION = (1305)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <MemberValue>1305</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FILE_ATTRIBUTE_NORMAL">
+      <MemberSignature Language="C#" Value="public const uint FILE_ATTRIBUTE_NORMAL = 128;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int32 FILE_ATTRIBUTE_NORMAL = (128)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <MemberValue>128</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FILE_FLAG_OVERLAPPED">
+      <MemberSignature Language="C#" Value="public const uint FILE_FLAG_OVERLAPPED = 1073741824;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int32 FILE_FLAG_OVERLAPPED = (1073741824)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <MemberValue>1073741824</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FILE_SHARE_READ">
+      <MemberSignature Language="C#" Value="public const uint FILE_SHARE_READ = 1;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int32 FILE_SHARE_READ = (1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FILE_SHARE_WRITE">
+      <MemberSignature Language="C#" Value="public const uint FILE_SHARE_WRITE = 2;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int32 FILE_SHARE_WRITE = (2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GENERIC_READ">
+      <MemberSignature Language="C#" Value="public const uint GENERIC_READ = 2147483648;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int32 GENERIC_READ = (2147483648)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <MemberValue>2147483648</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GENERIC_WRITE">
+      <MemberSignature Language="C#" Value="public const uint GENERIC_WRITE = 1073741824;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int32 GENERIC_WRITE = (1073741824)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <MemberValue>1073741824</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetOverlappedResult">
+      <MemberSignature Language="C#" Value="public static bool GetOverlappedResult (Microsoft.Win32.SafeHandles.SafeFileHandle hFile, System.Threading.NativeOverlapped* lpOverlapped, uint* lpNumberOfBytesTransferred, bool bWait);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig pinvokeimpl (&quot;kernel32&quot; as &quot;GetOverlappedResult&quot; auto winapi lasterr)bool GetOverlappedResult(class Microsoft.Win32.SafeHandles.SafeFileHandle hFile, valuetype System.Threading.NativeOverlapped* lpOverlapped, unsigned int32* lpNumberOfBytesTransferred, bool bWait) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="hFile" Type="Microsoft.Win32.SafeHandles.SafeFileHandle" />
+        <Parameter Name="lpOverlapped" Type="System.Threading.NativeOverlapped*" />
+        <Parameter Name="lpNumberOfBytesTransferred" Type="System.UInt32*" />
+        <Parameter Name="bWait" Type="System.Boolean" />
+      </Parameters>
+      <Docs>
+        <param name="hFile">To be added.</param>
+        <param name="lpOverlapped">To be added.</param>
+        <param name="lpNumberOfBytesTransferred">To be added.</param>
+        <param name="bWait">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GUID_DEVCLASS_VIRTUSB_BUS">
+      <MemberSignature Language="C#" Value="public static readonly Guid GUID_DEVCLASS_VIRTUSB_BUS;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Guid GUID_DEVCLASS_VIRTUSB_BUS" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GUID_DEVINTERFACE_VIRTUSB_BUS">
+      <MemberSignature Language="C#" Value="public static readonly Guid GUID_DEVINTERFACE_VIRTUSB_BUS;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Guid GUID_DEVINTERFACE_VIRTUSB_BUS" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Guid</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OPEN_EXISTING">
+      <MemberSignature Language="C#" Value="public const uint OPEN_EXISTING = 3;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int32 OPEN_EXISTING = (3)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetupDiDestroyDeviceInfoList">
+      <MemberSignature Language="C#" Value="public static bool SetupDiDestroyDeviceInfoList (IntPtr DeviceInfoSet);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig pinvokeimpl (&quot;setupapi&quot; as &quot;SetupDiDestroyDeviceInfoList&quot; auto winapi lasterr)bool SetupDiDestroyDeviceInfoList(native int DeviceInfoSet) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="DeviceInfoSet" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="DeviceInfoSet">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetupDiEnumDeviceInterfaces">
+      <MemberSignature Language="C#" Value="public static bool SetupDiEnumDeviceInterfaces (IntPtr DeviceInfoSet, IntPtr DeviceInfoData, ref Guid InterfaceClassGuid, uint MemberIndex, ref Vhci.Windows.Ioctl.SP_DEVICE_INTERFACE_DATA DeviceInterfaceData);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig pinvokeimpl (&quot;setupapi&quot; as &quot;SetupDiEnumDeviceInterfaces&quot; auto winapi lasterr)bool SetupDiEnumDeviceInterfaces(native int DeviceInfoSet, native int DeviceInfoData, valuetype System.Guid InterfaceClassGuid, unsigned int32 MemberIndex, valuetype Vhci.Windows.Ioctl/SP_DEVICE_INTERFACE_DATA DeviceInterfaceData) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="DeviceInfoSet" Type="System.IntPtr" />
+        <Parameter Name="DeviceInfoData" Type="System.IntPtr" />
+        <Parameter Name="InterfaceClassGuid" Type="System.Guid&amp;" RefType="ref" />
+        <Parameter Name="MemberIndex" Type="System.UInt32" />
+        <Parameter Name="DeviceInterfaceData" Type="Vhci.Windows.Ioctl+SP_DEVICE_INTERFACE_DATA&amp;" RefType="ref" />
+      </Parameters>
+      <Docs>
+        <param name="DeviceInfoSet">To be added.</param>
+        <param name="DeviceInfoData">To be added.</param>
+        <param name="InterfaceClassGuid">To be added.</param>
+        <param name="MemberIndex">To be added.</param>
+        <param name="DeviceInterfaceData">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetupDiGetClassDevs">
+      <MemberSignature Language="C#" Value="public static IntPtr SetupDiGetClassDevs (ref Guid ClassGuid, IntPtr Enumerator, IntPtr hwndParent, uint Flags);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig pinvokeimpl (&quot;setupapi&quot; as &quot;SetupDiGetClassDevs&quot; auto winapi lasterr)native int SetupDiGetClassDevs(valuetype System.Guid ClassGuid, native int Enumerator, native int hwndParent, unsigned int32 Flags) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ClassGuid" Type="System.Guid&amp;" RefType="ref" />
+        <Parameter Name="Enumerator" Type="System.IntPtr" />
+        <Parameter Name="hwndParent" Type="System.IntPtr" />
+        <Parameter Name="Flags" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="ClassGuid">To be added.</param>
+        <param name="Enumerator">To be added.</param>
+        <param name="hwndParent">To be added.</param>
+        <param name="Flags">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetupDiGetClassDevs">
+      <MemberSignature Language="C#" Value="public static IntPtr SetupDiGetClassDevs (IntPtr ClassGuid, string Enumerator, IntPtr hwndParent, uint Flags);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig pinvokeimpl (&quot;setupapi&quot; as &quot;SetupDiGetClassDevs&quot; auto winapi lasterr)native int SetupDiGetClassDevs(native int ClassGuid, string Enumerator, native int hwndParent, unsigned int32 Flags) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ClassGuid" Type="System.IntPtr" />
+        <Parameter Name="Enumerator" Type="System.String" />
+        <Parameter Name="hwndParent" Type="System.IntPtr" />
+        <Parameter Name="Flags" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="ClassGuid">To be added.</param>
+        <param name="Enumerator">To be added.</param>
+        <param name="hwndParent">To be added.</param>
+        <param name="Flags">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetupDiGetDeviceInterfaceDetail">
+      <MemberSignature Language="C#" Value="public static bool SetupDiGetDeviceInterfaceDetail (IntPtr DeviceInfoSet, ref Vhci.Windows.Ioctl.SP_DEVICE_INTERFACE_DATA DeviceInterfaceData, IntPtr DeviceInterfaceDetailData, uint DeviceInterfaceDetailDataSize, out uint RequiredSize, IntPtr DeviceInfoData);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig pinvokeimpl (&quot;setupapi&quot; as &quot;SetupDiGetDeviceInterfaceDetail&quot; auto winapi lasterr)bool SetupDiGetDeviceInterfaceDetail(native int DeviceInfoSet, valuetype Vhci.Windows.Ioctl/SP_DEVICE_INTERFACE_DATA DeviceInterfaceData, native int DeviceInterfaceDetailData, unsigned int32 DeviceInterfaceDetailDataSize, unsigned int32 RequiredSize, native int DeviceInfoData) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="DeviceInfoSet" Type="System.IntPtr" />
+        <Parameter Name="DeviceInterfaceData" Type="Vhci.Windows.Ioctl+SP_DEVICE_INTERFACE_DATA&amp;" RefType="ref" />
+        <Parameter Name="DeviceInterfaceDetailData" Type="System.IntPtr" />
+        <Parameter Name="DeviceInterfaceDetailDataSize" Type="System.UInt32" />
+        <Parameter Name="RequiredSize" Type="System.UInt32&amp;" RefType="out" />
+        <Parameter Name="DeviceInfoData" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <param name="DeviceInfoSet">To be added.</param>
+        <param name="DeviceInterfaceData">To be added.</param>
+        <param name="DeviceInterfaceDetailData">To be added.</param>
+        <param name="DeviceInterfaceDetailDataSize">To be added.</param>
+        <param name="RequiredSize">To be added.</param>
+        <param name="DeviceInfoData">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SIZEOF_VIRTUSB_GIVEBACK">
+      <MemberSignature Language="C#" Value="public static uint SIZEOF_VIRTUSB_GIVEBACK (uint num_iso_packets);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int32 SIZEOF_VIRTUSB_GIVEBACK(unsigned int32 num_iso_packets) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="num_iso_packets" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="num_iso_packets">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SIZEOF_VIRTUSB_URB_DATA">
+      <MemberSignature Language="C#" Value="public static uint SIZEOF_VIRTUSB_URB_DATA (uint num_iso_packets);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int32 SIZEOF_VIRTUSB_URB_DATA(unsigned int32 num_iso_packets) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="num_iso_packets" Type="System.UInt32" />
+      </Parameters>
+      <Docs>
+        <param name="num_iso_packets">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SP_DEVICE_INTERFACE_DATA_SIZE">
+      <MemberSignature Language="C#" Value="public static readonly uint SP_DEVICE_INTERFACE_DATA_SIZE;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly unsigned int32 SP_DEVICE_INTERFACE_DATA_SIZE" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SP_DEVICE_INTERFACE_DETAIL_DATA_SIZE">
+      <MemberSignature Language="C#" Value="public static readonly uint SP_DEVICE_INTERFACE_DETAIL_DATA_SIZE;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly unsigned int32 SP_DEVICE_INTERFACE_DETAIL_DATA_SIZE" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VIRTUSB_GIVEBACK_SIZE">
+      <MemberSignature Language="C#" Value="public static readonly uint VIRTUSB_GIVEBACK_SIZE;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly unsigned int32 VIRTUSB_GIVEBACK_SIZE" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VIRTUSB_IOC_DEVICE_TYPE">
+      <MemberSignature Language="C#" Value="public const ushort VIRTUSB_IOC_DEVICE_TYPE = 44955;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int16 VIRTUSB_IOC_DEVICE_TYPE = (44955)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <MemberValue>44955</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VIRTUSB_IOCFETCHDATA">
+      <MemberSignature Language="C#" Value="public const uint VIRTUSB_IOCFETCHDATA = 2946179091;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int32 VIRTUSB_IOCFETCHDATA = (2946179091)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <MemberValue>2946179091</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VIRTUSB_IOCFETCHWORK">
+      <MemberSignature Language="C#" Value="public const uint VIRTUSB_IOCFETCHWORK = 2946179080;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int32 VIRTUSB_IOCFETCHWORK = (2946179080)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <MemberValue>2946179080</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VIRTUSB_IOCGIVEBACK">
+      <MemberSignature Language="C#" Value="public const uint VIRTUSB_IOCGIVEBACK = 2946179087;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int32 VIRTUSB_IOCGIVEBACK = (2946179087)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <MemberValue>2946179087</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VIRTUSB_IOCPORTSTAT">
+      <MemberSignature Language="C#" Value="public const uint VIRTUSB_IOCPORTSTAT = 2946179079;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int32 VIRTUSB_IOCPORTSTAT = (2946179079)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <MemberValue>2946179079</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VIRTUSB_IOCREGISTER">
+      <MemberSignature Language="C#" Value="public const uint VIRTUSB_IOCREGISTER = 2946179072;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int32 VIRTUSB_IOCREGISTER = (2946179072)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <MemberValue>2946179072</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VIRTUSB_ISO_PACKET_DATA_SIZE">
+      <MemberSignature Language="C#" Value="public static readonly uint VIRTUSB_ISO_PACKET_DATA_SIZE;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly unsigned int32 VIRTUSB_ISO_PACKET_DATA_SIZE" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VIRTUSB_ISO_PACKET_GIVEBACK_SIZE">
+      <MemberSignature Language="C#" Value="public static readonly uint VIRTUSB_ISO_PACKET_GIVEBACK_SIZE;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly unsigned int32 VIRTUSB_ISO_PACKET_GIVEBACK_SIZE" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VIRTUSB_PORT_STAT_C_CONNECT">
+      <MemberSignature Language="C#" Value="public const ushort VIRTUSB_PORT_STAT_C_CONNECT = 1;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int16 VIRTUSB_PORT_STAT_C_CONNECT = (1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VIRTUSB_PORT_STAT_C_ENABLE">
+      <MemberSignature Language="C#" Value="public const ushort VIRTUSB_PORT_STAT_C_ENABLE = 2;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int16 VIRTUSB_PORT_STAT_C_ENABLE = (2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VIRTUSB_PORT_STAT_C_MASK">
+      <MemberSignature Language="C#" Value="public const ushort VIRTUSB_PORT_STAT_C_MASK = 31;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int16 VIRTUSB_PORT_STAT_C_MASK = (31)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <MemberValue>31</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VIRTUSB_PORT_STAT_C_OVER_CURRENT">
+      <MemberSignature Language="C#" Value="public const ushort VIRTUSB_PORT_STAT_C_OVER_CURRENT = 8;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int16 VIRTUSB_PORT_STAT_C_OVER_CURRENT = (8)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <MemberValue>8</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VIRTUSB_PORT_STAT_C_RESET">
+      <MemberSignature Language="C#" Value="public const ushort VIRTUSB_PORT_STAT_C_RESET = 16;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int16 VIRTUSB_PORT_STAT_C_RESET = (16)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <MemberValue>16</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VIRTUSB_PORT_STAT_C_SUSPEND">
+      <MemberSignature Language="C#" Value="public const ushort VIRTUSB_PORT_STAT_C_SUSPEND = 4;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int16 VIRTUSB_PORT_STAT_C_SUSPEND = (4)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VIRTUSB_PORT_STAT_CONNECT">
+      <MemberSignature Language="C#" Value="public const ushort VIRTUSB_PORT_STAT_CONNECT = 1;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int16 VIRTUSB_PORT_STAT_CONNECT = (1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VIRTUSB_PORT_STAT_ENABLE">
+      <MemberSignature Language="C#" Value="public const ushort VIRTUSB_PORT_STAT_ENABLE = 2;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int16 VIRTUSB_PORT_STAT_ENABLE = (2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VIRTUSB_PORT_STAT_FLAGS_RESUMING">
+      <MemberSignature Language="C#" Value="public const byte VIRTUSB_PORT_STAT_FLAGS_RESUMING = 1;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 VIRTUSB_PORT_STAT_FLAGS_RESUMING = (1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VIRTUSB_PORT_STAT_HIGH_SPEED">
+      <MemberSignature Language="C#" Value="public const ushort VIRTUSB_PORT_STAT_HIGH_SPEED = 1024;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int16 VIRTUSB_PORT_STAT_HIGH_SPEED = (1024)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <MemberValue>1024</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VIRTUSB_PORT_STAT_LOW_SPEED">
+      <MemberSignature Language="C#" Value="public const ushort VIRTUSB_PORT_STAT_LOW_SPEED = 512;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int16 VIRTUSB_PORT_STAT_LOW_SPEED = (512)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <MemberValue>512</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VIRTUSB_PORT_STAT_MASK">
+      <MemberSignature Language="C#" Value="public const ushort VIRTUSB_PORT_STAT_MASK = 1823;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int16 VIRTUSB_PORT_STAT_MASK = (1823)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <MemberValue>1823</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VIRTUSB_PORT_STAT_OVER_CURRENT">
+      <MemberSignature Language="C#" Value="public const ushort VIRTUSB_PORT_STAT_OVER_CURRENT = 8;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int16 VIRTUSB_PORT_STAT_OVER_CURRENT = (8)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <MemberValue>8</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VIRTUSB_PORT_STAT_POWER">
+      <MemberSignature Language="C#" Value="public const ushort VIRTUSB_PORT_STAT_POWER = 256;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int16 VIRTUSB_PORT_STAT_POWER = (256)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <MemberValue>256</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VIRTUSB_PORT_STAT_RESET">
+      <MemberSignature Language="C#" Value="public const ushort VIRTUSB_PORT_STAT_RESET = 16;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int16 VIRTUSB_PORT_STAT_RESET = (16)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <MemberValue>16</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VIRTUSB_PORT_STAT_SIZE">
+      <MemberSignature Language="C#" Value="public static readonly uint VIRTUSB_PORT_STAT_SIZE;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly unsigned int32 VIRTUSB_PORT_STAT_SIZE" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VIRTUSB_PORT_STAT_SUSPEND">
+      <MemberSignature Language="C#" Value="public const ushort VIRTUSB_PORT_STAT_SUSPEND = 4;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int16 VIRTUSB_PORT_STAT_SUSPEND = (4)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VIRTUSB_REGISTER_SIZE">
+      <MemberSignature Language="C#" Value="public static readonly uint VIRTUSB_REGISTER_SIZE;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly unsigned int32 VIRTUSB_REGISTER_SIZE" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VIRTUSB_URB_DATA_SIZE">
+      <MemberSignature Language="C#" Value="public static readonly uint VIRTUSB_URB_DATA_SIZE;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly unsigned int32 VIRTUSB_URB_DATA_SIZE" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VIRTUSB_URB_FLAGS_SHORT_TRANSFER_OK">
+      <MemberSignature Language="C#" Value="public const ushort VIRTUSB_URB_FLAGS_SHORT_TRANSFER_OK = 2;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int16 VIRTUSB_URB_FLAGS_SHORT_TRANSFER_OK = (2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VIRTUSB_URB_FLAGS_START_ISO_TRANSFER_ASAP">
+      <MemberSignature Language="C#" Value="public const ushort VIRTUSB_URB_FLAGS_START_ISO_TRANSFER_ASAP = 4;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int16 VIRTUSB_URB_FLAGS_START_ISO_TRANSFER_ASAP = (4)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt16</ReturnType>
+      </ReturnValue>
+      <MemberValue>4</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VIRTUSB_URB_SIZE">
+      <MemberSignature Language="C#" Value="public static readonly uint VIRTUSB_URB_SIZE;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly unsigned int32 VIRTUSB_URB_SIZE" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VIRTUSB_URB_TYPE_BULK">
+      <MemberSignature Language="C#" Value="public const byte VIRTUSB_URB_TYPE_BULK = 3;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 VIRTUSB_URB_TYPE_BULK = (3)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <MemberValue>3</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VIRTUSB_URB_TYPE_CONTROL">
+      <MemberSignature Language="C#" Value="public const byte VIRTUSB_URB_TYPE_CONTROL = 2;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 VIRTUSB_URB_TYPE_CONTROL = (2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VIRTUSB_URB_TYPE_INT">
+      <MemberSignature Language="C#" Value="public const byte VIRTUSB_URB_TYPE_INT = 1;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 VIRTUSB_URB_TYPE_INT = (1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VIRTUSB_URB_TYPE_ISO">
+      <MemberSignature Language="C#" Value="public const byte VIRTUSB_URB_TYPE_ISO = 0;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 VIRTUSB_URB_TYPE_ISO = (0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VIRTUSB_WORK_SIZE">
+      <MemberSignature Language="C#" Value="public static readonly uint VIRTUSB_WORK_SIZE;" />
+      <MemberSignature Language="ILAsm" Value=".field public static initonly unsigned int32 VIRTUSB_WORK_SIZE" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.UInt32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VIRTUSB_WORK_TYPE_CANCEL_URB">
+      <MemberSignature Language="C#" Value="public const byte VIRTUSB_WORK_TYPE_CANCEL_URB = 2;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 VIRTUSB_WORK_TYPE_CANCEL_URB = (2)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VIRTUSB_WORK_TYPE_PORT_STAT">
+      <MemberSignature Language="C#" Value="public const byte VIRTUSB_WORK_TYPE_PORT_STAT = 0;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 VIRTUSB_WORK_TYPE_PORT_STAT = (0)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="VIRTUSB_WORK_TYPE_PROCESS_URB">
+      <MemberSignature Language="C#" Value="public const byte VIRTUSB_WORK_TYPE_PROCESS_URB = 1;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal unsigned int8 VIRTUSB_WORK_TYPE_PROCESS_URB = (1)" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

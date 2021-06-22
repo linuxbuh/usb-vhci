@@ -1,0 +1,114 @@
+<Type Name="InterruptUrb" FullName="Usb.InterruptUrb">
+  <TypeSignature Language="C#" Value="public class InterruptUrb : Usb.Urb" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit InterruptUrb extends Usb.Urb" />
+  <AssemblyInfo>
+    <AssemblyName>Usb</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>1.3.1.7</AssemblyVersion>
+    <AssemblyVersion>1.4.2.8</AssemblyVersion>
+    <AssemblyVersion>1.5.2.9</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Usb.Urb</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public InterruptUrb (long handle, byte[] buffer, int buffer_actual, Usb.UrbStatus status, Usb.UrbFlags flags, byte epadr, Usb.InterruptEndpoint ep, int interval);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int64 handle, unsigned int8[] buffer, int32 buffer_actual, valuetype Usb.UrbStatus status, valuetype Usb.UrbFlags flags, unsigned int8 epadr, class Usb.InterruptEndpoint ep, int32 interval) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="handle" Type="System.Int64" />
+        <Parameter Name="buffer" Type="System.Byte[]" />
+        <Parameter Name="buffer_actual" Type="System.Int32" />
+        <Parameter Name="status" Type="Usb.UrbStatus" />
+        <Parameter Name="flags" Type="Usb.UrbFlags" />
+        <Parameter Name="epadr" Type="System.Byte" />
+        <Parameter Name="ep" Type="Usb.InterruptEndpoint" />
+        <Parameter Name="interval" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="handle">To be added.</param>
+        <param name="buffer">To be added.</param>
+        <param name="buffer_actual">To be added.</param>
+        <param name="status">To be added.</param>
+        <param name="flags">To be added.</param>
+        <param name="epadr">To be added.</param>
+        <param name="ep">To be added.</param>
+        <param name="interval">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DumpProperties">
+      <MemberSignature Language="C#" Value="protected override void DumpProperties (System.Text.StringBuilder s);" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DumpProperties(class System.Text.StringBuilder s) cil managed" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="s" Type="System.Text.StringBuilder" />
+      </Parameters>
+      <Docs>
+        <param name="s">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Interval">
+      <MemberSignature Language="C#" Value="public int Interval { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Interval" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public override sealed Usb.EndpointType Type { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Usb.EndpointType Type" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.1.7</AssemblyVersion>
+        <AssemblyVersion>1.4.2.8</AssemblyVersion>
+        <AssemblyVersion>1.5.2.9</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Usb.EndpointType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

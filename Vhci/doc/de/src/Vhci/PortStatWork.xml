@@ -1,0 +1,228 @@
+<Type Name="PortStatWork" FullName="Vhci.PortStatWork">
+  <TypeSignature Language="C#" Value="public class PortStatWork : Vhci.Work" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PortStatWork extends Vhci.Work" />
+  <AssemblyInfo>
+    <AssemblyName>Vhci</AssemblyName>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <AssemblyVersion>1.3.0.2</AssemblyVersion>
+    <AssemblyVersion>1.3.1.3</AssemblyVersion>
+    <AssemblyVersion>1.4.2.4</AssemblyVersion>
+    <AssemblyVersion>1.5.2.4</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>Vhci.Work</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PortStatWork (byte port, Vhci.PortStat stat);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8 port, valuetype Vhci.PortStat stat) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.3.1.3</AssemblyVersion>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="port" Type="System.Byte" />
+        <Parameter Name="stat" Type="Vhci.PortStat" />
+      </Parameters>
+      <Docs>
+        <param name="port">To be added.</param>
+        <param name="stat">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public PortStatWork (byte port, Vhci.PortStat stat, Vhci.PortStat prev);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8 port, valuetype Vhci.PortStat stat, valuetype Vhci.PortStat prev) cil managed" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.3.1.3</AssemblyVersion>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="port" Type="System.Byte" />
+        <Parameter Name="stat" Type="Vhci.PortStat" />
+        <Parameter Name="prev" Type="Vhci.PortStat" />
+      </Parameters>
+      <Docs>
+        <param name="port">To be added.</param>
+        <param name="stat">To be added.</param>
+        <param name="prev">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PortStat">
+      <MemberSignature Language="C#" Value="public Vhci.PortStat PortStat { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Vhci.PortStat PortStat" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.3.1.3</AssemblyVersion>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Vhci.PortStat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TriggerFlags">
+      <MemberSignature Language="C#" Value="public Vhci.PortStatWorkTriggerFlags TriggerFlags { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Vhci.PortStatWorkTriggerFlags TriggerFlags" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.3.1.3</AssemblyVersion>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Vhci.PortStatWorkTriggerFlags</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TriggersDisable">
+      <MemberSignature Language="C#" Value="public bool TriggersDisable { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool TriggersDisable" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.3.1.3</AssemblyVersion>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TriggersPowerOff">
+      <MemberSignature Language="C#" Value="public bool TriggersPowerOff { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool TriggersPowerOff" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.3.1.3</AssemblyVersion>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TriggersPowerOn">
+      <MemberSignature Language="C#" Value="public bool TriggersPowerOn { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool TriggersPowerOn" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.3.1.3</AssemblyVersion>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TriggersReset">
+      <MemberSignature Language="C#" Value="public bool TriggersReset { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool TriggersReset" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.3.1.3</AssemblyVersion>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TriggersResuming">
+      <MemberSignature Language="C#" Value="public bool TriggersResuming { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool TriggersResuming" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.3.1.3</AssemblyVersion>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TriggersSuspend">
+      <MemberSignature Language="C#" Value="public bool TriggersSuspend { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool TriggersSuspend" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyVersion>1.0.0.0</AssemblyVersion>
+        <AssemblyVersion>1.3.0.2</AssemblyVersion>
+        <AssemblyVersion>1.3.1.3</AssemblyVersion>
+        <AssemblyVersion>1.4.2.4</AssemblyVersion>
+        <AssemblyVersion>1.5.2.4</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
