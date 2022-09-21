@@ -1,8 +1,18 @@
-Read INSTALL for build/install instructions.
-
 Web: http://sourceforge.net/p/usb-vhci/wiki/Home/
      http://sourceforge.net/projects/usb-vhci/
 
 You also need the kernel module for this to work. Download it from:
 http://sourceforge.net/projects/usb-vhci/files/linux%20kernel%20module/
 
+Install
+=======
+
+Just run
+
+  ./configure
+  make
+  make install   # (as root)
+
+to build and install it.
+
+If the documentation won't build, try "./configure --disable-doc".
